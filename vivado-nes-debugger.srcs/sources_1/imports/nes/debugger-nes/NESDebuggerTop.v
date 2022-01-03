@@ -3,14 +3,22 @@
  */
 
 module NESDebuggerTop(
-    input   i_clk_5mhz,
+    input   i_clk_5mhz,             // NES clock
+    input   i_clk_25mhz,            // VGA clock
     input   i_reset_n,
     
     // SPI interface
     input           i_spi_cs_n,
     input           i_spi_clk,      // SPI CLK: clock signal from controller
     output          o_spi_cipo,     // SPI CIPO: tri-state in top module: high-z when cs is positive
-    input           i_spi_copi      // SPI CPOI: only process when cs is negative
+    input           i_spi_copi,     // SPI CPOI: only process when cs is negative
+
+    // VGA output
+    output [3:0]    o_vga_red,
+    output [3:0]    o_vga_green,
+    output [3:0]    o_vga_blue,
+    output          o_vga_hsync,
+    output          o_vga_vsync
 );
 
 localparam RW_WRITE = 0;
@@ -405,5 +413,44 @@ Memory memory_nametable (
   .i_data(w_mem_nametable_data_wr),
   .o_data(w_mem_nametable_data_rd)
 );
+
+//
+// VGA Output
+//
+
+wire w_vga_visible;
+wire [10:0] w_vga_x;
+wire [10:0] w_vga_y;
+wire [7:0] w_vga_red;
+wire [7:0] w_vga_green;
+wire [7:0] w_vga_blue;
+
+VGAGenerator vga_generator(
+    .i_clk(i_clk_25mhz),
+    .i_reset_n(i_reset_n),
+    .o_x(w_vga_x),
+    .o_y(w_vga_y),
+    .o_visible(w_vga_visible)
+);
+
+VGAOutput vga_output(
+    .i_clk(i_clk_25mhz),
+    .i_reset_n(i_reset_n),
+    .i_visible(w_vga_visible),
+    .i_x(w_vga_x),
+    .i_y(w_vga_y),
+    .i_red(255),
+    .i_green(255),
+    .i_blue(0),
+    .o_vga_red(w_vga_red),
+    .o_vga_green(w_vga_green),
+    .o_vga_blue(w_vga_blue),
+    .o_vga_hsync(o_vga_hsync),
+    .o_vga_vsync(o_vga_vsync)
+);
+
+assign o_vga_red = w_vga_red[7:4];
+assign o_vga_green = w_vga_green[7:4];
+assign o_vga_blue = w_vga_blue[7:4];
 
 endmodule

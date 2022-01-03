@@ -2,8 +2,8 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Sat Jan  1 18:59:54 2022
-# Process ID: 8764
+# Start of session at: Mon Jan  3 17:11:59 2022
+# Process ID: 13316
 # Current directory: C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/synth_1/top.vds
@@ -17,13 +17,13 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 12964
+INFO: [Synth 8-7075] Helper process launched with PID 10788
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1012.891 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1014.598 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/synth_1/.Xil/Vivado-8764-DESKTOP-H1KDTUU/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/synth_1/.Xil/Vivado-8764-DESKTOP-H1KDTUU/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/synth_1/.Xil/Vivado-13316-DESKTOP-H1KDTUU/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/synth_1/.Xil/Vivado-13316-DESKTOP-H1KDTUU/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'NESDebuggerTop' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:5]
 	Parameter RW_WRITE bound to: 0 - type: integer 
 	Parameter RW_READ bound to: 1 - type: integer 
@@ -43,7 +43,7 @@ INFO: [Synth 8-6157] synthesizing module 'NESDebugger' [C:/Users/jim/Documents/G
 	Parameter CMD_VALUE_WRITE bound to: 8'b00000100 
 	Parameter CMD_VALUE_READ bound to: 8'b00000101 
 INFO: [Synth 8-6155] done synthesizing module 'NESDebugger' (3#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebugger.v:7]
-INFO: [Synth 8-226] default block is never used [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:122]
+INFO: [Synth 8-226] default block is never used [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:130]
 INFO: [Synth 8-6157] synthesizing module 'NES' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/nes/NES.v:1]
 	Parameter ADDRESS_JOY1 bound to: 16'b0100000000010110 
 	Parameter RW_READ bound to: 1 - type: integer 
@@ -313,43 +313,43 @@ INFO: [Synth 8-6157] synthesizing module 'PPUMemoryMap' [C:/Users/jim/Documents/
 	Parameter ADDRESS_NAMETABLE_START bound to: 14'b10000000000000 
 INFO: [Synth 8-6155] done synthesizing module 'PPUMemoryMap' (31#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/nes/PPUMemoryMap.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'NES' (32#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/nes/NES.v:1]
-WARNING: [Synth 8-7071] port 'o_video_red' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'o_video_green' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'o_video_blue' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'o_video_x' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'o_video_y' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'o_video_visible' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'o_controller_latch' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'o_controller_clk' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'i_controller_1' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'o_cpu_debug_ir' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'o_cpu_debug_error' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'o_cpu_debug_rw' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'o_cpu_debug_address' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'o_cpu_debug_tcu' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'o_cpu_debug_clk_en' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'o_cpu_debug_sync' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'o_ppu_debug_ppumask' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'o_ppu_debug_ppuctrl' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'o_ppu_debug_ppustatus' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'o_ppu_debug_ppuscroll_x' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'o_ppu_debug_ppuscroll_y' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'o_ppu_debug_vram_address' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'o_ppu_debug_v' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'o_ppu_debug_t' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'o_ppu_debug_x' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'o_ppu_debug_w' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'o_ppu_debug_rasterizer_counter' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'o_ppu_debug_palette_0' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'o_ppu_debug_palette_1' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'o_ppu_debug_palette_2' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'o_ppu_debug_palette_3' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'o_ppu_debug_palette_4' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'o_ppu_debug_palette_5' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'o_ppu_debug_palette_6' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'o_ppu_debug_palette_7' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7071] port 'o_ppu_debug_colour_index' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
-WARNING: [Synth 8-7023] instance 'nes' of module 'NES' has 55 connections declared, but only 19 given [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:195]
+WARNING: [Synth 8-7071] port 'o_video_red' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'o_video_green' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'o_video_blue' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'o_video_x' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'o_video_y' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'o_video_visible' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'o_controller_latch' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'o_controller_clk' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'i_controller_1' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'o_cpu_debug_ir' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'o_cpu_debug_error' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'o_cpu_debug_rw' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'o_cpu_debug_address' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'o_cpu_debug_tcu' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'o_cpu_debug_clk_en' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'o_cpu_debug_sync' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'o_ppu_debug_ppumask' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'o_ppu_debug_ppuctrl' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'o_ppu_debug_ppustatus' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'o_ppu_debug_ppuscroll_x' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'o_ppu_debug_ppuscroll_y' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'o_ppu_debug_vram_address' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'o_ppu_debug_v' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'o_ppu_debug_t' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'o_ppu_debug_x' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'o_ppu_debug_w' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'o_ppu_debug_rasterizer_counter' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'o_ppu_debug_palette_0' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'o_ppu_debug_palette_1' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'o_ppu_debug_palette_2' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'o_ppu_debug_palette_3' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'o_ppu_debug_palette_4' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'o_ppu_debug_palette_5' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'o_ppu_debug_palette_6' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'o_ppu_debug_palette_7' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7071] port 'o_ppu_debug_colour_index' of module 'NES' is unconnected for instance 'nes' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
+WARNING: [Synth 8-7023] instance 'nes' of module 'NES' has 55 connections declared, but only 19 given [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:203]
 INFO: [Synth 8-6157] synthesizing module 'NESDebuggerValues' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerValues.v:7]
 	Parameter VALUEID_NES_RESET_N bound to: 1 - type: integer 
 	Parameter VALUEID_DEBUGGER_MEMORY_POOL bound to: 2 - type: integer 
@@ -359,24 +359,43 @@ INFO: [Synth 8-6157] synthesizing module 'NESDebuggerMCU' [C:/Users/jim/Document
 	Parameter RW_READ bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'NESDebuggerMCU' (34#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerMCU.v:1]
 INFO: [Synth 8-6157] synthesizing module 'Memory' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-common/hardware/Memory.v:4]
-INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/synth_1/.Xil/Vivado-8764-DESKTOP-H1KDTUU/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (35#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/synth_1/.Xil/Vivado-8764-DESKTOP-H1KDTUU/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/synth_1/.Xil/Vivado-13316-DESKTOP-H1KDTUU/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (35#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/synth_1/.Xil/Vivado-13316-DESKTOP-H1KDTUU/realtime/blk_mem_gen_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'Memory' (36#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-common/hardware/Memory.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'NESDebuggerTop' (37#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'top' (38#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'VGAGenerator' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/ppu/vga/VGAGenerator.v:7]
+	Parameter WIDTH bound to: 800 - type: integer 
+	Parameter HEIGHT bound to: 525 - type: integer 
+	Parameter WIDTH_VISIBLE bound to: 640 - type: integer 
+	Parameter HEIGHT_VISIBLE bound to: 480 - type: integer 
+	Parameter PIXEL_BITWIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'VGAGenerator' (37#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/ppu/vga/VGAGenerator.v:7]
+INFO: [Synth 8-6157] synthesizing module 'VGAOutput' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/ppu/vga/VGAOutput.v:8]
+	Parameter WIDTH bound to: 800 - type: integer 
+	Parameter HEIGHT bound to: 525 - type: integer 
+	Parameter WIDTH_VISIBLE bound to: 640 - type: integer 
+	Parameter HEIGHT_VISIBLE bound to: 480 - type: integer 
+	Parameter FRONT_PORCH_X bound to: 16 - type: integer 
+	Parameter BACK_PORCH_X bound to: 96 - type: integer 
+	Parameter FRONT_PORCH_Y bound to: 10 - type: integer 
+	Parameter BACK_PORCH_Y bound to: 33 - type: integer 
+	Parameter PIXEL_BITWIDTH bound to: 11 - type: integer 
+	Parameter RGB_BITWIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'VGAOutput' (38#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/ppu/vga/VGAOutput.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'NESDebuggerTop' (39#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'top' (40#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1023.254 ; gain = 10.363
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1022.680 ; gain = 8.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1035.469 ; gain = 22.578
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1022.680 ; gain = 8.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1035.469 ; gain = 22.578
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1022.680 ; gain = 8.082
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 1035.469 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 1022.680 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -392,43 +411,44 @@ Finished Parsing XDC File [c:/Users/jim/Documents/GitHub/personal/vivado/vivado-
 Parsing XDC File [c:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'pll'
 WARNING: [Vivado 12-584] No ports matched ''. [c:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc:1]
 WARNING: [Vivado 12-584] No ports matched ''. [c:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc:4]
+WARNING: [Vivado 12-584] No ports matched ''. [c:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc:6]
 Finished Parsing XDC File [c:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'pll'
 Parsing XDC File [C:/Users/jim/Documents/GitHub/personal/digilent-xdc/Arty-A7-100-Master.xdc]
-WARNING: [Vivado 12-507] No nets matched 'i_spi_clk_IBUF'. [C:/Users/jim/Documents/GitHub/personal/digilent-xdc/Arty-A7-100-Master.xdc:171]
-WARNING: [Vivado 12-507] No nets matched 'debuggerTop/mcu_ram/w_nes_ram_data_rd[0]'. [C:/Users/jim/Documents/GitHub/personal/digilent-xdc/Arty-A7-100-Master.xdc:224]
+WARNING: [Vivado 12-507] No nets matched 'i_spi_clk_IBUF'. [C:/Users/jim/Documents/GitHub/personal/digilent-xdc/Arty-A7-100-Master.xdc:173]
+WARNING: [Vivado 12-507] No nets matched 'debuggerTop/mcu_ram/w_nes_ram_data_rd[0]'. [C:/Users/jim/Documents/GitHub/personal/digilent-xdc/Arty-A7-100-Master.xdc:226]
 Finished Parsing XDC File [C:/Users/jim/Documents/GitHub/personal/digilent-xdc/Arty-A7-100-Master.xdc]
 WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/jim/Documents/GitHub/personal/digilent-xdc/Arty-A7-100-Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/jim/Documents/GitHub/personal/digilent-xdc/Arty-A7-100-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1114.520 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1100.797 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1114.520 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1100.797 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1114.520 ; gain = 101.629
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1100.797 ; gain = 86.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1114.520 ; gain = 101.629
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1100.797 ; gain = 86.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for i_clk_100mhz. (constraint file  c:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for i_clk_100mhz. (constraint file  c:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for i_clk_100mhz. (constraint file  c:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for i_clk_100mhz. (constraint file  c:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 8).
 Applied set_property DONT_TOUCH = true for debuggerTop/memory_prg/blockRam. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for debuggerTop/memory_ram/blockRam. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for debuggerTop/memory_patterntable/blockRam. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for debuggerTop/memory_nametable/blockRam. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for pll. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1114.520 ; gain = 101.629
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1100.797 ; gain = 86.199
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'r_state_reg' in module 'Cpu2A03'
 ---------------------------------------------------------------------------------------------------
@@ -441,7 +461,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'r_state_reg' in module 'Cpu
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'r_state_reg' using encoding 'sequential' in module 'Cpu2A03'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1114.520 ; gain = 101.629
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1100.797 ; gain = 86.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -451,6 +471,7 @@ Detailed RTL Component Info :
 	   3 Input   16 Bit       Adders := 1     
 	   2 Input   16 Bit       Adders := 4     
 	   2 Input   15 Bit       Adders := 2     
+	   2 Input   11 Bit       Adders := 2     
 	   2 Input    9 Bit       Adders := 2     
 	   2 Input    8 Bit       Adders := 4     
 	   2 Input    5 Bit       Adders := 1     
@@ -465,6 +486,7 @@ Detailed RTL Component Info :
 	               16 Bit    Registers := 8     
 	               15 Bit    Registers := 2     
 	               14 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
 	                9 Bit    Registers := 2     
 	                8 Bit    Registers := 324   
 	                7 Bit    Registers := 1     
@@ -481,8 +503,9 @@ Detailed RTL Component Info :
 	  11 Input   15 Bit        Muxes := 1     
 	   8 Input   15 Bit        Muxes := 1     
 	   2 Input   14 Bit        Muxes := 2     
+	   2 Input   11 Bit        Muxes := 2     
 	   2 Input    9 Bit        Muxes := 2     
-	   2 Input    8 Bit        Muxes := 77    
+	   2 Input    8 Bit        Muxes := 80    
 	   4 Input    8 Bit        Muxes := 3     
 	   3 Input    8 Bit        Muxes := 3     
 	   8 Input    8 Bit        Muxes := 1     
@@ -538,7 +561,7 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 1181.199 ; gain = 168.309
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 1159.836 ; gain = 145.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -563,14 +586,14 @@ Finished ROM, RAM, DSP and Shift Register Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 1181.199 ; gain = 168.309
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:07 ; elapsed = 00:01:08 . Memory (MB): peak = 1159.836 ; gain = 145.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_2_10/i_data[5]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_data[5]
-      : \debuggerTop/nes /i_2_1/O474[5]
+      : \debuggerTop/nes /i_2_1/O475[5]
       : \debuggerTop/nes /i_2_1/o_address[13]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /o_address[13]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_2_10/o_address[13]
@@ -579,37 +602,37 @@ Start Timing Optimization
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_2_10/o_address[14]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_2_10/i_data[6]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_data[6]
-      : \debuggerTop/nes /i_2_1/O474[6]
+      : \debuggerTop/nes /i_2_1/O475[6]
       : \debuggerTop/nes /i_2_1/o_address[14]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /o_address[14]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_2_10/o_address[14]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_2_10/i_data[6]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_data[6]
-      : \debuggerTop/nes /i_2_1/O474[6]
+      : \debuggerTop/nes /i_2_1/O475[6]
       : \debuggerTop/nes /i_2_1/o_address[2]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /o_address[2]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_2_10/o_address[2]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_2_10/i_data[2]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_data[2]
-      : \debuggerTop/nes /i_2_1/O474[2]
+      : \debuggerTop/nes /i_2_1/O475[2]
       : \debuggerTop/nes /i_2_1/o_address[1]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /o_address[1]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_2_10/o_address[1]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_2_10/i_data[1]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_data[1]
-      : \debuggerTop/nes /i_2_1/O474[1]
+      : \debuggerTop/nes /i_2_1/O475[1]
       : \debuggerTop/nes /i_2_1/o_address[0]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /o_address[0]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_2_10/o_address[0]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_2_10/i_data[0]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_data[0]
-      : \debuggerTop/nes /i_2_1/O474[0]
+      : \debuggerTop/nes /i_2_1/O475[0]
       : \debuggerTop/nes /i_2_1/o_address[12]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /o_address[12]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_2_10/o_address[12]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_2_10/i_data[4]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_data[4]
-      : \debuggerTop/nes /i_2_1/O474[4]
+      : \debuggerTop/nes /i_2_1/O475[4]
       : i_2_5/\debuggerTop/w_nes_ram_en 
       : \debuggerTop/nes /o_cs_ram
       : \debuggerTop/nes /i_2_1/o_cs_prg[1]
@@ -621,33 +644,33 @@ Start Timing Optimization
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_2_10/o_address[15]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_2_10/i_data[7]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_data[7]
-      : \debuggerTop/nes /i_2_1/O474[7]
+      : \debuggerTop/nes /i_2_1/O475[7]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_2_10/i_data[7]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_data[7]
-      : \debuggerTop/nes /i_2_1/O474[7]
+      : \debuggerTop/nes /i_2_1/O475[7]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_2_10/i_data[2]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_data[2]
-      : \debuggerTop/nes /i_2_1/O474[2]
+      : \debuggerTop/nes /i_2_1/O475[2]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_2_10/i_data[6]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_data[6]
-      : \debuggerTop/nes /i_2_1/O474[6]
+      : \debuggerTop/nes /i_2_1/O475[6]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_2_10/i_data[5]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_data[5]
-      : \debuggerTop/nes /i_2_1/O474[5]
+      : \debuggerTop/nes /i_2_1/O475[5]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_2_10/i_data[6]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_data[6]
-      : \debuggerTop/nes /i_2_1/O474[6]
+      : \debuggerTop/nes /i_2_1/O475[6]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_2_10/i_data[0]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_data[0]
-      : \debuggerTop/nes /i_2_1/O474[0]
+      : \debuggerTop/nes /i_2_1/O475[0]
       : \debuggerTop/nes /i_2_1/o_address[8]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /o_address[8]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_2_10/o_address[8]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_2_10/i_data[1]
       : \debuggerTop/nes /\cpu2A03/cpu6502 /i_data[1]
-      : \debuggerTop/nes /i_2_1/O474[1]
+      : \debuggerTop/nes /i_2_1/O475[1]
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:21 ; elapsed = 00:01:22 . Memory (MB): peak = 1318.855 ; gain = 305.965
+Finished Timing Optimization : Time (s): cpu = 00:01:23 ; elapsed = 00:01:24 . Memory (MB): peak = 1315.008 ; gain = 300.410
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -656,9 +679,9 @@ Found timing loop:
      0: i_2_2573/O (LUT6)
       [(null):0]
      1: i_2_2573/I3 (LUT6)
-     2: i_2_3293/O (LUT2)
+     2: i_2_3331/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-     3: i_2_3293/I1 (LUT2)
+     3: i_2_3331/I1 (LUT2)
      4: i_2_2656/O (LUT2)
       [(null):0]
      5: i_2_2656/I1 (LUT2)
@@ -1310,7 +1333,7 @@ Found timing loop:
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
 Inferred a: "set_disable_timing -from I1 -to O i_2_931"
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:26 ; elapsed = 00:01:27 . Memory (MB): peak = 1328.426 ; gain = 315.535
+Finished Technology Mapping : Time (s): cpu = 00:01:28 ; elapsed = 00:01:29 . Memory (MB): peak = 1324.012 ; gain = 309.414
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1328,37 +1351,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:30 ; elapsed = 00:01:31 . Memory (MB): peak = 1328.426 ; gain = 315.535
+Finished IO Insertion : Time (s): cpu = 00:01:32 ; elapsed = 00:01:33 . Memory (MB): peak = 1324.012 ; gain = 309.414
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:30 ; elapsed = 00:01:31 . Memory (MB): peak = 1328.426 ; gain = 315.535
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:32 ; elapsed = 00:01:33 . Memory (MB): peak = 1324.012 ; gain = 309.414
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:30 ; elapsed = 00:01:32 . Memory (MB): peak = 1328.426 ; gain = 315.535
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 1324.012 ; gain = 309.414
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:30 ; elapsed = 00:01:32 . Memory (MB): peak = 1328.426 ; gain = 315.535
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 1324.012 ; gain = 309.414
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:31 ; elapsed = 00:01:32 . Memory (MB): peak = 1328.426 ; gain = 315.535
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:33 ; elapsed = 00:01:34 . Memory (MB): peak = 1324.012 ; gain = 309.414
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:31 ; elapsed = 00:01:32 . Memory (MB): peak = 1328.426 ; gain = 315.535
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:33 ; elapsed = 00:01:34 . Memory (MB): peak = 1324.012 ; gain = 309.414
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1381,40 +1404,40 @@ Report Cell Usage:
 |5     |clk_wiz        |     1|
 |6     |BUFG           |     1|
 |7     |CARRY4         |    29|
-|8     |LUT1           |    25|
-|9     |LUT2           |   175|
-|10    |LUT3           |   127|
-|11    |LUT4           |   315|
-|12    |LUT5           |   304|
-|13    |LUT6           |  1940|
+|8     |LUT1           |    26|
+|9     |LUT2           |   180|
+|10    |LUT3           |   131|
+|11    |LUT4           |   326|
+|12    |LUT5           |   312|
+|13    |LUT6           |  1949|
 |14    |MUXF7          |   307|
 |15    |MUXF8          |   145|
-|16    |FDCE           |   414|
+|16    |FDCE           |   436|
 |17    |FDPE           |    31|
 |18    |FDRE           |  2331|
 |19    |IBUF           |     4|
-|20    |OBUF           |     1|
+|20    |OBUF           |    15|
 +------+---------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:31 ; elapsed = 00:01:32 . Memory (MB): peak = 1328.426 ; gain = 315.535
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:33 ; elapsed = 00:01:34 . Memory (MB): peak = 1324.012 ; gain = 309.414
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 62 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:19 ; elapsed = 00:01:28 . Memory (MB): peak = 1328.426 ; gain = 236.484
-Synthesis Optimization Complete : Time (s): cpu = 00:01:31 ; elapsed = 00:01:32 . Memory (MB): peak = 1328.426 ; gain = 315.535
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:21 ; elapsed = 00:01:30 . Memory (MB): peak = 1324.012 ; gain = 231.297
+Synthesis Optimization Complete : Time (s): cpu = 00:01:33 ; elapsed = 00:01:34 . Memory (MB): peak = 1324.012 ; gain = 309.414
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 1328.426 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 1329.863 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 481 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1328.426 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1329.863 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-95 Infos, 42 Warnings, 62 Critical Warnings and 0 Errors encountered.
+99 Infos, 43 Warnings, 62 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:37 ; elapsed = 00:01:39 . Memory (MB): peak = 1328.426 ; gain = 315.535
+synth_design: Time (s): cpu = 00:01:39 ; elapsed = 00:01:41 . Memory (MB): peak = 1329.863 ; gain = 315.266
 INFO: [Common 17-1381] The checkpoint 'C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Jan  1 19:01:37 2022...
+INFO: [Common 17-206] Exiting Vivado at Mon Jan  3 17:13:44 2022...

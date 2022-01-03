@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Mon Dec 20 16:37:20 2021
+// Date        : Mon Jan  3 16:48:31 2022
 // Host        : DESKTOP-H1KDTUU running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v
@@ -15,21 +15,25 @@
 (* NotValidForBitStream *)
 module clk_wiz_0
    (o_clk_5mhz,
+    o_clk_25mhz,
     resetn,
     o_locked,
     i_clk_100mhz);
   output o_clk_5mhz;
+  output o_clk_25mhz;
   input resetn;
   output o_locked;
   input i_clk_100mhz;
 
   (* IBUF_LOW_PWR *) wire i_clk_100mhz;
+  wire o_clk_25mhz;
   wire o_clk_5mhz;
   wire o_locked;
   wire resetn;
 
   clk_wiz_0_clk_wiz_0_clk_wiz inst
        (.i_clk_100mhz(i_clk_100mhz),
+        .o_clk_25mhz(o_clk_25mhz),
         .o_clk_5mhz(o_clk_5mhz),
         .o_locked(o_locked),
         .resetn(resetn));
@@ -38,10 +42,12 @@ endmodule
 (* ORIG_REF_NAME = "clk_wiz_0_clk_wiz" *) 
 module clk_wiz_0_clk_wiz_0_clk_wiz
    (o_clk_5mhz,
+    o_clk_25mhz,
     resetn,
     o_locked,
     i_clk_100mhz);
   output o_clk_5mhz;
+  output o_clk_25mhz;
   input resetn;
   output o_locked;
   input i_clk_100mhz;
@@ -50,6 +56,8 @@ module clk_wiz_0_clk_wiz_0_clk_wiz
   wire clkfbout_clk_wiz_0;
   wire i_clk_100mhz;
   wire i_clk_100mhz_clk_wiz_0;
+  wire o_clk_25mhz;
+  wire o_clk_25mhz_clk_wiz_0;
   wire o_clk_5mhz;
   wire o_clk_5mhz_clk_wiz_0;
   wire o_locked;
@@ -59,7 +67,6 @@ module clk_wiz_0_clk_wiz_0_clk_wiz
   wire NLW_mmcm_adv_inst_CLKFBSTOPPED_UNCONNECTED;
   wire NLW_mmcm_adv_inst_CLKINSTOPPED_UNCONNECTED;
   wire NLW_mmcm_adv_inst_CLKOUT0B_UNCONNECTED;
-  wire NLW_mmcm_adv_inst_CLKOUT1_UNCONNECTED;
   wire NLW_mmcm_adv_inst_CLKOUT1B_UNCONNECTED;
   wire NLW_mmcm_adv_inst_CLKOUT2_UNCONNECTED;
   wire NLW_mmcm_adv_inst_CLKOUT2B_UNCONNECTED;
@@ -90,18 +97,22 @@ module clk_wiz_0_clk_wiz_0_clk_wiz
        (.I(o_clk_5mhz_clk_wiz_0),
         .O(o_clk_5mhz));
   (* BOX_TYPE = "PRIMITIVE" *) 
+  BUFG clkout2_buf
+       (.I(o_clk_25mhz_clk_wiz_0),
+        .O(o_clk_25mhz));
+  (* BOX_TYPE = "PRIMITIVE" *) 
   MMCME2_ADV #(
     .BANDWIDTH("OPTIMIZED"),
-    .CLKFBOUT_MULT_F(32.000000),
+    .CLKFBOUT_MULT_F(12.625000),
     .CLKFBOUT_PHASE(0.000000),
     .CLKFBOUT_USE_FINE_PS("FALSE"),
     .CLKIN1_PERIOD(10.000000),
     .CLKIN2_PERIOD(0.000000),
-    .CLKOUT0_DIVIDE_F(128.000000),
+    .CLKOUT0_DIVIDE_F(126.250000),
     .CLKOUT0_DUTY_CYCLE(0.500000),
     .CLKOUT0_PHASE(0.000000),
     .CLKOUT0_USE_FINE_PS("FALSE"),
-    .CLKOUT1_DIVIDE(1),
+    .CLKOUT1_DIVIDE(25),
     .CLKOUT1_DUTY_CYCLE(0.500000),
     .CLKOUT1_PHASE(0.000000),
     .CLKOUT1_USE_FINE_PS("FALSE"),
@@ -127,7 +138,7 @@ module clk_wiz_0_clk_wiz_0_clk_wiz
     .CLKOUT6_PHASE(0.000000),
     .CLKOUT6_USE_FINE_PS("FALSE"),
     .COMPENSATION("ZHOLD"),
-    .DIVCLK_DIVIDE(5),
+    .DIVCLK_DIVIDE(2),
     .IS_CLKINSEL_INVERTED(1'b0),
     .IS_PSEN_INVERTED(1'b0),
     .IS_PSINCDEC_INVERTED(1'b0),
@@ -150,7 +161,7 @@ module clk_wiz_0_clk_wiz_0_clk_wiz
         .CLKINSTOPPED(NLW_mmcm_adv_inst_CLKINSTOPPED_UNCONNECTED),
         .CLKOUT0(o_clk_5mhz_clk_wiz_0),
         .CLKOUT0B(NLW_mmcm_adv_inst_CLKOUT0B_UNCONNECTED),
-        .CLKOUT1(NLW_mmcm_adv_inst_CLKOUT1_UNCONNECTED),
+        .CLKOUT1(o_clk_25mhz_clk_wiz_0),
         .CLKOUT1B(NLW_mmcm_adv_inst_CLKOUT1B_UNCONNECTED),
         .CLKOUT2(NLW_mmcm_adv_inst_CLKOUT2_UNCONNECTED),
         .CLKOUT2B(NLW_mmcm_adv_inst_CLKOUT2B_UNCONNECTED),

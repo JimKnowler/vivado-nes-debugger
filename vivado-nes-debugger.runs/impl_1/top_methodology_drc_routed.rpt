@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Sat Jan  1 19:04:17 2022
+| Date         : Mon Jan  3 17:16:10 2022
 | Host         : DESKTOP-H1KDTUU running 64-bit major release  (build 9200)
 | Command      : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
 | Design       : top
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 31
+             Violations found: 33
 +-----------+------------------+------------------------------------------------+------------+
 | Rule      | Severity         | Description                                    | Violations |
 +-----------+------------------+------------------------------------------------+------------+
-| TIMING-6  | Critical Warning | No common primary clock between related clocks | 2          |
+| TIMING-6  | Critical Warning | No common primary clock between related clocks | 4          |
 | TIMING-17 | Critical Warning | Non-clocked sequential cell                    | 25         |
 | LUTAR-1   | Warning          | LUT drives async reset alert                   | 3          |
 | TIMING-23 | Warning          | Combinational loop found                       | 1          |
@@ -37,10 +37,20 @@ Table of Contents
 -----------------
 TIMING-6#1 Critical Warning
 No common primary clock between related clocks  
-The clocks o_clk_5mhz_clk_wiz_0 and o_clk_5mhz_clk_wiz_0_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks o_clk_5mhz_clk_wiz_0] -to [get_clocks o_clk_5mhz_clk_wiz_0_1]
+The clocks o_clk_25mhz_clk_wiz_0 and o_clk_25mhz_clk_wiz_0_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks o_clk_25mhz_clk_wiz_0] -to [get_clocks o_clk_25mhz_clk_wiz_0_1]
 Related violations: <none>
 
 TIMING-6#2 Critical Warning
+No common primary clock between related clocks  
+The clocks o_clk_25mhz_clk_wiz_0_1 and o_clk_25mhz_clk_wiz_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks o_clk_25mhz_clk_wiz_0_1] -to [get_clocks o_clk_25mhz_clk_wiz_0]
+Related violations: <none>
+
+TIMING-6#3 Critical Warning
+No common primary clock between related clocks  
+The clocks o_clk_5mhz_clk_wiz_0 and o_clk_5mhz_clk_wiz_0_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks o_clk_5mhz_clk_wiz_0] -to [get_clocks o_clk_5mhz_clk_wiz_0_1]
+Related violations: <none>
+
+TIMING-6#4 Critical Warning
 No common primary clock between related clocks  
 The clocks o_clk_5mhz_clk_wiz_0_1 and o_clk_5mhz_clk_wiz_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks o_clk_5mhz_clk_wiz_0_1] -to [get_clocks o_clk_5mhz_clk_wiz_0]
 Related violations: <none>
@@ -186,25 +196,6 @@ Related violations: <none>
 
 LUTAR-1#2 Warning
 LUT drives async reset alert  
-LUT cell debuggerTop/mcu_prg/r_rx_dv_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) debuggerTop/mcu_nametable/r_debugger_data_reg[0]/CLR,
-debuggerTop/mcu_nametable/r_debugger_data_reg[1]/CLR,
-debuggerTop/mcu_nametable/r_debugger_data_reg[2]/CLR,
-debuggerTop/mcu_nametable/r_debugger_data_reg[3]/CLR,
-debuggerTop/mcu_nametable/r_debugger_data_reg[4]/CLR,
-debuggerTop/mcu_nametable/r_debugger_data_reg[5]/CLR,
-debuggerTop/mcu_nametable/r_debugger_data_reg[6]/CLR,
-debuggerTop/mcu_nametable/r_debugger_data_reg[7]/CLR,
-debuggerTop/mcu_nametable/r_nes_data_reg[0]/CLR,
-debuggerTop/mcu_nametable/r_nes_data_reg[1]/CLR,
-debuggerTop/mcu_nametable/r_nes_data_reg[2]/CLR,
-debuggerTop/mcu_nametable/r_nes_data_reg[3]/CLR,
-debuggerTop/mcu_nametable/r_nes_data_reg[4]/CLR,
-debuggerTop/mcu_nametable/r_nes_data_reg[5]/CLR,
-debuggerTop/mcu_nametable/r_nes_data_reg[6]/CLR (the first 15 of 74 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
-Related violations: <none>
-
-LUTAR-1#3 Warning
-LUT drives async reset alert  
 LUT cell debuggerTop/values/cpu2A03/r_nmi_n_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) debuggerTop/nes/clockEnable/r_counter_reg[0]/PRE,
 debuggerTop/nes/clockEnable/r_counter_reg[1]/PRE,
 debuggerTop/nes/cpu2A03/FSM_sequential_r_state_reg[0]/CLR,
@@ -220,6 +211,25 @@ debuggerTop/nes/cpu2A03/cpu6502/alu/r_add_reg[6]/CLR,
 debuggerTop/nes/cpu2A03/cpu6502/alu/r_add_reg[7]/CLR,
 debuggerTop/nes/cpu2A03/cpu6502/alu/r_avr_out_reg/CLR,
 debuggerTop/nes/cpu2A03/cpu6502/abh/r_address_reg[0]/CLR (the first 15 of 235 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell debuggerTop/vga_generator/r_rx_dv_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) debuggerTop/mcu_nametable/r_debugger_data_reg[0]/CLR,
+debuggerTop/mcu_nametable/r_debugger_data_reg[1]/CLR,
+debuggerTop/mcu_nametable/r_debugger_data_reg[2]/CLR,
+debuggerTop/mcu_nametable/r_debugger_data_reg[3]/CLR,
+debuggerTop/mcu_nametable/r_debugger_data_reg[4]/CLR,
+debuggerTop/mcu_nametable/r_debugger_data_reg[5]/CLR,
+debuggerTop/mcu_nametable/r_debugger_data_reg[6]/CLR,
+debuggerTop/mcu_nametable/r_debugger_data_reg[7]/CLR,
+debuggerTop/mcu_nametable/r_nes_data_reg[0]/CLR,
+debuggerTop/mcu_nametable/r_nes_data_reg[1]/CLR,
+debuggerTop/mcu_nametable/r_nes_data_reg[2]/CLR,
+debuggerTop/mcu_nametable/r_nes_data_reg[3]/CLR,
+debuggerTop/mcu_nametable/r_nes_data_reg[4]/CLR,
+debuggerTop/mcu_nametable/r_nes_data_reg[5]/CLR,
+debuggerTop/mcu_nametable/r_nes_data_reg[6]/CLR (the first 15 of 96 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 TIMING-23#1 Warning
