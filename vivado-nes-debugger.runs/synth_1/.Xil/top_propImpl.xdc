@@ -20,3 +20,5 @@ set_property src_info {type:XDC file:2 line:171 export:INPUT save:INPUT read:REA
 set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets i_spi_clk_IBUF];
 set_property src_info {type:XDC file:2 line:181 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN C2    IOSTANDARD LVCMOS33 } [get_ports { i_reset_n }]; #IO_L16P_T2_35 Sch=ck_rst
+set_property src_info {type:XDC file:2 line:224 export:INPUT save:INPUT read:READ} [current_design]
+set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets debuggerTop/mcu_ram/w_nes_ram_data_rd[0]]
