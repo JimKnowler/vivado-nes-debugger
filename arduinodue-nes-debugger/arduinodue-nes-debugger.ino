@@ -2,6 +2,29 @@
 
 int pin_spi_cs_n = 8;
 
+// choose which ROM to load
+//#define ROM_SUPERMARIO
+//#define ROM_DONKEYKONG
+//#define ROM_NESTEST
+#define ROM_INTEGRATIONTEST
+
+
+#ifdef ROM_SUPERMARIO
+#include "supermario/chr_rom_bank_0.bin.h"
+#include "supermario/prg_rom_bank_0.6502.bin.h"
+#include "supermario/prg_rom_bank_1.6502.bin.h"
+#endif
+
+#ifdef ROM_DONKEYKONG
+#include "donkeykong/chr_rom_bank_0.bin.h"
+#include "donkeykong/prg_rom_bank_0.6502.bin.h"
+#endif
+
+#ifdef ROM_NESTEST
+#include "nestest/chr_rom_bank_0.bin.h"
+#include "nestest/prg_rom_bank_0.6502.bin.h"
+#endif
+
 enum class Command : byte {
   NOP = 0,
   ECHO = 1,
@@ -79,7 +102,7 @@ uint16_t valueRead(uint16_t id) {
   return value;
 }
 
-void enableChipSelect(bool isEnabled) {
+void SetSpiChipSelectEnabled(bool isEnabled) {
   digitalWrite(pin_spi_cs_n, isEnabled ? LOW : HIGH);
 }
 
@@ -95,7 +118,7 @@ void syncSPI() {
   Serial.println("syncSPI - begin");
 
   while (!hasSynchronised) {
-    enableChipSelect(true);
+    SetSpiChipSelectEnabled(true);
     
     nop();
     
@@ -124,7 +147,7 @@ void syncSPI() {
       hasSynchronised = true;
     }
 
-    enableChipSelect(false);
+    SetSpiChipSelectEnabled(false);
   }
 
   
@@ -223,6 +246,134 @@ void testNesDebugger() {
 }
 
 ///////////////////////////////////////////////////////////////////////////
+// testing
+
+void setupTest() {
+  Serial.println("**** setupTest");
+  SetSpiChipSelectEnabled(true);
+
+  // put NES into reset mode
+  setResetN(0);
+
+  SetSpiChipSelectEnabled(false);
+}
+
+void loopTest() {
+  Serial.println("**** loopTest");
+  SetSpiChipSelectEnabled(true);
+
+  testNesDebugger();
+
+  SetSpiChipSelectEnabled(false);
+}
+
+///////////////////////////////////////////////////////////////////////////
+// running NES ROMs
+
+void setupROM() {
+  Serial.println("**** setupROM - start");
+  SetSpiChipSelectEnabled(true);
+
+  // put NES in reset mode
+  setResetN(0);
+
+  //Serial.println(" 5 second delay - does VGA output stop?");
+  //delay(5000);
+
+#ifdef ROM_NESTEST
+  Serial.println("NES TEST");
+  // chr @ 0x0000
+  valueWrite(VALUEID_DEBUGGER_MEMORY_POOL, MEMORY_POOL_PATTERNTABLE);
+  memWrite(0x0000, chr_rom_bank_0_bin, 0x3FFF);
+
+  // prg @ 0xc000
+  valueWrite(VALUEID_DEBUGGER_MEMORY_POOL, MEMORY_POOL_PRG);
+  memWrite(0xc000, prg_rom_bank_0_6502_bin, 0x3FFF);
+
+  // TODO:
+  // if only using CPU tests then fix up the RESET vector address to 
+  //sram.write(0xfffc, 0x00);       // low byte
+  //sram.write(0xfffd, 0xc0);       // high byte
+#endif
+
+#ifdef ROM_DONKEYKONG
+  Serial.println("Donkey Kong");
+  // chr @ 0x0000
+  valueWrite(VALUEID_DEBUGGER_MEMORY_POOL, MEMORY_POOL_PATTERNTABLE);
+  memWrite(0x0000, chr_rom_bank_0_bin, 0x3FFF);
+
+  // prg @ 0xc000
+  valueWrite(VALUEID_DEBUGGER_MEMORY_POOL, MEMORY_POOL_PRG);
+  memWrite(0xc000, prg_rom_bank_0_6502_bin, 0x3FFF);
+#endif
+
+#ifdef ROM_SUPERMARIO
+  Serial.println("SuperMario");
+  // chr @ 0x0000
+  valueWrite(VALUEID_DEBUGGER_MEMORY_POOL, MEMORY_POOL_PATTERNTABLE);
+  memWrite(0x0000, chr_rom_bank_0_bin, 0x3FFF);
+
+  // prg @ 0x8000, 0xc000
+  valueWrite(VALUEID_DEBUGGER_MEMORY_POOL, MEMORY_POOL_PRG);
+  memWrite(0x8000, prg_rom_bank_0_6502_bin, 0x3FFF);
+  memWrite(0xc000, prg_rom_bank_1_6502_bin, 0x3FFF);
+#endif
+
+#ifdef ROM_INTEGRATIONTEST
+  Serial.println("Integration Test");
+
+  valueWrite(VALUEID_DEBUGGER_MEMORY_POOL, MEMORY_POOL_RAM);
+  fillMemory(0);
+
+  valueWrite(VALUEID_DEBUGGER_MEMORY_POOL, MEMORY_POOL_PRG);
+  fillMemory(0);
+  
+  // prg @ 0x8000
+  byte prg[] = {
+      0xa9, 0xff,           // lda #$ff
+      0x8d, 0x02, 0x20,     // sta #$2002
+
+      0xa9, 0x55,           // lda #$55,
+      0x8d, 0x00, 0x20,     // sta #$2000
+
+      0x4c, 0x0a, 0x80      // jmp $800a (this opcode)
+  };
+
+  // reset vector @ 0xfffc -> pointing to 0x8000
+  byte resetVector[] = {
+    0x00, 0x80
+  };
+
+  memWrite(0x8000, prg, 13);
+  memWrite(0xfffc, resetVector, 2);
+  
+#endif
+
+  // start NES running
+  setResetN(1);
+
+#ifdef ROM_INTEGRATIONTEST
+  // test contents of memory
+
+  byte a;
+  memRead(0x2002, &a, 1);
+
+  Serial.print("0x2002 - expected [0xFF] found [");
+  Serial.print(a, HEX);
+  Serial.println("]");
+  
+  byte b;
+  memRead(0x2000, &b, 1);
+   
+  Serial.print("0x2000 - expected [0x55] found [");
+  Serial.print(b, HEX);
+  Serial.println("]");
+#endif
+
+  Serial.println("**** setupROM - complete");
+}
+
+///////////////////////////////////////////////////////////////////////////
 // Arduino lifecycle
 
 void setup() {
@@ -230,25 +381,19 @@ void setup() {
   Serial.println("NES Debugger");
   
   pinMode(pin_spi_cs_n, OUTPUT);
-  digitalWrite(pin_spi_cs_n, HIGH);
+  SetSpiChipSelectEnabled(false);
 
   SPI.begin();
   SPI.beginTransaction(SPISettings(500000, MSBFIRST, SPI_MODE1));
 
   syncSPI();
-
-  enableChipSelect(true);
-
-  // put NES into reset mode
-  setResetN(0);
   
-  enableChipSelect(false);
+  //setupTest();
+
+  setupROM();
+
 }
 
 void loop() {
-  enableChipSelect(true);
-
-  testNesDebugger();
-
-  enableChipSelect(false);
+  //loopTest();
 }

@@ -37,7 +37,7 @@ always @(posedge i_clk or negedge i_reset_n)
 begin
     if (!i_reset_n)
     begin
-        r_nes_reset_n <= 1;
+        r_nes_reset_n <= 0;
     end
     else
     begin                
