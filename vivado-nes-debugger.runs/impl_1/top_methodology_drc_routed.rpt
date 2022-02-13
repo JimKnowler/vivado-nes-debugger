@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Mon Feb  7 08:03:05 2022
+| Date         : Sun Feb 13 18:17:00 2022
 | Host         : DESKTOP-H1KDTUU running 64-bit major release  (build 9200)
 | Command      : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
 | Design       : top
@@ -197,21 +197,21 @@ Related violations: <none>
 
 LUTAR-1#2 Warning
 LUT drives async reset alert  
-LUT cell debuggerTop/nes/cpu2A03/cpu6502/decoder/r_linebuffer1[255][23]_i_5, with 2 or more inputs, drives asynchronous preset/clear pin(s) debuggerTop/mcu_nametable/r_debugger_data_read_reg[0]/CLR,
-debuggerTop/mcu_nametable/r_debugger_data_read_reg[1]/CLR,
-debuggerTop/mcu_nametable/r_debugger_data_read_reg[2]/CLR,
-debuggerTop/mcu_nametable/r_debugger_data_read_reg[3]/CLR,
-debuggerTop/mcu_nametable/r_debugger_data_read_reg[4]/CLR,
-debuggerTop/mcu_nametable/r_debugger_data_read_reg[5]/CLR,
-debuggerTop/mcu_nametable/r_debugger_data_read_reg[6]/CLR,
-debuggerTop/mcu_nametable/r_debugger_data_read_reg[7]/CLR,
-debuggerTop/mcu_nametable/r_nes_read_data_reg[0]/CLR,
-debuggerTop/mcu_nametable/r_nes_read_data_reg[1]/CLR,
-debuggerTop/mcu_nametable/r_nes_read_data_reg[2]/CLR,
-debuggerTop/mcu_nametable/r_nes_read_data_reg[3]/CLR,
-debuggerTop/mcu_nametable/r_nes_read_data_reg[4]/CLR,
-debuggerTop/mcu_nametable/r_nes_read_data_reg[5]/CLR,
-debuggerTop/mcu_nametable/r_nes_read_data_reg[6]/CLR (the first 15 of 6299 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell debuggerTop/nes/ppu/backgroundShiftPatternTableLow/r_linebuffer1[254][23]_i_5, with 2 or more inputs, drives asynchronous preset/clear pin(s) debuggerTop/r_nes_video_blue_reg[2]/CLR,
+debuggerTop/r_nes_video_blue_reg[3]/CLR,
+debuggerTop/r_nes_video_blue_reg[4]/CLR,
+debuggerTop/r_nes_video_blue_reg[5]/CLR,
+debuggerTop/r_nes_video_blue_reg[6]/CLR,
+debuggerTop/r_nes_video_blue_reg[7]/CLR,
+debuggerTop/r_nes_video_green_reg[1]/CLR,
+debuggerTop/r_nes_video_green_reg[2]/CLR,
+debuggerTop/r_nes_video_green_reg[3]/CLR,
+debuggerTop/r_nes_video_green_reg[4]/CLR,
+debuggerTop/r_nes_video_green_reg[5]/CLR,
+debuggerTop/r_nes_video_green_reg[6]/CLR,
+debuggerTop/r_nes_video_green_reg[7]/CLR,
+debuggerTop/r_nes_video_red_reg[2]/CLR,
+debuggerTop/r_nes_video_red_reg[3]/CLR (the first 15 of 6290 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#3 Warning
@@ -230,12 +230,12 @@ debuggerTop/nes/cpu2A03/cpu6502/alu/r_add_reg[5]/CLR,
 debuggerTop/nes/cpu2A03/cpu6502/alu/r_add_reg[6]/CLR,
 debuggerTop/nes/cpu2A03/cpu6502/alu/r_add_reg[7]/CLR,
 debuggerTop/nes/cpu2A03/cpu6502/alu/r_avr_out_reg/CLR,
-debuggerTop/nes/cpu2A03/cpu6502/abh/r_address_reg[0]/CLR (the first 15 of 295 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+debuggerTop/nes/cpu2A03/cpu6502/abh/r_address_reg[0]/CLR (the first 15 of 293 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 TIMING-23#1 Warning
 Combinational loop found  
-A timing loop has been detected on a combinational path. A timing arc has been disabled between debuggerTop/nes/cpu2A03/cpu6502/tcu/r_ir[0]_i_1/I1 and debuggerTop/nes/cpu2A03/cpu6502/tcu/r_ir[0]_i_1/O to disable the timing loop
+A timing loop has been detected on a combinational path. A timing arc has been disabled between debuggerTop/nes/cpu2A03/cpu6502/tcu/r_nes_read_data[7]_i_1/I4 and debuggerTop/nes/cpu2A03/cpu6502/tcu/r_nes_read_data[7]_i_1/O to disable the timing loop
 Related violations: <none>
 
 TIMING-38#1 Warning

@@ -519,6 +519,39 @@ VGAOutput vga_output(
 // CDC FIFO - Video signal from 5MHz CPU/PPU to 25MHz VGA
 //
 
+// experiment: cache nes video x/y at falling edge, ready for fifo to read on rising edge
+reg [8:0] r_nes_video_x;
+reg [8:0] r_nes_video_y;
+reg r_nes_video_visible;
+reg [7:0] r_nes_video_red;
+reg [7:0] r_nes_video_green;
+reg [7:0] r_nes_video_blue;
+
+always @(negedge i_reset_n or negedge i_clk_5mhz)
+begin
+    if (!i_reset_n)
+    begin
+        r_nes_video_visible <= 0;
+        r_nes_video_x <= 0;
+        r_nes_video_y <= 0;
+        
+        r_nes_video_red <= 0;
+        r_nes_video_green <= 0;
+        r_nes_video_blue <= 0;
+    end
+    else
+    begin
+        r_nes_video_visible <= w_nes_video_visible;
+        r_nes_video_x <= w_nes_video_x;
+        r_nes_video_y <= w_nes_video_y;
+        
+        r_nes_video_red <= w_nes_video_red;
+        r_nes_video_green <= w_nes_video_green;
+        r_nes_video_blue <= w_nes_video_blue;
+    end
+end
+
+
 wire w_fifo_pixel_valid;
 wire [23:0] w_fifo_pixel_rgb;
 
@@ -527,10 +560,16 @@ FIFO video_fifo(
     .i_clk_25mhz(i_clk_25mhz),
     .i_reset_n(i_reset_n),
     
-    .i_video_valid(w_nes_video_visible),
-    .i_video_red(w_nes_video_red),
-    .i_video_green(w_nes_video_green),
-    .i_video_blue(w_nes_video_blue),
+    .i_video_valid(r_nes_video_visible),
+    
+    .i_video_red(r_nes_video_red),
+    .i_video_green(r_nes_video_green),
+    .i_video_blue(r_nes_video_blue),
+    
+    // test - vertical red line at x==100
+    //.i_video_red((r_nes_video_x == 100) ? 255 : 0),
+    //.i_video_green(0),
+    //.i_video_blue(0),
 
     .o_pixel_valid(w_fifo_pixel_valid),
     .o_pixel_rgb(w_fifo_pixel_rgb)

@@ -49,7 +49,8 @@ begin
             i_cpu_debug_clk_en,     // [29]
             i_cpu_debug_sync,       // [28]
             i_cpu_debug_tcu,        // [27:24]
-            i_cpu_debug_ir,         // [23:16]
+            i_cpu_debug_rw ? i_nes_ram_data_rd : i_nes_ram_data_wr,         // [23:16]
+            //i_cpu_debug_ir,         // [23:16]
             i_cpu_debug_address     // [15:0]
         };
     end

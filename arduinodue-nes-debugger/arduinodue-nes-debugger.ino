@@ -3,10 +3,10 @@
 int pin_spi_cs_n = 8;
 
 // choose which ROM to load
-//#define ROM_SUPERMARIO
+#define ROM_SUPERMARIO
 //#define ROM_DONKEYKONG
 //#define ROM_NESTEST
-#define ROM_INTEGRATIONTEST
+//#define ROM_INTEGRATIONTEST
 
 
 #ifdef ROM_SUPERMARIO
@@ -328,10 +328,9 @@ void setupROM() {
   valueWrite(VALUEID_DEBUGGER_MEMORY_POOL, MEMORY_POOL_RAM);
   fillMemory(0);
 
-  valueWrite(VALUEID_DEBUGGER_MEMORY_POOL, MEMORY_POOL_PRG);
-  fillMemory(0);
-  
-  // prg @ 0x8000
+  // prg @ 0x0000 in RAM 
+  //   load the entire program in RAM memory space (0->0x7FFFF)
+  //   so that we can see it while profiling RAM?
   byte prg[] = {
       0xa9, 0xff,           // lda #$ff
       0x8d, 0x02, 0x20,     // sta #$2002
@@ -342,12 +341,16 @@ void setupROM() {
       0x4c, 0x0a, 0x80      // jmp $800a (this opcode)
   };
 
-  // reset vector @ 0xfffc -> pointing to 0x8000
-  byte resetVector[] = {
-    0x00, 0x80
-  };
+  memWrite(0x0000, prg, 13);
 
-  memWrite(0x8000, prg, 13);
+  valueWrite(VALUEID_DEBUGGER_MEMORY_POOL, MEMORY_POOL_PRG);
+  fillMemory(0);
+
+  // reset vector @ 0xfffc -> pointing to 0x0000
+  byte resetVector[] = {
+    0x00, 0x0000
+  };
+  
   memWrite(0xfffc, resetVector, 2);
   
 #endif
@@ -406,7 +409,7 @@ void readProfiler() {
         int sync = getBit(hi, 12);
     
         char buffer[64];
-        sprintf(buffer, "profile index [%04d] addr:%04x rw:%d data:%02x clk_en:%d sync:%d error:%d", i, address, rw, data, clk_en, sync, error);
+        sprintf(buffer, "profile index [%04d] addr:%04x rw:%d data(RAM):%02x clk_en:%d sync:%d error:%d", i, address, rw, data, clk_en, sync, error);
         Serial.println(buffer);
       }
     }
