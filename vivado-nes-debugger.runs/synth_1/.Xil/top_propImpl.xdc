@@ -51,4 +51,8 @@ set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets i_spi_clk_IBUF];
 set_property src_info {type:XDC file:2 line:183 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN C2    IOSTANDARD LVCMOS33 } [get_ports { i_reset_n }]; #IO_L16P_T2_35 Sch=ck_rst
 set_property src_info {type:XDC file:2 line:226 export:INPUT save:INPUT read:READ} [current_design]
+set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets debuggerTop/nes/cpu2A03/cpu6502/dl/r_data_reg[5]_0]
+set_property src_info {type:XDC file:2 line:227 export:INPUT save:INPUT read:READ} [current_design]
 set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets debuggerTop/mcu_ram/w_nes_ram_data_rd[0]]
+set_property src_info {type:XDC file:2 line:228 export:INPUT save:INPUT read:READ} [current_design]
+set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets debuggerTop/nes/cpu2A03/cpu6502/ir/r_address[0]]

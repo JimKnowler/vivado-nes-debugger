@@ -14,6 +14,11 @@ module NESDebuggerValues(
     input [15:0] i_data,
     output [15:0] o_data,
     
+    // profiler
+    input [15:0] i_profiler_sample_data,
+    output [15:0] o_profiler_sample_index,          // index of sample that profiler would like to view
+    output [15:0] o_profiler_sample_data_index,     // index into data for current sample
+    
     // NES reset_n signal
     output o_nes_reset_n,
 
@@ -28,8 +33,20 @@ localparam VALUEID_NES_RESET_N = 1;
 // 0 = PRG, 1 = RAM, 2 = PATTERNTABLE (CHR), 3 = NAMETABLE
 localparam VALUEID_DEBUGGER_MEMORY_POOL = 2;
 
+// Set the current sample index that will be used when reading from the profiler
+localparam VALUEID_PROFILER_SAMPLE_INDEX = 3;
+
+// Set the index with the data of the current sample that will be used when reading from the profiler
+localparam VALUEID_PROFILER_SAMPLE_DATA_INDEX = 4;
+
+// Get data associated with the current sample index, and at the current sample data index
+localparam VALUEID_PROFILER_SAMPLE_DATA = 5;
+
 reg r_nes_reset_n;
 reg [1:0] r_debugger_memory_pool;
+
+reg [15:0] r_profiler_sample_index;
+reg [15:0] r_profiler_sample_data_index;
 
 reg [15:0] r_value;
 
@@ -52,6 +69,12 @@ begin
                 VALUEID_DEBUGGER_MEMORY_POOL: begin
                     r_debugger_memory_pool <= i_data[1:0];
                 end
+                VALUEID_PROFILER_SAMPLE_INDEX: begin
+                    r_profiler_sample_index <= i_data;
+                end
+                VALUEID_PROFILER_SAMPLE_DATA_INDEX: begin
+                    r_profiler_sample_data_index <= i_data;
+                end
                 default: begin
                 end
                 endcase
@@ -69,6 +92,9 @@ begin
     VALUEID_DEBUGGER_MEMORY_POOL: begin
         r_value = { 14'd0, r_debugger_memory_pool };
     end
+    VALUEID_PROFILER_SAMPLE_DATA: begin
+        r_value = i_profiler_sample_data;
+    end
     default:
         r_value = 0;
     endcase
@@ -77,5 +103,7 @@ end
 assign o_data = i_ena ? r_value : 0;
 assign o_nes_reset_n = r_nes_reset_n;
 assign o_debugger_memory_pool = r_debugger_memory_pool;
+assign o_profiler_sample_index = r_profiler_sample_index;
+assign o_profiler_sample_data_index = r_profiler_sample_data_index;
 
 endmodule

@@ -189,7 +189,10 @@ void testMemory() {
 
 enum ValueID : uint16_t {
   VALUEID_NES_RESET_N = 1,
-  VALUEID_DEBUGGER_MEMORY_POOL = 2
+  VALUEID_DEBUGGER_MEMORY_POOL = 2,
+  VALUEID_DEBUGGER_PROFILER_SAMPLE_INDEX = 3,
+  VALUEID_DEBUGGER_PROFILER_SAMPLE_DATA_INDEX = 4,
+  VALUEID_DEBUGGER_PROFILER_SAMPLE_DATA = 5
 };
 
 enum MemoryPool : uint16_t {
@@ -355,6 +358,8 @@ void setupROM() {
 #ifdef ROM_INTEGRATIONTEST
   // test contents of memory
 
+  valueWrite(VALUEID_DEBUGGER_MEMORY_POOL, MEMORY_POOL_RAM);
+
   byte a;
   memRead(0x2002, &a, 1);
 
@@ -371,6 +376,43 @@ void setupROM() {
 #endif
 
   Serial.println("**** setupROM - complete");
+}
+
+int getBit(uint16_t word, int index) {
+  bool isSet = (word & (1<<index)) != 0;
+  return isSet ? 1 : 0; 
+}
+
+void readProfiler() {
+  Serial.println("Read Profiler");
+
+  for (int j=0; j<1; j++) {
+  // note: outer loop useful for testing whether profiler results are consistent
+    
+    for (int i=0; i<100; i++) {
+      valueWrite(VALUEID_DEBUGGER_PROFILER_SAMPLE_INDEX, i);
+      valueWrite(VALUEID_DEBUGGER_PROFILER_SAMPLE_DATA_INDEX, 0);
+      uint16_t lo = valueRead(VALUEID_DEBUGGER_PROFILER_SAMPLE_DATA);
+      valueWrite(VALUEID_DEBUGGER_PROFILER_SAMPLE_DATA_INDEX, 1);
+      uint16_t hi = valueRead(VALUEID_DEBUGGER_PROFILER_SAMPLE_DATA);
+
+    
+      int clk_en = getBit(hi, 13);
+      if (clk_en == 1) {
+        uint16_t address = lo;
+        uint8_t data = uint8_t(hi & 0xff);
+        int error = getBit(hi, 15);
+        int rw = getBit(hi, 14);
+        int sync = getBit(hi, 12);
+    
+        char buffer[64];
+        sprintf(buffer, "profile index [%04d] addr:%04x rw:%d data:%02x clk_en:%d sync:%d error:%d", i, address, rw, data, clk_en, sync, error);
+        Serial.println(buffer);
+      }
+    }
+
+    Serial.println("--");
+  }
 }
 
 ///////////////////////////////////////////////////////////////////////////
@@ -391,6 +433,9 @@ void setup() {
   //setupTest();
 
   setupROM();
+
+  delay(1000);
+  readProfiler();
 
 }
 

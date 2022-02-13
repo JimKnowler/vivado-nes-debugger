@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Mon Jan  3 17:16:10 2022
+| Date         : Mon Feb  7 08:03:05 2022
 | Host         : DESKTOP-H1KDTUU running 64-bit major release  (build 9200)
 | Command      : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
 | Design       : top
@@ -23,7 +23,7 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 33
+             Violations found: 35
 +-----------+------------------+------------------------------------------------+------------+
 | Rule      | Severity         | Description                                    | Violations |
 +-----------+------------------+------------------------------------------------+------------+
@@ -31,6 +31,7 @@ Table of Contents
 | TIMING-17 | Critical Warning | Non-clocked sequential cell                    | 25         |
 | LUTAR-1   | Warning          | LUT drives async reset alert                   | 3          |
 | TIMING-23 | Warning          | Combinational loop found                       | 1          |
+| TIMING-38 | Warning          | Bus skew constraint applied on multiple clocks | 2          |
 +-----------+------------------+------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -196,6 +197,25 @@ Related violations: <none>
 
 LUTAR-1#2 Warning
 LUT drives async reset alert  
+LUT cell debuggerTop/nes/cpu2A03/cpu6502/decoder/r_linebuffer1[255][23]_i_5, with 2 or more inputs, drives asynchronous preset/clear pin(s) debuggerTop/mcu_nametable/r_debugger_data_read_reg[0]/CLR,
+debuggerTop/mcu_nametable/r_debugger_data_read_reg[1]/CLR,
+debuggerTop/mcu_nametable/r_debugger_data_read_reg[2]/CLR,
+debuggerTop/mcu_nametable/r_debugger_data_read_reg[3]/CLR,
+debuggerTop/mcu_nametable/r_debugger_data_read_reg[4]/CLR,
+debuggerTop/mcu_nametable/r_debugger_data_read_reg[5]/CLR,
+debuggerTop/mcu_nametable/r_debugger_data_read_reg[6]/CLR,
+debuggerTop/mcu_nametable/r_debugger_data_read_reg[7]/CLR,
+debuggerTop/mcu_nametable/r_nes_read_data_reg[0]/CLR,
+debuggerTop/mcu_nametable/r_nes_read_data_reg[1]/CLR,
+debuggerTop/mcu_nametable/r_nes_read_data_reg[2]/CLR,
+debuggerTop/mcu_nametable/r_nes_read_data_reg[3]/CLR,
+debuggerTop/mcu_nametable/r_nes_read_data_reg[4]/CLR,
+debuggerTop/mcu_nametable/r_nes_read_data_reg[5]/CLR,
+debuggerTop/mcu_nametable/r_nes_read_data_reg[6]/CLR (the first 15 of 6299 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
 LUT cell debuggerTop/values/cpu2A03/r_nmi_n_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) debuggerTop/nes/clockEnable/r_counter_reg[0]/PRE,
 debuggerTop/nes/clockEnable/r_counter_reg[1]/PRE,
 debuggerTop/nes/cpu2A03/FSM_sequential_r_state_reg[0]/CLR,
@@ -210,31 +230,22 @@ debuggerTop/nes/cpu2A03/cpu6502/alu/r_add_reg[5]/CLR,
 debuggerTop/nes/cpu2A03/cpu6502/alu/r_add_reg[6]/CLR,
 debuggerTop/nes/cpu2A03/cpu6502/alu/r_add_reg[7]/CLR,
 debuggerTop/nes/cpu2A03/cpu6502/alu/r_avr_out_reg/CLR,
-debuggerTop/nes/cpu2A03/cpu6502/abh/r_address_reg[0]/CLR (the first 15 of 235 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
-Related violations: <none>
-
-LUTAR-1#3 Warning
-LUT drives async reset alert  
-LUT cell debuggerTop/vga_generator/r_rx_dv_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) debuggerTop/mcu_nametable/r_debugger_data_reg[0]/CLR,
-debuggerTop/mcu_nametable/r_debugger_data_reg[1]/CLR,
-debuggerTop/mcu_nametable/r_debugger_data_reg[2]/CLR,
-debuggerTop/mcu_nametable/r_debugger_data_reg[3]/CLR,
-debuggerTop/mcu_nametable/r_debugger_data_reg[4]/CLR,
-debuggerTop/mcu_nametable/r_debugger_data_reg[5]/CLR,
-debuggerTop/mcu_nametable/r_debugger_data_reg[6]/CLR,
-debuggerTop/mcu_nametable/r_debugger_data_reg[7]/CLR,
-debuggerTop/mcu_nametable/r_nes_data_reg[0]/CLR,
-debuggerTop/mcu_nametable/r_nes_data_reg[1]/CLR,
-debuggerTop/mcu_nametable/r_nes_data_reg[2]/CLR,
-debuggerTop/mcu_nametable/r_nes_data_reg[3]/CLR,
-debuggerTop/mcu_nametable/r_nes_data_reg[4]/CLR,
-debuggerTop/mcu_nametable/r_nes_data_reg[5]/CLR,
-debuggerTop/mcu_nametable/r_nes_data_reg[6]/CLR (the first 15 of 96 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+debuggerTop/nes/cpu2A03/cpu6502/abh/r_address_reg[0]/CLR (the first 15 of 295 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 TIMING-23#1 Warning
 Combinational loop found  
-A timing loop has been detected on a combinational path. A timing arc has been disabled between debuggerTop/nes/cpu2A03/cpu6502/ir/r_ir[0]_i_5/I5 and debuggerTop/nes/cpu2A03/cpu6502/ir/r_ir[0]_i_5/O to disable the timing loop
+A timing loop has been detected on a combinational path. A timing arc has been disabled between debuggerTop/nes/cpu2A03/cpu6502/tcu/r_ir[0]_i_1/I1 and debuggerTop/nes/cpu2A03/cpu6502/tcu/r_ir[0]_i_1/O to disable the timing loop
+Related violations: <none>
+
+TIMING-38#1 Warning
+Bus skew constraint applied on multiple clocks  
+Multiple clocks involved on source or destination of a bus skew constraint (see constraint position 5 in the Timing Constraint Window in Vivado IDE). It is recommended to have only one source clock and one destination clock per bus skew constraint. First endpoint covered by the constraint: debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+Related violations: <none>
+
+TIMING-38#2 Warning
+Bus skew constraint applied on multiple clocks  
+Multiple clocks involved on source or destination of a bus skew constraint (see constraint position 7 in the Timing Constraint Window in Vivado IDE). It is recommended to have only one source clock and one destination clock per bus skew constraint. First endpoint covered by the constraint: debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
 Related violations: <none>
 
 

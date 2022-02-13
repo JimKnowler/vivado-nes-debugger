@@ -50,6 +50,10 @@ clk_wiz_0 pll(
     .o_locked(w_clk_locked)
  );
  
+ wire [7:0] w_vga_red;
+ wire [7:0] w_vga_green;
+ wire [7:0] w_vga_blue;
+ 
  NESDebuggerTop debuggerTop(
     .i_clk_5mhz(w_clk_5mhz),
     .i_clk_25mhz(w_clk_25mhz),
@@ -60,11 +64,15 @@ clk_wiz_0 pll(
     .o_spi_cipo(o_spi_cipo),
     .i_spi_copi(i_spi_copi),
     
-    .o_vga_red(o_vga_r),
-    .o_vga_green(o_vga_g),
-    .o_vga_blue(o_vga_b),
+    .o_vga_red(w_vga_red),
+    .o_vga_green(w_vga_green),
+    .o_vga_blue(w_vga_blue),
     .o_vga_hsync(o_vga_hs),
     .o_vga_vsync(o_vga_vs)
  );
-    
+
+assign o_vga_r = w_vga_red[7:4];
+assign o_vga_g = w_vga_green[7:4];
+assign o_vga_b = w_vga_blue[7:4];
+
 endmodule

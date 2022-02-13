@@ -21,6 +21,9 @@ module NESDebuggerTop(
     output          o_vga_vsync
 );
 
+// reset for NES design
+wire w_nes_reset_n;
+
 localparam RW_WRITE = 0;
 localparam RW_READ = 1;
 
@@ -106,6 +109,44 @@ NESDebugger debugger(
 
     .o_debug_cmd(w_debug_cmd),
     .o_debug_cmd_bytes_remaining(w_debug_cmd_bytes_remaining)
+);
+
+//
+// Profiler
+//
+
+wire [15:0] w_profiler_sample_data;
+wire [15:0] w_profiler_sample_index;
+wire [15:0] w_profiler_sample_data_index;
+
+wire [7:0] w_cpu_debug_ir;
+wire w_cpu_debug_error;
+wire w_cpu_debug_rw;
+wire [15:0] w_cpu_debug_address;
+wire [3:0] w_cpu_debug_tcu;
+wire w_cpu_debug_clk_en;
+wire w_cpu_debug_sync;
+
+NESProfiler profiler(
+    .i_clk(i_clk_5mhz),
+    .i_reset_n(i_reset_n & w_nes_reset_n),
+    
+    // Interface to Debugger
+    .o_sample_data(w_profiler_sample_data),
+    .i_sample_index(w_profiler_sample_index),
+    .i_sample_data_index(w_profiler_sample_data_index),
+    
+    // Interface to NES
+    .i_cpu_debug_ir(w_cpu_debug_ir),                        // todo: replace by cpu's data bus (either input or output, depending on rw)
+    .i_cpu_debug_error(w_cpu_debug_error),
+    .i_cpu_debug_rw(w_cpu_debug_rw),
+    .i_cpu_debug_address(w_cpu_debug_address),
+    .i_cpu_debug_tcu(w_cpu_debug_tcu),
+    .i_cpu_debug_clk_en(w_cpu_debug_clk_en),
+    .i_cpu_debug_sync(w_cpu_debug_sync),
+    .i_nes_ram_data_wr(w_nes_ram_data_wr),
+    .i_nes_ram_data_rd(w_nes_ram_data_rd),
+    .i_nes_prg_data_rd(w_nes_prg_data_rd)
 );
 
 //
@@ -197,8 +238,6 @@ wire [7:0] w_nes_nametable_data_wr;
 // NES
 //
 
-wire w_nes_reset_n;
-
 wire [7:0] w_nes_video_red;
 wire [7:0] w_nes_video_green;
 wire [7:0] w_nes_video_blue;
@@ -249,12 +288,21 @@ NES nes(
     .i_data_nametable(w_nes_nametable_data_rd),
     .o_data_nametable(w_nes_nametable_data_wr),
     .o_rw_nametable(w_nes_nametable_rw),
-    .o_address_nametable(w_nes_nametable_address)
+    .o_address_nametable(w_nes_nametable_address),
+    
+    // debugging
+    .o_cpu_debug_ir(w_cpu_debug_ir),
+    .o_cpu_debug_error(w_cpu_debug_error),
+    .o_cpu_debug_rw(w_cpu_debug_rw),
+    .o_cpu_debug_address(w_cpu_debug_address),
+    .o_cpu_debug_tcu(w_cpu_debug_tcu),
+    .o_cpu_debug_clk_en(w_cpu_debug_clk_en),
+    .o_cpu_debug_sync(w_cpu_debug_sync)
 );
 /* verilator lint_on PINMISSING */
 
 //
-// Values - control CPU step + read CPU values
+// Values - control NES reset, profiler, and debugger memory access
 //
 
 reg r_is_value_wea;
@@ -273,8 +321,16 @@ NESDebuggerValues values (
     .i_id(w_value_id),
     .i_data(w_value_data_wr),
     .o_data(w_value_data_rd),
+    
+    // profiler
+     .i_profiler_sample_data(w_profiler_sample_data),
+     .o_profiler_sample_index(w_profiler_sample_index),
+     .o_profiler_sample_data_index(w_profiler_sample_data_index),
 
+    // nes reset
     .o_nes_reset_n(w_nes_reset_n),
+    
+    // debugger memory access
     .o_debugger_memory_pool(w_debugger_memory_pool)
 );
 
@@ -287,7 +343,7 @@ NESDebuggerMCU mcu_prg(
     .i_reset_n(i_reset_n),
 
     // connection to NES
-    .i_nes_en(w_nes_prg_en),
+    .i_nes_en(w_nes_prg_en & w_cpu_debug_clk_en),
     .i_nes_rw(w_nes_prg_rw),
     .i_nes_address(w_nes_prg_address),
     .i_nes_data(w_nes_prg_data_wr),
@@ -322,7 +378,7 @@ NESDebuggerMCU mcu_ram(
     .i_reset_n(i_reset_n),
 
     // connection to NES
-    .i_nes_en(w_nes_ram_en),
+    .i_nes_en(w_nes_ram_en & w_cpu_debug_clk_en),           // JK: is clk_en required to avoid writing incorrect values?
     .i_nes_rw(w_nes_ram_rw),
     .i_nes_address(w_nes_ram_address),
     .i_nes_data(w_nes_ram_data_wr),
