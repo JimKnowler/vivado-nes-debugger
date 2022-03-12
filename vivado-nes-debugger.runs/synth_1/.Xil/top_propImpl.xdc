@@ -4,7 +4,7 @@ current_instance pll
 set_property src_info {type:SCOPED_XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 create_clock -period 10.000 [get_ports -no_traverse {}]
 set_property src_info {type:SCOPED_XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
-create_generated_clock -source [get_ports i_clk_100mhz] -edges {1 2 3} -edge_shift {0.000 95.000 190.000} [get_ports {}]
+create_generated_clock -source [get_ports i_clk_100mhz] -edges {1 2 3} -edge_shift {0.000 88.267 176.535} [get_ports {}]
 set_property src_info {type:SCOPED_XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]
 create_generated_clock -source [get_ports i_clk_100mhz] -edges {1 2 3} -edge_shift {0.000 14.802 29.604} [get_ports {}]
 current_instance

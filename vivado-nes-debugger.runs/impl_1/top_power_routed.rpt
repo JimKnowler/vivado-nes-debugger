@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date             : Sun Feb 13 18:17:05 2022
+| Date             : Sat Feb 26 15:32:22 2022
 | Host             : DESKTOP-H1KDTUU running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.228        |
+| Total On-Chip Power (W)  | 0.229        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.127        |
+| Dynamic (W)              | 0.129        |
 | Device Static (W)        | 0.101        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 84.0         |
@@ -53,20 +53,20 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.009 |       10 |       --- |             --- |
-| Slice Logic             |     0.007 |    16743 |       --- |             --- |
-|   LUT as Logic          |     0.007 |     5046 |     63400 |            7.96 |
+| Slice Logic             |     0.008 |    16743 |       --- |             --- |
+|   LUT as Logic          |     0.007 |     5049 |     63400 |            7.96 |
 |   F7/F8 Muxes           |    <0.001 |     1569 |     63400 |            2.47 |
 |   Register              |    <0.001 |     9334 |    126800 |            7.36 |
 |   CARRY4                |    <0.001 |       33 |     15850 |            0.21 |
 |   BUFG                  |    <0.001 |        1 |        32 |            3.13 |
 |   Others                |     0.000 |      139 |       --- |             --- |
 |   LUT as Shift Register |     0.000 |        3 |     19000 |            0.02 |
-| Signals                 |     0.012 |    12215 |       --- |             --- |
-| Block RAM               |     0.003 |     68.5 |       135 |           50.74 |
+| Signals                 |     0.012 |    12221 |       --- |             --- |
+| Block RAM               |     0.004 |     68.5 |       135 |           50.74 |
 | MMCM                    |     0.096 |        1 |         6 |           16.67 |
 | I/O                     |    <0.001 |       20 |       210 |            9.52 |
 | Static Power            |     0.101 |          |           |                 |
-| Total                   |     0.228 |          |           |                 |
+| Total                   |     0.229 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -76,7 +76,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.048 |       0.031 |      0.017 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.049 |       0.032 |      0.017 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.071 |       0.053 |      0.018 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -137,8 +137,8 @@ Table of Contents
 | i_clk_100mhz            | i_clk_100mhz                   |            10.0 |
 | o_clk_25mhz_clk_wiz_0   | pll/inst/o_clk_25mhz_clk_wiz_0 |            39.6 |
 | o_clk_25mhz_clk_wiz_0_1 | pll/inst/o_clk_25mhz_clk_wiz_0 |            39.6 |
-| o_clk_5mhz_clk_wiz_0    | pll/inst/o_clk_5mhz_clk_wiz_0  |           200.0 |
-| o_clk_5mhz_clk_wiz_0_1  | pll/inst/o_clk_5mhz_clk_wiz_0  |           200.0 |
+| o_clk_5mhz_clk_wiz_0    | pll/inst/o_clk_5mhz_clk_wiz_0  |           186.5 |
+| o_clk_5mhz_clk_wiz_0_1  | pll/inst/o_clk_5mhz_clk_wiz_0  |           186.5 |
 | sys_clk_pin             | i_clk_100mhz                   |            10.0 |
 +-------------------------+--------------------------------+-----------------+
 
@@ -152,13 +152,13 @@ Table of Contents
 +-------------------+-----------+
 | Name              | Power (W) |
 +-------------------+-----------+
-| top               |     0.127 |
-|   debuggerTop     |     0.031 |
+| top               |     0.129 |
+|   debuggerTop     |     0.032 |
 |     memory_prg    |     0.001 |
 |       blockRam    |     0.001 |
 |     memory_ram    |     0.001 |
 |       blockRam    |     0.001 |
-|     nes           |     0.009 |
+|     nes           |     0.010 |
 |       cpu2A03     |     0.003 |
 |       ppu         |     0.006 |
 |     vga_generator |     0.002 |
