@@ -24,6 +24,14 @@ module NESDebuggerTop(
 // reset for NES design
 wire w_nes_reset_n;
 
+// synchronisation between 25mhz videooutput and 5mhz NES
+// where NES clock-enable is disabled at the end of a frame until the video output is ready for it to continue
+//
+// NES clock should be disabled when it is about to start a new frame
+// until r_videooutput_sync is set to 1
+reg r_videooutput_sync;
+
+// debug communication
 localparam RW_WRITE = 0;
 localparam RW_READ = 1;
 
@@ -247,13 +255,31 @@ wire [8:0] w_nes_video_y;
 /* verilator lint_on UNUSED */
 wire w_nes_video_visible;
 
+// NES clock enable
+reg r_nes_ce;
+
+localparam [8:0] NES_SCREEN_WIDTH = 341;
+localparam [8:0] NES_SCREEN_HEIGHT = 262;
+
+always @(*)
+begin
+    r_nes_ce = 1;
+
+    // pause NES rendering just-before starting new frame
+    // UNTIL videooutput sets 'sync' signal
+    if ((w_nes_video_x==NES_SCREEN_WIDTH-1) && (w_nes_video_y == NES_SCREEN_HEIGHT-1) && (r_videooutput_sync == 0))
+    begin
+        r_nes_ce = 0;
+    end
+end
+
 /* verilator lint_off PINMISSING */
 NES nes(
     .i_clk(i_clk_5mhz),
     .i_reset_n(i_reset_n & w_nes_reset_n),
 
     // clock enable
-    .i_ce(1),
+    .i_ce(r_nes_ce),
 
     // video output
     .o_video_red(w_nes_video_red),
@@ -578,6 +604,10 @@ FIFO video_fifo(
     .o_pixel_rgb(w_fifo_pixel_rgb)
 );
 
+// NOTE: what prevents video_output from rendering during v-blank?
+//       do we just have to make sure that we feed video from 
+//       NES at right time?
+
 /* verilator lint_off PINMISSING */
 VideoOutput video_output(
     .i_clk(i_clk_25mhz),
@@ -602,5 +632,35 @@ VideoOutput video_output(
     */
 );
 /* verilator lint_on PINMISSING */
+
+// 
+// pause NES at end of frame, until videoutput is ready for the first row
+//
+
+wire w_videooutput_sync_posedge;
+
+always @(negedge i_reset_n or posedge i_clk_5mhz)
+begin
+    if (!i_reset_n)
+    begin
+        r_videooutput_sync <= 0;
+    end
+    else if (w_videooutput_sync_posedge)
+    begin
+        r_videooutput_sync <= 1;
+    end
+    else if (w_nes_video_y == 0)
+    begin
+        r_videooutput_sync <= 0;
+    end
+end
+
+Sync video_output_sync(
+    .i_clk(i_clk_25mhz),
+    .i_reset_n(i_reset_n),
+    .i_data(w_vga_y >= 523),        // VGA height is 525
+    .i_sync_clk(i_clk_5mhz),
+    .o_sync_posedge(w_videooutput_sync_posedge)
+);
 
 endmodule
