@@ -2,6 +2,9 @@ module NES(
     input i_clk,                            // 5 MHz
     input i_reset_n,
 
+    input i_ce,                         // clock enable for CPU + PPU
+                                        // NOTE: audio synthesis is independent of clock enable
+
     //////////////////////////////
     // Video output
     //////////////////////////////
@@ -95,11 +98,14 @@ module NES(
     localparam RW_READ = 1;
 
     wire w_ce_cpu;
+    wire w_ce_ppu;
 
     ClockEnable clockEnable(
         .i_clk(i_clk),
         .i_reset_n(i_reset_n),
-        .o_ce_cpu(w_ce_cpu)
+        .i_ce(i_ce),
+        .o_ce_cpu(w_ce_cpu),
+        .o_ce_ppu(w_ce_ppu)
     );
 
     wire w_cpu_rw;
@@ -164,15 +170,16 @@ module NES(
         .o_debug_error(o_cpu_debug_error)
     );
 
-    wire w_ce_ppu;
+    // is the CPU reading/writing an address that the PPU should respond to
+    wire w_cs_ppu;
 
     PPUChipEnable ppuChipEnable(
         .i_clk(i_clk),
         .i_reset_n(i_reset_n),
         .i_clk_en_cpu(w_ce_cpu),
-        .i_clk_en_ppu(1),
+        .i_clk_en_ppu(w_ce_ppu),
         .i_address(w_cpu_address),
-        .o_ce(w_ce_ppu)
+        .o_ce(w_cs_ppu)
     );
 
     wire w_ppu_vram_we_n;
@@ -195,7 +202,8 @@ module NES(
     PPU ppu(
         .i_clk(i_clk),
         .i_reset_n(i_reset_n),
-        .i_cs_n(~w_ce_ppu),
+        .i_cs_n(~w_cs_ppu),
+        .i_ce(w_ce_ppu),
         .o_int_n(w_nmi_n),
         .i_rs(w_rs_ppu),
         .i_data(w_data_cpu_ppu),
