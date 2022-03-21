@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date             : Sun Mar 20 17:18:46 2022
+| Date             : Mon Mar 21 08:26:24 2022
 | Host             : DESKTOP-H1KDTUU running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.010 |       10 |       --- |             --- |
-| Slice Logic             |     0.010 |    21878 |       --- |             --- |
-|   LUT as Logic          |     0.009 |     6353 |     63400 |           10.02 |
-|   F7/F8 Muxes           |    <0.001 |     2230 |     63400 |            3.52 |
-|   Register              |    <0.001 |    12483 |    126800 |            9.84 |
+| Slice Logic             |     0.010 |    21548 |       --- |             --- |
+|   LUT as Logic          |     0.009 |     6305 |     63400 |            9.94 |
+|   F7/F8 Muxes           |    <0.001 |     2097 |     63400 |            3.31 |
+|   Register              |    <0.001 |    12426 |    126800 |            9.80 |
 |   CARRY4                |    <0.001 |       33 |     15850 |            0.21 |
 |   BUFG                  |    <0.001 |        1 |        32 |            3.13 |
 |   Others                |     0.000 |      140 |       --- |             --- |
 |   LUT as Shift Register |     0.000 |        3 |     19000 |            0.02 |
-| Signals                 |     0.018 |    15994 |       --- |             --- |
+| Signals                 |     0.018 |    15941 |       --- |             --- |
 | Block RAM               |     0.004 |     68.5 |       135 |           50.74 |
 | MMCM                    |     0.096 |        1 |         6 |           16.67 |
 | I/O                     |    <0.001 |       20 |       210 |            9.52 |
@@ -164,7 +164,7 @@ Table of Contents
 |     vga_generator |     0.004 |
 |     video_fifo    |     0.009 |
 |       fifo_ip     |     0.009 |
-|     video_output  |     0.014 |
+|     video_output  |     0.015 |
 |   pll             |     0.096 |
 |     inst          |     0.096 |
 +-------------------+-----------+

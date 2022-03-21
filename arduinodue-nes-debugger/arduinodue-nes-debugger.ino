@@ -3,8 +3,8 @@
 int pin_spi_cs_n = 8;
 
 // choose which ROM to load
-//#define ROM_SUPERMARIO
-#define ROM_DONKEYKONG
+#define ROM_SUPERMARIO
+//#define ROM_DONKEYKONG
 //#define ROM_NESTEST
 //#define ROM_INTEGRATIONTEST
 
