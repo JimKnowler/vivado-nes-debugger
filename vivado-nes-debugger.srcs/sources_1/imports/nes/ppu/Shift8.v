@@ -1,6 +1,6 @@
 // 8 bit shift register
 // - serial shift in
-// - parallel out
+// - serial shift out
 
 module Shift8(
     input i_clk,

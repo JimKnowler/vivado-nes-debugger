@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1647850777">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1649868314">
   <File Type="PA-TCL" Name="top.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="top_reports.tcl"/>
@@ -70,6 +70,13 @@
       <FileInfo SFType="SVerilog">
         <Attr Name="ImportPath" Val="$PPRDIR/../../verilog-nes/nes/cpu6502/AddressBusRegister.v"/>
         <Attr Name="ImportTime" Val="1637430096"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/nes/ppu/Background.v">
+      <FileInfo SFType="SVerilog">
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -289,6 +296,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/nes/ppu/PPUSprite8x8TileAddress.v">
+      <FileInfo SFType="SVerilog">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/nes/ppu/PPUTileAddress.v">
       <FileInfo SFType="SVerilog">
         <Attr Name="ImportPath" Val="$PPRDIR/../../verilog-nes/nes/ppu/PPUTileAddress.v"/>
@@ -356,6 +370,27 @@
       <FileInfo SFType="SVerilog">
         <Attr Name="ImportPath" Val="$PPRDIR/../../verilog-nes/nes/ppu/Shift8.v"/>
         <Attr Name="ImportTime" Val="1635526522"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/nes/ppu/ShiftParallelLoad8.v">
+      <FileInfo SFType="SVerilog">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/nes/ppu/SpriteRasterizerPriority.v">
+      <FileInfo SFType="SVerilog">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/nes/ppu/Sprites.v">
+      <FileInfo SFType="SVerilog">
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

@@ -92,7 +92,8 @@ module NES(
     output [31:0] o_ppu_debug_palette_5,
     output [31:0] o_ppu_debug_palette_6,
     output [31:0] o_ppu_debug_palette_7,
-    output [5:0] o_ppu_debug_colour_index
+    output [5:0] o_ppu_debug_colour_index,
+    output [7:0] o_ppu_debug_i_vram_data
 );
     localparam [15:0] ADDRESS_JOY1 = 16'h4016;
     localparam RW_READ = 1;
@@ -116,6 +117,7 @@ module NES(
 
     wire w_out0;
     wire w_oe1_n;
+    wire w_oe2_n;
     
     /* verilator lint_off UNUSED */
     wire w_sync;
@@ -150,6 +152,7 @@ module NES(
         // controller
         .o_out0(w_out0),
         .o_oe1_n(w_oe1_n),
+        .o_oe2_n(w_oe2_n),
 
         // debug
         .o_debug_bus_db(w_debug_bus_db),
@@ -271,6 +274,7 @@ module NES(
         .o_rw_ppu(w_rw_ppu),
         // Controller
         .i_oe1_n(w_oe1_n),
+        .i_oe2_n(w_oe2_n),
         .i_controller_1(i_controller_1)
     );
 
@@ -302,6 +306,7 @@ module NES(
     assign o_cpu_debug_clk_en = w_ce_cpu;
     assign o_ppu_debug_vram_address = w_ppu_vram_address;
     assign o_cpu_debug_sync = w_sync;
+    assign o_ppu_debug_i_vram_data = w_ppu_vram_data_input;
 
     assign o_controller_latch = w_out0;
     assign o_controller_clk = !((w_cpu_rw == RW_READ) && (w_cpu_address == ADDRESS_JOY1));
