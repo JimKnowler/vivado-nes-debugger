@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Mon Jan  3 16:21:30 2022
+// Date        : Thu Apr 14 11:42:23 2022
 // Host        : DESKTOP-H1KDTUU running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               c:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_stub.v
@@ -16,14 +16,14 @@
 (* x_core_info = "fifo_generator_v13_2_5,Vivado 2020.1" *)
 module fifo_generator_0(rst, wr_clk, rd_clk, din, wr_en, rd_en, dout, full, 
   empty, wr_rst_busy, rd_rst_busy)
-/* synthesis syn_black_box black_box_pad_pin="rst,wr_clk,rd_clk,din[23:0],wr_en,rd_en,dout[23:0],full,empty,wr_rst_busy,rd_rst_busy" */;
+/* synthesis syn_black_box black_box_pad_pin="rst,wr_clk,rd_clk,din[32:0],wr_en,rd_en,dout[32:0],full,empty,wr_rst_busy,rd_rst_busy" */;
   input rst;
   input wr_clk;
   input rd_clk;
-  input [23:0]din;
+  input [32:0]din;
   input wr_en;
   input rd_en;
-  output [23:0]dout;
+  output [32:0]dout;
   output full;
   output empty;
   output wr_rst_busy;

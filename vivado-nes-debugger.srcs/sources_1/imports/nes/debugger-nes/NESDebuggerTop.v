@@ -545,12 +545,13 @@ end
 
 wire w_fifo_pixel_valid;
 wire [23:0] w_fifo_pixel_rgb;
+wire [8:0] w_fifo_pixel_x;
 
 FIFO video_fifo(
     .i_clk_5mhz(i_clk_5mhz),
     .i_clk_25mhz(i_clk_25mhz),
     .i_reset_n(i_reset_n),
-    
+    .i_video_x(w_nes_video_x),    
     .i_video_valid(r_nes_video_visible),
     
     .i_video_red(r_nes_video_red),
@@ -563,6 +564,7 @@ FIFO video_fifo(
     //.i_video_blue(0),
 
     .o_pixel_valid(w_fifo_pixel_valid),
+    .o_pixel_x(w_fifo_pixel_x),
     .o_pixel_rgb(w_fifo_pixel_rgb)
 );
 
@@ -577,6 +579,7 @@ VideoOutput video_output(
 
     // data received from FIFO
     .i_pixel_valid(w_fifo_pixel_valid),
+    .i_pixel_x(w_fifo_pixel_x),
     .i_pixel_rgb(w_fifo_pixel_rgb),
 
     // driving VGA pixel data
