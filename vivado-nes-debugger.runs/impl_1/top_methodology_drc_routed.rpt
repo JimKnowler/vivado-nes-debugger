@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Thu Apr 14 13:33:00 2022
+| Date         : Mon May  2 14:39:47 2022
 | Host         : DESKTOP-H1KDTUU running 64-bit major release  (build 9200)
 | Command      : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
 | Design       : top
@@ -222,36 +222,36 @@ debuggerTop/r_nes_video_green_reg[5]/CLR,
 debuggerTop/r_nes_video_green_reg[6]/CLR,
 debuggerTop/r_nes_video_green_reg[7]/CLR,
 debuggerTop/r_nes_video_red_reg[2]/CLR,
-debuggerTop/r_nes_video_red_reg[3]/CLR (the first 15 of 9346 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+debuggerTop/r_nes_video_red_reg[3]/CLR (the first 15 of 9345 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#3 Warning
 LUT drives async reset alert  
 LUT cell debuggerTop/values/r_nmi_n_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) debuggerTop/nes/clockEnable/r_counter_reg[0]/PRE,
 debuggerTop/nes/clockEnable/r_counter_reg[1]/PRE,
-debuggerTop/nes/cpu2A03/FSM_sequential_r_state_reg[0]/CLR,
-debuggerTop/nes/cpu2A03/FSM_sequential_r_state_reg[1]/CLR,
-debuggerTop/nes/cpu2A03/cpu6502/alu/r_acr_out_reg/CLR,
-debuggerTop/nes/cpu2A03/cpu6502/alu/r_add_reg[0]/CLR,
-debuggerTop/nes/cpu2A03/cpu6502/alu/r_add_reg[1]/CLR,
-debuggerTop/nes/cpu2A03/cpu6502/alu/r_add_reg[2]/CLR,
-debuggerTop/nes/cpu2A03/cpu6502/alu/r_add_reg[3]/CLR,
-debuggerTop/nes/cpu2A03/cpu6502/alu/r_add_reg[4]/CLR,
-debuggerTop/nes/cpu2A03/cpu6502/alu/r_add_reg[5]/CLR,
-debuggerTop/nes/cpu2A03/cpu6502/alu/r_add_reg[6]/CLR,
-debuggerTop/nes/cpu2A03/cpu6502/alu/r_add_reg[7]/CLR,
-debuggerTop/nes/cpu2A03/cpu6502/alu/r_avr_out_reg/CLR,
-debuggerTop/nes/cpu2A03/cpu6502/abl/r_address_reg[0]/CLR (the first 15 of 503 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+debuggerTop/nes/ppu/r_nmi_occurred_reg/CLR,
+debuggerTop/nes/ppu/r_oamaddr_reg[0]/CLR,
+debuggerTop/nes/ppu/r_oamaddr_reg[0]_rep/CLR,
+debuggerTop/nes/ppu/r_oamaddr_reg[0]_rep__0/CLR,
+debuggerTop/nes/ppu/r_oamaddr_reg[0]_rep__1/CLR,
+debuggerTop/nes/ppu/r_oamaddr_reg[0]_rep__2/CLR,
+debuggerTop/nes/ppu/r_oamaddr_reg[1]/CLR,
+debuggerTop/nes/ppu/r_oamaddr_reg[1]_rep/CLR,
+debuggerTop/nes/ppu/r_oamaddr_reg[1]_rep__0/CLR,
+debuggerTop/nes/ppu/r_oamaddr_reg[1]_rep__1/CLR,
+debuggerTop/nes/ppu/r_oamaddr_reg[1]_rep__2/CLR,
+debuggerTop/nes/ppu/r_oamaddr_reg[1]_rep__3/CLR,
+debuggerTop/nes/ppu/r_oamaddr_reg[2]/CLR (the first 15 of 504 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 TIMING-16#1 Warning
 Large setup violation  
-There is a large setup violation of -1.611 ns between debuggerTop/video_output_sync/r_data_0_reg/C (clocked by o_clk_25mhz_clk_wiz_0) and debuggerTop/video_output_sync/r_data_1_reg/D (clocked by o_clk_5mhz_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.436 ns between debuggerTop/video_output_sync/r_data_0_reg/C (clocked by o_clk_25mhz_clk_wiz_0_1) and debuggerTop/video_output_sync/r_data_1_reg/D (clocked by o_clk_5mhz_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-23#1 Warning
 Combinational loop found  
-A timing loop has been detected on a combinational path. A timing arc has been disabled between debuggerTop/nes/cpu2A03/cpu6502/tcu/r_oam[63][6]_i_1/I0 and debuggerTop/nes/cpu2A03/cpu6502/tcu/r_oam[63][6]_i_1/O to disable the timing loop
+A timing loop has been detected on a combinational path. A timing arc has been disabled between debuggerTop/nes/cpu2A03/cpu6502/ir/r_oam[63][6]_i_1/I5 and debuggerTop/nes/cpu2A03/cpu6502/ir/r_oam[63][6]_i_1/O to disable the timing loop
 Related violations: <none>
 
 TIMING-38#1 Warning

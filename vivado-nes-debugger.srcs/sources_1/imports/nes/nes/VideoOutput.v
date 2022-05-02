@@ -66,12 +66,14 @@ begin
     r_vga_pixel_rgb = 0;
     r_vga_visible = (i_vga_x < VGA_VISIBLE_WIDTH) && (r_vga_reset_n == 1);
 
-    if (r_vga_visible)
+    if ((r_vga_visible) && (r_linebuffer_write != r_linebuffer_read))
+    begin
         case (r_linebuffer_read)
         0:          r_vga_pixel_rgb = r_linebuffer0[i_vga_x[8:1]];      // NOTE: ignoring LSB, so each pixel rendered twice
         1:          r_vga_pixel_rgb = r_linebuffer1[i_vga_x[8:1]];      // NOTE: ignoring LSB, so each pixel rendered twice
         default:    r_vga_pixel_rgb = r_linebuffer2[i_vga_x[8:1]];
         endcase
+    end
     else
         r_vga_pixel_rgb = 0;
 end

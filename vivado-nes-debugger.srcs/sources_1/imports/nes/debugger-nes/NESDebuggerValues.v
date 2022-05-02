@@ -15,6 +15,7 @@ module NESDebuggerValues(
     output [15:0] o_data,
     
     // profiler
+    output o_profiler_wen,                          // enable the profiler to write to its' memory
     input [15:0] i_profiler_sample_data,
     output [15:0] o_profiler_sample_index,          // index of sample that profiler would like to view
     output [15:0] o_profiler_sample_data_index,     // index into data for current sample
@@ -42,19 +43,25 @@ localparam VALUEID_PROFILER_SAMPLE_DATA_INDEX = 4;
 // Get data associated with the current sample index, and at the current sample data index
 localparam VALUEID_PROFILER_SAMPLE_DATA = 5;
 
+// Set write enable for profiler
+localparam VALUEID_PROFILER_WEN = 6;
+
 reg r_nes_reset_n;
 reg [1:0] r_debugger_memory_pool;
 
 reg [15:0] r_profiler_sample_index;
 reg [15:0] r_profiler_sample_data_index;
+reg r_profiler_wen;
 
 reg [15:0] r_value;
 
+// WRITE values
 always @(posedge i_clk or negedge i_reset_n)
 begin
     if (!i_reset_n)
     begin
         r_nes_reset_n <= 0;
+        r_profiler_wen <= 0;
     end
     else
     begin                
@@ -75,6 +82,9 @@ begin
                 VALUEID_PROFILER_SAMPLE_DATA_INDEX: begin
                     r_profiler_sample_data_index <= i_data;
                 end
+                VALUEID_PROFILER_WEN: begin
+                    r_profiler_wen <= i_data;
+                end
                 default: begin
                 end
                 endcase
@@ -83,6 +93,7 @@ begin
     end
 end
 
+// READ values
 always @(*)
 begin
     case (i_id)
@@ -105,5 +116,6 @@ assign o_nes_reset_n = r_nes_reset_n;
 assign o_debugger_memory_pool = r_debugger_memory_pool;
 assign o_profiler_sample_index = r_profiler_sample_index;
 assign o_profiler_sample_data_index = r_profiler_sample_data_index;
+assign o_profiler_wen = r_profiler_wen;
 
 endmodule

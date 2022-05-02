@@ -3,9 +3,9 @@
 int pin_spi_cs_n = 8;
 
 // choose which ROM to load
-#define ROM_SUPERMARIO
+//#define ROM_SUPERMARIO
 //#define ROM_DONKEYKONG
-//#define ROM_NESTEST
+#define ROM_NESTEST
 //#define ROM_INTEGRATIONTEST
 
 
@@ -192,7 +192,8 @@ enum ValueID : uint16_t {
   VALUEID_DEBUGGER_MEMORY_POOL = 2,
   VALUEID_DEBUGGER_PROFILER_SAMPLE_INDEX = 3,
   VALUEID_DEBUGGER_PROFILER_SAMPLE_DATA_INDEX = 4,
-  VALUEID_DEBUGGER_PROFILER_SAMPLE_DATA = 5
+  VALUEID_DEBUGGER_PROFILER_SAMPLE_DATA = 5,
+  VALUEID_PROFILER_WEN = 6
 };
 
 enum MemoryPool : uint16_t {
@@ -216,6 +217,10 @@ void fillMemory(byte value) {
 
 void setResetN(uint16_t resetn) {
   valueWrite(VALUEID_NES_RESET_N, resetn);
+}
+
+void setProfilerEnabled() {
+  valueWrite(VALUEID_PROFILER_WEN, 1);
 }
 
 void testNesDebugger() {
@@ -291,6 +296,7 @@ void setupROM() {
 
   // prg @ 0xc000
   valueWrite(VALUEID_DEBUGGER_MEMORY_POOL, MEMORY_POOL_PRG);
+  memWrite(0x0000, prg_rom_bank_0_6502_bin, 0x3FFF);
   memWrite(0xc000, prg_rom_bank_0_6502_bin, 0x3FFF);
 
   // TODO:
@@ -305,7 +311,7 @@ void setupROM() {
   valueWrite(VALUEID_DEBUGGER_MEMORY_POOL, MEMORY_POOL_PATTERNTABLE);
   memWrite(0x0000, chr_rom_bank_0_bin, 0x3FFF);
 
-  // prg @ 0xc000
+  // prg @ 0x0000 and 0xc000
   valueWrite(VALUEID_DEBUGGER_MEMORY_POOL, MEMORY_POOL_PRG);
   memWrite(0xc000, prg_rom_bank_0_6502_bin, 0x3FFF);
 #endif
@@ -386,36 +392,42 @@ int getBit(uint16_t word, int index) {
   return isSet ? 1 : 0; 
 }
 
+int getBits(uint16_t word, int indexHi, int indexLo) {
+  int bits = word >> indexLo;
+  int bitmask = (1 << (1 + indexHi - indexLo)) - 1;
+  bits &= bitmask;
+
+  return bits;
+}
+
 void readProfiler() {
   Serial.println("Read Profiler");
 
-  for (int j=0; j<1; j++) {
-  // note: outer loop useful for testing whether profiler results are consistent
-    
-    for (int i=0; i<100; i++) {
-      valueWrite(VALUEID_DEBUGGER_PROFILER_SAMPLE_INDEX, i);
-      valueWrite(VALUEID_DEBUGGER_PROFILER_SAMPLE_DATA_INDEX, 0);
-      uint16_t lo = valueRead(VALUEID_DEBUGGER_PROFILER_SAMPLE_DATA);
-      valueWrite(VALUEID_DEBUGGER_PROFILER_SAMPLE_DATA_INDEX, 1);
-      uint16_t hi = valueRead(VALUEID_DEBUGGER_PROFILER_SAMPLE_DATA);
+  const int NUM_SAMPLES = 200;
 
-    
-      int clk_en = getBit(hi, 13);
-      if (clk_en == 1) {
-        uint16_t address = lo;
-        uint8_t data = uint8_t(hi & 0xff);
-        int error = getBit(hi, 15);
-        int rw = getBit(hi, 14);
-        int sync = getBit(hi, 12);
-    
-        char buffer[64];
-        sprintf(buffer, "profile index [%04d] addr:%04x rw:%d data(RAM):%02x clk_en:%d sync:%d error:%d", i, address, rw, data, clk_en, sync, error);
-        Serial.println(buffer);
-      }
-    }
+  for (int i=0; i<NUM_SAMPLES; i++) {
+    valueWrite(VALUEID_DEBUGGER_PROFILER_SAMPLE_INDEX, i);
+    valueWrite(VALUEID_DEBUGGER_PROFILER_SAMPLE_DATA_INDEX, 0);
+    uint16_t lo = valueRead(VALUEID_DEBUGGER_PROFILER_SAMPLE_DATA);
+    valueWrite(VALUEID_DEBUGGER_PROFILER_SAMPLE_DATA_INDEX, 1);
+    uint16_t hi = valueRead(VALUEID_DEBUGGER_PROFILER_SAMPLE_DATA);
 
-    Serial.println("--");
+    int sync_posedge = getBit(hi, 15);
+    int sync = getBit(hi, 14);
+    int nes_ce = getBit(hi, 13);
+    int cpu_ce = getBit(hi, 12);
+    int ppu_ce = getBit(hi, 11);
+    int nes_x = getBits(hi, 10, 2);
+    int nes_y = (getBits(hi, 1, 0) << 7) | getBits(lo, 15, 9);
+    int nes_visible = getBit(lo, 8);
+    int cpu_sync = getBit(lo, 7);  
+    char buffer[64];
+    sprintf(buffer, "profile: [%04d] sync_posedge [%d] sync [%d] nes_x [%03d] nes_y [%03d] cpu[%d] ppu[%d] nes[%d] cpu_sync[%d]\n", i, sync_posedge, sync, nes_x, nes_y, cpu_ce, ppu_ce, nes_ce, cpu_sync);
+    Serial.println(buffer);
+  
+    
   }
+
 }
 
 ///////////////////////////////////////////////////////////////////////////
@@ -437,7 +449,14 @@ void setup() {
 
   setupROM();
 
+  // wait 5 seconds for v-sync to break
+  delay(5000);
+  Serial.println("Enable Profiler");
+  setProfilerEnabled();
+  
+  // wait a second and then read profiler
   delay(1000);
+  Serial.println("Read profiler");
   readProfiler();
 
 }

@@ -235,6 +235,18 @@ begin
     end
 end
 
+
+// NES debug ports
+wire [7:0] w_cpu_debug_ir;
+wire w_cpu_debug_error;
+wire w_cpu_debug_rw;
+wire [15:0] w_cpu_debug_address;
+wire [3:0] w_cpu_debug_tcu;
+wire w_cpu_debug_clk_en;
+wire w_cpu_debug_sync;
+wire w_ppu_debug_clk_en;
+
+
 /* verilator lint_off PINMISSING */
 NES nes(
     .i_clk(i_clk_5mhz),
@@ -288,7 +300,8 @@ NES nes(
     .o_cpu_debug_address(w_cpu_debug_address),
     .o_cpu_debug_tcu(w_cpu_debug_tcu),
     .o_cpu_debug_clk_en(w_cpu_debug_clk_en),
-    .o_cpu_debug_sync(w_cpu_debug_sync)
+    .o_cpu_debug_sync(w_cpu_debug_sync),
+    .o_ppu_debug_clk_en(w_ppu_debug_clk_en)
 );
 /* verilator lint_on PINMISSING */
 
@@ -303,6 +316,11 @@ begin
     r_is_value_wea = (w_value_rw == RW_WRITE);
 end
 
+wire [15:0] w_profiler_sample_data;
+wire [15:0] w_profiler_sample_index;
+wire [15:0] w_profiler_sample_data_index;
+wire w_profiler_wen;
+
 NESDebuggerValues values (
     .i_clk(i_clk_5mhz),
     .i_reset_n(i_reset_n),
@@ -314,9 +332,10 @@ NESDebuggerValues values (
     .o_data(w_value_data_rd),
     
     // profiler
-     .i_profiler_sample_data(w_profiler_sample_data),
-     .o_profiler_sample_index(w_profiler_sample_index),
-     .o_profiler_sample_data_index(w_profiler_sample_data_index),
+    .o_profiler_wen(w_profiler_wen),
+    .i_profiler_sample_data(w_profiler_sample_data),
+    .o_profiler_sample_index(w_profiler_sample_index),
+    .o_profiler_sample_data_index(w_profiler_sample_data_index),
 
     // nes reset
     .o_nes_reset_n(w_nes_reset_n),
@@ -632,17 +651,8 @@ Sync video_output_sync(
 // Profiler
 //
 
-wire [15:0] w_profiler_sample_data;
-wire [15:0] w_profiler_sample_index;
-wire [15:0] w_profiler_sample_data_index;
-
-wire [7:0] w_cpu_debug_ir;
-wire w_cpu_debug_error;
-wire w_cpu_debug_rw;
-wire [15:0] w_cpu_debug_address;
-wire [3:0] w_cpu_debug_tcu;
-wire w_cpu_debug_clk_en;
-wire w_cpu_debug_sync;
+wire [6:0] w_profiler_spacing;
+assign w_profiler_spacing = 0;
 
 NESProfiler profiler(
     .i_clk(i_clk_5mhz),
@@ -654,16 +664,22 @@ NESProfiler profiler(
     .i_sample_data_index(w_profiler_sample_data_index),
     
     // Interface to NES
-    .i_cpu_debug_ir(w_cpu_debug_ir),                        // todo: replace by cpu's data bus (either input or output, depending on rw)
-    .i_cpu_debug_error(w_cpu_debug_error),
-    .i_cpu_debug_rw(w_cpu_debug_rw),
-    .i_cpu_debug_address(w_cpu_debug_address),
-    .i_cpu_debug_tcu(w_cpu_debug_tcu),
-    .i_cpu_debug_clk_en(w_cpu_debug_clk_en),
-    .i_cpu_debug_sync(w_cpu_debug_sync),
-    .i_nes_ram_data_wr(w_nes_ram_data_wr),
-    .i_nes_ram_data_rd(w_nes_ram_data_rd),
-    .i_nes_prg_data_rd(w_nes_prg_data_rd)
+    .i_sample_data({
+        w_videooutput_sync_posedge,             // : 1
+        r_videooutput_sync,                     // : 1
+        r_nes_ce,                               // : 1
+        w_cpu_debug_clk_en,                     // : 1
+        w_ppu_debug_clk_en,                     // : 1
+        w_nes_video_x,                          // : 9
+        w_nes_video_y,                          // : 9
+        w_nes_visible,                          // : 1
+        w_cpu_debug_sync,                       // : 1
+        w_profiler_spacing                     
+    }),
+
+    // write enable
+    .i_wen(w_profiler_wen)
 );
+
 
 endmodule
