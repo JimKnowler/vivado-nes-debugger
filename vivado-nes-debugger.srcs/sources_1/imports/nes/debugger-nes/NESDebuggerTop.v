@@ -2,6 +2,9 @@
  * Top module for NES debugger
  */
 
+ // DEBUG_FRAME_RATE - adds a white vertical line that scrolls horizontally, used to debug NES->VGA video output
+ // `define DEBUG_FRAME_RATE
+
 module NESDebuggerTop(
     input   i_clk_5mhz,             // NES clock
     input   i_clk_25mhz,            // VGA clock
@@ -583,15 +586,16 @@ FIFO video_fifo(
     .i_reset_n(i_reset_n),
     .i_video_x(w_nes_video_x),    
     .i_video_valid(r_nes_video_visible),
-    
+
+`ifdef DEBUG_FRAME_RATE
     .i_video_red((w_nes_video_x == r_debug_counter_x) ? 8'b11111111 : r_nes_video_red),
     .i_video_green((w_nes_video_x == r_debug_counter_x) ? 8'b11111111 : r_nes_video_green),
     .i_video_blue((w_nes_video_x == r_debug_counter_x) ? 8'b11111111 : r_nes_video_blue),
-    
-    // test - vertical red line at x==100
-    //.i_video_red((r_nes_video_x == 100) ? 255 : 0),
-    //.i_video_green(0),
-    //.i_video_blue(0),
+`else
+    .i_video_red(r_nes_video_red),
+    .i_video_green(r_nes_video_green),
+    .i_video_blue(r_nes_video_blue),
+`endif
 
     .o_pixel_valid(w_fifo_pixel_valid),
     .o_pixel_x(w_fifo_pixel_x),
@@ -657,7 +661,7 @@ end
 Sync video_output_sync(
     .i_clk(i_clk_25mhz),
     .i_reset_n(i_reset_n),
-    .i_data(w_vga_y >= 520),        // VGA height is 525
+    .i_data(w_vga_y >= 520),        // VGA height is 525 - why doesn't changing this make any change to the black triangle at the top of the screen?  Is there something else that prevents pixel data from being sent to FIFO in advance of VGA circuit rendering to screen?
     .i_sync_clk(i_clk_5mhz),
     .o_sync_posedge(w_videooutput_sync_posedge)
 );
