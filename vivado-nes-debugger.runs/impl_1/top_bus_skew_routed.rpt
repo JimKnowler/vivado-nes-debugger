@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Mon May  2 14:40:01 2022
+| Date         : Sun May  8 14:26:29 2022
 | Host         : DESKTOP-H1KDTUU running 64-bit major release  (build 9200)
 | Command      : report_bus_skew -warn_on_violation -file top_bus_skew_routed.rpt -pb top_bus_skew_routed.pb -rpx top_bus_skew_routed.rpx
 | Design       : top
@@ -23,10 +23,10 @@ Id  Position  From                            To                              Co
 --  --------  ------------------------------  ------------------------------  ------  ---------------  ----------  ---------
 1   5         [get_cells [list {debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]} {debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]} {debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]} {debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]} {debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[4]} {debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[5]} {debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[6]} {debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[7]}]]
                                               [get_cells [list {debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} {debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]}]]
-                                                                              Slow             39.604       1.146     38.458
+                                                                              Slow             39.604       1.198     38.406
 2   7         [get_cells [list {debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]} {debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]} {debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]} {debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]} {debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[4]} {debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[5]} {debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[6]} {debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[7]}]]
                                               [get_cells [list {debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} {debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]}]]
-                                                                              Slow             39.604       1.271     38.333
+                                                                              Slow             39.604       1.127     38.477
 
 
 2. Bus Skew Report Per Constraint
@@ -40,27 +40,27 @@ Endpoints: 8
 From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
 o_clk_25mhz_clk_wiz_0
-                      o_clk_5mhz_clk_wiz_0  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/D
-                                                                            debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]/D
-                                                                                                            Slow         1.146     38.458
+                      o_clk_5mhz_clk_wiz_0  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+                                                                            debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
+                                                                                                            Slow         1.198     38.406
 
 
-Slack (MET) :             38.458ns  (requirement - actual skew)
-  Endpoint Source:        debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[5]/C
+Slack (MET) :             38.406ns  (requirement - actual skew)
+  Endpoint Source:        debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
                             (rising edge-triggered cell FDRE clocked by o_clk_25mhz_clk_wiz_0)
-  Endpoint Destination:   debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/D
+  Endpoint Destination:   debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
                             (rising edge-triggered cell FDRE clocked by o_clk_5mhz_clk_wiz_0)
-  Reference Source:       debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[7]/C
+  Reference Source:       debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[4]/C
                             (rising edge-triggered cell FDRE clocked by o_clk_25mhz_clk_wiz_0)
-  Reference Destination:  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]/D
+  Reference Destination:  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
                             (rising edge-triggered cell FDRE clocked by o_clk_5mhz_clk_wiz_0)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            39.604ns
-  Endpoint Relative Delay:    1.501ns
-  Reference Relative Delay:   0.313ns
-  Relative CRPR:              0.346ns
+  Endpoint Relative Delay:    1.447ns
+  Reference Relative Delay:   0.295ns
+  Relative CRPR:              0.257ns
   Uncertainty:                0.303ns
-  Actual Bus Skew:            1.146ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+  Actual Bus Skew:            1.198ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -75,12 +75,12 @@ Endpoint path:
                                                      -7.070    -4.355 r  pll/inst/mmcm_adv_inst/CLKOUT1
                          net (fo=1, routed)           1.719    -2.636    pll/inst/o_clk_25mhz_clk_wiz_0
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096    -2.540 r  pll/inst/clkout2_buf/O
-                         net (fo=9330, routed)        1.636    -0.904    debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
-    SLICE_X31Y85         FDRE                                         r  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[5]/C
+                         net (fo=9330, routed)        1.614    -0.926    debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
+    SLICE_X51Y76         FDRE                                         r  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X31Y85         FDRE (Prop_fdre_C_Q)         0.419    -0.485 r  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[5]/Q
-                         net (fo=1, routed)           0.606     0.121    debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[5]
-    SLICE_X33Y85         FDRE                                         r  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/D
+    SLICE_X51Y76         FDRE (Prop_fdre_C_Q)         0.419    -0.507 r  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]/Q
+                         net (fo=1, routed)           0.609     0.102    debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[1]
+    SLICE_X46Y76         FDRE                                         r  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock o_clk_5mhz_clk_wiz_0 rise edge)
@@ -93,15 +93,15 @@ Endpoint path:
                                                      -7.324    -4.751 r  pll/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.639    -3.112    pll/inst/o_clk_5mhz_clk_wiz_0
     BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.091    -3.021 r  pll/inst/clkout1_buf/O
-                         net (fo=3892, routed)        1.515    -1.505    debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
-    SLICE_X33Y85         FDRE                                         r  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/C
-                         clock pessimism              0.395    -1.110    
-    SLICE_X33Y85         FDRE (Setup_fdre_C_D)       -0.270    -1.380    debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]
+                         net (fo=3900, routed)        1.498    -1.522    debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
+    SLICE_X46Y76         FDRE                                         r  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/C
+                         clock pessimism              0.395    -1.127    
+    SLICE_X46Y76         FDRE (Setup_fdre_C_D)       -0.218    -1.345    debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]
   -------------------------------------------------------------------
-                         data arrival                           0.121    
-                         clock arrival                         -1.380    
+                         data arrival                           0.102    
+                         clock arrival                         -1.345    
   -------------------------------------------------------------------
-                         relative delay                         1.501    
+                         relative delay                         1.447    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -116,12 +116,12 @@ Reference path:
                                                      -7.324    -4.751 r  pll/inst/mmcm_adv_inst/CLKOUT1
                          net (fo=1, routed)           1.639    -3.112    pll/inst/o_clk_25mhz_clk_wiz_0
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    -3.021 r  pll/inst/clkout2_buf/O
-                         net (fo=9330, routed)        1.515    -1.505    debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
-    SLICE_X29Y84         FDRE                                         r  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[7]/C
+                         net (fo=9330, routed)        1.487    -1.533    debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
+    SLICE_X52Y74         FDRE                                         r  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[4]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X29Y84         FDRE (Prop_fdre_C_Q)         0.367    -1.138 r  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[7]/Q
-                         net (fo=1, routed)           0.380    -0.758    debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[7]
-    SLICE_X30Y84         FDRE                                         r  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]/D
+    SLICE_X52Y74         FDRE (Prop_fdre_C_Q)         0.367    -1.166 r  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[4]/Q
+                         net (fo=1, routed)           0.372    -0.795    debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[4]
+    SLICE_X50Y74         FDRE                                         r  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock o_clk_5mhz_clk_wiz_0 rise edge)
@@ -134,15 +134,15 @@ Reference path:
                                                      -7.070    -4.355 r  pll/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.719    -2.636    pll/inst/o_clk_5mhz_clk_wiz_0
     BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.096    -2.540 r  pll/inst/clkout1_buf/O
-                         net (fo=3892, routed)        1.634    -0.906    debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
-    SLICE_X30Y84         FDRE                                         r  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]/C
-                         clock pessimism             -0.395    -1.301    
-    SLICE_X30Y84         FDRE (Hold_fdre_C_D)         0.230    -1.071    debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]
+                         net (fo=3900, routed)        1.612    -0.928    debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
+    SLICE_X50Y74         FDRE                                         r  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/C
+                         clock pessimism             -0.395    -1.323    
+    SLICE_X50Y74         FDRE (Hold_fdre_C_D)         0.233    -1.090    debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]
   -------------------------------------------------------------------
-                         data arrival                          -0.758    
-                         clock arrival                         -1.071    
+                         data arrival                          -0.795    
+                         clock arrival                         -1.090    
   -------------------------------------------------------------------
-                         relative delay                         0.313    
+                         relative delay                         0.295    
 
 
 
@@ -155,26 +155,26 @@ From Clock            To Clock              Endpoint Pin                    Refe
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
 o_clk_5mhz_clk_wiz_0  o_clk_25mhz_clk_wiz_0_1
                                             debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/D
-                                                                            debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
-                                                                                                            Slow         1.271     38.333
+                                                                            debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+                                                                                                            Slow         1.127     38.477
 
 
-Slack (MET) :             38.333ns  (requirement - actual skew)
+Slack (MET) :             38.477ns  (requirement - actual skew)
   Endpoint Source:        debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[5]/C
                             (rising edge-triggered cell FDRE clocked by o_clk_5mhz_clk_wiz_0)
   Endpoint Destination:   debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/D
                             (rising edge-triggered cell FDRE clocked by o_clk_25mhz_clk_wiz_0_1)
-  Reference Source:       debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[4]/C
+  Reference Source:       debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]/C
                             (rising edge-triggered cell FDRE clocked by o_clk_5mhz_clk_wiz_0)
-  Reference Destination:  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
+  Reference Destination:  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
                             (rising edge-triggered cell FDRE clocked by o_clk_25mhz_clk_wiz_0_1)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            39.604ns
-  Endpoint Relative Delay:    1.723ns
-  Reference Relative Delay:   0.367ns
-  Relative CRPR:              0.388ns
+  Endpoint Relative Delay:    1.560ns
+  Reference Relative Delay:   0.391ns
+  Relative CRPR:              0.346ns
   Uncertainty:                0.303ns
-  Actual Bus Skew:            1.271ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+  Actual Bus Skew:            1.127ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -189,12 +189,12 @@ Endpoint path:
                                                      -7.070    -4.355 r  pll/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.719    -2.636    pll/inst/o_clk_5mhz_clk_wiz_0
     BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.096    -2.540 r  pll/inst/clkout1_buf/O
-                         net (fo=3892, routed)        1.637    -0.903    debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
-    SLICE_X28Y86         FDRE                                         r  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[5]/C
+                         net (fo=3900, routed)        1.605    -0.935    debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
+    SLICE_X52Y75         FDRE                                         r  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[5]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X28Y86         FDRE (Prop_fdre_C_Q)         0.419    -0.484 r  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[5]/Q
-                         net (fo=1, routed)           0.816     0.333    debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[5]
-    SLICE_X29Y86         FDRE                                         r  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/D
+    SLICE_X52Y75         FDRE (Prop_fdre_C_Q)         0.419    -0.516 r  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[5]/Q
+                         net (fo=1, routed)           0.674     0.158    debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[5]
+    SLICE_X52Y74         FDRE                                         r  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock o_clk_25mhz_clk_wiz_0_1 rise edge)
@@ -207,15 +207,15 @@ Endpoint path:
                                                      -7.324    -4.751 r  pll/inst/mmcm_adv_inst/CLKOUT1
                          net (fo=1, routed)           1.639    -3.112    pll/inst/o_clk_25mhz_clk_wiz_0
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    -3.021 r  pll/inst/clkout2_buf/O
-                         net (fo=9330, routed)        1.516    -1.504    debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
-    SLICE_X29Y86         FDRE                                         r  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/C
-                         clock pessimism              0.395    -1.109    
-    SLICE_X29Y86         FDRE (Setup_fdre_C_D)       -0.281    -1.390    debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]
+                         net (fo=9330, routed)        1.487    -1.533    debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
+    SLICE_X52Y74         FDRE                                         r  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/C
+                         clock pessimism              0.395    -1.138    
+    SLICE_X52Y74         FDRE (Setup_fdre_C_D)       -0.264    -1.402    debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]
   -------------------------------------------------------------------
-                         data arrival                           0.333    
-                         clock arrival                         -1.390    
+                         data arrival                           0.158    
+                         clock arrival                         -1.402    
   -------------------------------------------------------------------
-                         relative delay                         1.723    
+                         relative delay                         1.560    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -230,12 +230,12 @@ Reference path:
                                                      -7.324    -4.751 r  pll/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.639    -3.112    pll/inst/o_clk_5mhz_clk_wiz_0
     BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.091    -3.021 r  pll/inst/clkout1_buf/O
-                         net (fo=3892, routed)        1.516    -1.504    debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
-    SLICE_X28Y86         FDRE                                         r  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[4]/C
+                         net (fo=3900, routed)        1.490    -1.530    debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
+    SLICE_X52Y77         FDRE                                         r  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X28Y86         FDRE (Prop_fdre_C_Q)         0.367    -1.137 r  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[4]/Q
-                         net (fo=1, routed)           0.376    -0.761    debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[4]
-    SLICE_X28Y85         FDRE                                         r  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
+    SLICE_X52Y77         FDRE (Prop_fdre_C_Q)         0.367    -1.163 r  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]/Q
+                         net (fo=1, routed)           0.395    -0.768    debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[0]
+    SLICE_X52Y76         FDRE                                         r  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock o_clk_25mhz_clk_wiz_0_1 rise edge)
@@ -248,15 +248,15 @@ Reference path:
                                                      -7.070    -4.355 r  pll/inst/mmcm_adv_inst/CLKOUT1
                          net (fo=1, routed)           1.719    -2.636    pll/inst/o_clk_25mhz_clk_wiz_0
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096    -2.540 r  pll/inst/clkout2_buf/O
-                         net (fo=9330, routed)        1.637    -0.903    debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
-    SLICE_X28Y85         FDRE                                         r  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/C
-                         clock pessimism             -0.395    -1.298    
-    SLICE_X28Y85         FDRE (Hold_fdre_C_D)         0.170    -1.128    debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]
+                         net (fo=9330, routed)        1.607    -0.933    debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
+    SLICE_X52Y76         FDRE                                         r  debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/C
+                         clock pessimism             -0.395    -1.328    
+    SLICE_X52Y76         FDRE (Hold_fdre_C_D)         0.169    -1.159    debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]
   -------------------------------------------------------------------
-                         data arrival                          -0.761    
-                         clock arrival                         -1.128    
+                         data arrival                          -0.768    
+                         clock arrival                         -1.159    
   -------------------------------------------------------------------
-                         relative delay                         0.367    
+                         relative delay                         0.391    
 
 
 

@@ -223,15 +223,24 @@ reg r_nes_ce;
 localparam [8:0] NES_SCREEN_WIDTH = 341;
 localparam [8:0] NES_SCREEN_HEIGHT = 262;
 
-always @(*)
+always @(negedge i_reset_n or negedge i_clk_5mhz)
 begin
-    r_nes_ce = 1;
-
-    // pause NES rendering just-before starting new frame
-    // UNTIL videooutput sets 'sync' signal
-    if ((w_nes_video_x==NES_SCREEN_WIDTH-1) && (w_nes_video_y == NES_SCREEN_HEIGHT-1) && (r_videooutput_sync == 0))
+    if (!i_reset_n)
     begin
-        r_nes_ce = 0;
+        r_nes_ce = 1;
+    end
+    else
+    begin
+        // pause NES rendering just-before starting new frame
+        // UNTIL videooutput sets 'sync' signal
+        if ((w_nes_video_x >= (NES_SCREEN_WIDTH-3)) && (w_nes_video_x <= (NES_SCREEN_WIDTH-1)) && (w_nes_video_y == (NES_SCREEN_HEIGHT-1)) && (r_videooutput_sync == 0))
+        begin
+            r_nes_ce <= 0;
+        end
+        else
+        begin
+            r_nes_ce <= 1;
+        end
     end
 end
 
@@ -566,6 +575,8 @@ wire w_fifo_pixel_valid;
 wire [23:0] w_fifo_pixel_rgb;
 wire [8:0] w_fifo_pixel_x;
 
+reg [7:0] r_debug_counter_x;
+
 FIFO video_fifo(
     .i_clk_5mhz(i_clk_5mhz),
     .i_clk_25mhz(i_clk_25mhz),
@@ -573,9 +584,9 @@ FIFO video_fifo(
     .i_video_x(w_nes_video_x),    
     .i_video_valid(r_nes_video_visible),
     
-    .i_video_red(r_nes_video_red),
-    .i_video_green(r_nes_video_green),
-    .i_video_blue(r_nes_video_blue),
+    .i_video_red((w_nes_video_x == r_debug_counter_x) ? 8'b11111111 : r_nes_video_red),
+    .i_video_green((w_nes_video_x == r_debug_counter_x) ? 8'b11111111 : r_nes_video_green),
+    .i_video_blue((w_nes_video_x == r_debug_counter_x) ? 8'b11111111 : r_nes_video_blue),
     
     // test - vertical red line at x==100
     //.i_video_red((r_nes_video_x == 100) ? 255 : 0),
@@ -590,6 +601,8 @@ FIFO video_fifo(
 // NOTE: what prevents video_output from rendering during v-blank?
 //       do we just have to make sure that we feed video from 
 //       NES at right time?
+
+
 
 /* verilator lint_off PINMISSING */
 VideoOutput video_output(
@@ -628,10 +641,12 @@ begin
     if (!i_reset_n)
     begin
         r_videooutput_sync <= 0;
+        r_debug_counter_x <= 0;
     end
     else if (w_videooutput_sync_posedge)
     begin
         r_videooutput_sync <= 1;
+        r_debug_counter_x <= r_debug_counter_x + 1;
     end
     else if (w_nes_video_y == 0)
     begin
@@ -642,7 +657,7 @@ end
 Sync video_output_sync(
     .i_clk(i_clk_25mhz),
     .i_reset_n(i_reset_n),
-    .i_data(w_vga_y >= 523),        // VGA height is 525
+    .i_data(w_vga_y >= 520),        // VGA height is 525
     .i_sync_clk(i_clk_5mhz),
     .o_sync_posedge(w_videooutput_sync_posedge)
 );

@@ -30,9 +30,9 @@ begin
     end
     else
     begin
-        r_sample_write_enable <= i_wen && (r_sample_index < MAX_NUM_SAMPLES);
+        r_sample_write_enable <= i_wen && (r_sample_index < (MAX_NUM_SAMPLES-1));
 
-        if (i_wen)
+        if (r_sample_write_enable)
         begin
             if (r_sample_index < MAX_NUM_SAMPLES)
             begin

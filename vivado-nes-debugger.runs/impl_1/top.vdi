@@ -2,8 +2,8 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Mon May  2 14:34:16 2022
-# Process ID: 7540
+# Start of session at: Sun May  8 14:20:38 2022
+# Process ID: 11792
 # Current directory: C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/impl_1
 # Command line: vivado.exe -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
 # Log file: C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/impl_1/top.vdi
@@ -18,8 +18,8 @@ INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jim/Documents/GitHub/p
 INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp' for cell 'debuggerTop/memory_nametable/blockRam'
 INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/ip/NESProfilerMemory/NESProfilerMemory.dcp' for cell 'debuggerTop/profiler/memory'
 INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.dcp' for cell 'debuggerTop/video_fifo/fifo_ip'
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.209 . Memory (MB): peak = 1013.672 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 2546 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.208 . Memory (MB): peak = 1013.711 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2547 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2020.1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -28,7 +28,7 @@ Finished Parsing XDC File [c:/Users/jim/Documents/GitHub/personal/vivado/vivado-
 Parsing XDC File [c:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'pll/inst'
 INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
 INFO: [Timing 38-2] Deriving generated clocks [c:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
-get_clocks: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1370.438 ; gain = 356.766
+get_clocks: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1371.141 ; gain = 357.430
 Finished Parsing XDC File [c:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'pll/inst'
 Parsing XDC File [c:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'debuggerTop/video_fifo/fifo_ip/U0'
 Finished Parsing XDC File [c:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'debuggerTop/video_fifo/fifo_ip/U0'
@@ -54,13 +54,13 @@ Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_
 Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnrst_full.gsckt_bsy_o.xpm_cdc_sync_rst_sckt_bsy_o'
 Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'debuggerTop/video_fifo/fifo_ip/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnrst_full.gsckt_bsy_o.xpm_cdc_sync_rst_sckt_bsy_o'
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1370.438 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1371.141 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 13 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1370.438 ; gain = 356.766
+link_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1371.141 ; gain = 357.430
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
@@ -71,57 +71,57 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.994 . Memory (MB): peak = 1370.438 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1371.141 ; gain = 0.000
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Cache Timing Information Task | Checksum: 19aeba7d4
+Ending Cache Timing Information Task | Checksum: fa256d43
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.796 . Memory (MB): peak = 1370.438 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.850 . Memory (MB): peak = 1371.141 ; gain = 0.000
 
 Starting Logic Optimization Task
 
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 1f76a7f7a
+Phase 1 Retarget | Checksum: 138454643
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1531.305 ; gain = 0.004
-INFO: [Opt 31-389] Phase Retarget created 2 cells and removed 25 cells
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1540.273 ; gain = 1.590
+INFO: [Opt 31-389] Phase Retarget created 2 cells and removed 24 cells
 INFO: [Opt 31-1021] In phase Retarget, 8 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 2 Constant propagation | Checksum: 1e2769570
+Phase 2 Constant propagation | Checksum: f5aa118e
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1531.305 ; gain = 0.004
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1540.273 ; gain = 1.590
 INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
 INFO: [Opt 31-1021] In phase Constant propagation, 7 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 3 Sweep
-Phase 3 Sweep | Checksum: 1e8d64bec
+Phase 3 Sweep | Checksum: e57d494e
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1531.305 ; gain = 0.004
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1540.273 ; gain = 1.590
 INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 7 cells
 INFO: [Opt 31-1021] In phase Sweep, 14 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 4 BUFG optimization
-Phase 4 BUFG optimization | Checksum: 1e8d64bec
+Phase 4 BUFG optimization | Checksum: e57d494e
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1531.305 ; gain = 0.004
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1540.273 ; gain = 1.590
 INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
 
 Phase 5 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
-Phase 5 Shift Register Optimization | Checksum: 1e8d64bec
+Phase 5 Shift Register Optimization | Checksum: e57d494e
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1531.305 ; gain = 0.004
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1540.273 ; gain = 1.590
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 6 Post Processing Netlist
-Phase 6 Post Processing Netlist | Checksum: 1e8d64bec
+Phase 6 Post Processing Netlist | Checksum: e57d494e
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1531.305 ; gain = 0.004
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1540.273 ; gain = 1.590
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
 INFO: [Opt 31-1021] In phase Post Processing Netlist, 7 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 Opt_design Change Summary
@@ -131,7 +131,7 @@ Opt_design Change Summary
 -------------------------------------------------------------------------------------------------------------------------
 |  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
 -------------------------------------------------------------------------------------------------------------------------
-|  Retarget                     |               2  |              25  |                                              8  |
+|  Retarget                     |               2  |              24  |                                              8  |
 |  Constant propagation         |               0  |               0  |                                              7  |
 |  Sweep                        |               0  |               7  |                                             14  |
 |  BUFG optimization            |               0  |               0  |                                              0  |
@@ -143,16 +143,16 @@ Opt_design Change Summary
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1531.305 ; gain = 0.000
-Ending Logic Optimization Task | Checksum: 153f5636a
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1540.273 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 130e25d86
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1531.305 ; gain = 0.004
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1540.273 ; gain = 1.590
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
 INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-203] Number of nets are not same before and after processing of findDistanceFromSourceAndDest. Before: 118 After: 146
 Running Vector-less Activity Propagation...
-INFO: [Pwropt 34-203] Number of nets are not same before and after processing of findDistanceFromSourceAndDest. Before: 109 After: 146
 
 Finished Running Vector-less Activity Propagation
 INFO: [Pwropt 34-9] Applying IDT optimizations ...
@@ -165,40 +165,40 @@ INFO: [Pwropt 34-201] Structural ODC has moved 4 WE to EN ports
 Number of BRAM Ports augmented: 36 newly gated: 8 Total Ports: 138
 Number of Flops added for Enable Generation: 4
 
-Ending PowerOpt Patch Enables Task | Checksum: 18fea6650
+Ending PowerOpt Patch Enables Task | Checksum: 1f57535bf
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.346 . Memory (MB): peak = 1798.758 ; gain = 0.000
-Ending Power Optimization Task | Checksum: 18fea6650
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.336 . Memory (MB): peak = 1801.531 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1f57535bf
 
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 1798.758 ; gain = 267.453
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 1801.531 ; gain = 261.258
 
 Starting Final Cleanup Task
 
 Starting Logic Optimization Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Logic Optimization Task | Checksum: 1b5f9bad3
+Ending Logic Optimization Task | Checksum: 1d73ebc97
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1798.758 ; gain = 0.000
-Ending Final Cleanup Task | Checksum: 1b5f9bad3
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1801.531 ; gain = 0.000
+Ending Final Cleanup Task | Checksum: 1d73ebc97
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1798.758 ; gain = 0.000
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1801.531 ; gain = 0.000
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1798.758 ; gain = 0.000
-Ending Netlist Obfuscation Task | Checksum: 1b5f9bad3
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1801.531 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1d73ebc97
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1798.758 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1801.531 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
 41 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1798.758 ; gain = 428.320
+opt_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:21 . Memory (MB): peak = 1801.531 ; gain = 430.391
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 1798.758 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 1801.531 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/impl_1/top_opt.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
 Command: report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
@@ -218,9 +218,9 @@ WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 
 WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 146 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is debuggerTop/mcu_ram/r_nes_read_data_reg[2]_0. Please evaluate your design. The cells in the loop are: debuggerTop/nes/cpu2A03/cpu6502/ir/FSM_sequential_r_state[0]_i_4, debuggerTop/nes/cpu2A03/cpu6502/ir/FSM_sequential_r_state[0]_i_5, debuggerTop/nes/cpu2A03/cpu6502/ir/FSM_sequential_r_state[0]_i_6, debuggerTop/nes/cpu2A03/cpu6502/ir/blockRam_i_27__1, debuggerTop/nes/cpu2A03/cpu6502/ir/blockRam_i_28__1, debuggerTop/nes/cpu2A03/cpu6502/ir/blockRam_i_29__1, debuggerTop/nes/cpu2A03/cpu6502/ir/blockRam_i_30__1, debuggerTop/nes/cpu2A03/cpu6502/ir/blockRam_i_40__0, debuggerTop/nes/cpu2A03/cpu6502/ir/blockRam_i_41, debuggerTop/nes/cpu2A03/cpu6502/ir/blockRam_i_42__0, debuggerTop/nes/cpu2A03/cpu6502/ir/blockRam_i_43__0, debuggerTop/nes/cpu2A03/cpu6502/ir/blockRam_i_45__0, debuggerTop/nes/cpu2A03/cpu6502/ir/r_address[0]_i_1, debuggerTop/nes/cpu2A03/cpu6502/ir/r_address[0]_i_1__0, debuggerTop/nes/cpu2A03/cpu6502/ir/r_address[0]_i_2... and (the first 15 of 146 listed).
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[12] (net: debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[12]) which is driven by a register (debuggerTop/debugger/r_mem_address_reg[12]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[12] (net: debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[12]) which is driven by a register (debuggerTop/debugger/r_mem_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[12] (net: debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[12]) which is driven by a register (debuggerTop/mcu_nametable/r_nes_write_address_reg[12]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[12] (net: debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[12]) which is driven by a register (debuggerTop/mcu_nametable/r_nes_write_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[12] (net: debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[12]) which is driven by a register (debuggerTop/nes/ppu/background/r_video_address_reg[12]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[12] (net: debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[12]) which is driven by a register (debuggerTop/nes/ppu/background/r_video_address_reg[13]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[12] (net: debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[12]) which is driven by a register (debuggerTop/nes/ppu/background/r_video_rd_n_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[12] (net: debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[12]) which is driven by a register (debuggerTop/nes/ppu/r_video_rd_n_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[12] (net: debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[12]) which is driven by a register (debuggerTop/nes/ppu/r_video_we_n_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[13] (net: debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[13]) which is driven by a register (debuggerTop/debugger/r_mem_address_reg[13]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
@@ -250,11 +250,11 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1798.758 ; gain = 0.000
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: bf7e15aa
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1801.531 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1096036b9
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1798.758 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1798.758 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1801.531 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1801.531 ; gain = 0.000
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
 WARNING: [Place 30-574] Poor placement for routing between an IO pin and BUFG. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
@@ -262,36 +262,36 @@ WARNING: [Place 30-574] Poor placement for routing between an IO pin and BUFG. T
 	i_spi_clk_IBUF_inst (IBUF.O) is locked to IOB_X1Y114
 	i_spi_clk_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y0
 Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: f38596a9
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: c7d0e0ac
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1798.758 ; gain = 0.000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1801.531 ; gain = 0.000
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: 1c9d99f90
+Phase 1.3 Build Placer Netlist Model | Checksum: 15bb6cfe9
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1798.758 ; gain = 0.000
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1801.531 ; gain = 0.000
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: 1c9d99f90
+Phase 1.4 Constrain Clocks/Macros | Checksum: 15bb6cfe9
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1798.758 ; gain = 0.000
-Phase 1 Placer Initialization | Checksum: 1c9d99f90
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1801.531 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 15bb6cfe9
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1798.758 ; gain = 0.000
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1801.531 ; gain = 0.000
 
 Phase 2 Global Placement
 
 Phase 2.1 Floorplanning
-Phase 2.1 Floorplanning | Checksum: 1bd837f92
+Phase 2.1 Floorplanning | Checksum: 170ac90f1
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1798.758 ; gain = 0.000
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1801.531 ; gain = 0.000
 
 Phase 2.2 Global Placement Core
 
 Phase 2.2.1 Physical Synthesis In Placer
-INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 186 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 173 LUT instances to create LUTNM shape
 INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
-INFO: [Physopt 32-775] End 1 Pass. Optimized 80 nets or cells. Created 0 new cell, deleted 80 existing cells and moved 0 existing cell
+INFO: [Physopt 32-775] End 1 Pass. Optimized 73 nets or cells. Created 0 new cell, deleted 73 existing cells and moved 0 existing cell
 INFO: [Physopt 32-65] No nets found for high-fanout optimization.
 INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
@@ -307,7 +307,7 @@ INFO: [Physopt 32-846] No candidate cells for URAM register optimization found i
 INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
 INFO: [Physopt 32-949] No candidate nets found for HD net replication
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1798.758 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1801.531 ; gain = 0.000
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -316,7 +316,7 @@ Summary of Physical Synthesis Optimizations
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 |  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-|  LUT Combining                                    |            0  |             80  |                    80  |           0  |           1  |  00:00:01  |
+|  LUT Combining                                    |            0  |             73  |                    73  |           0  |           1  |  00:00:01  |
 |  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
@@ -324,69 +324,69 @@ Summary of Physical Synthesis Optimizations
 |  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Total                                            |            0  |             80  |                    80  |           0  |           8  |  00:00:01  |
+|  Total                                            |            0  |             73  |                    73  |           0  |           8  |  00:00:01  |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Phase 2.2.1 Physical Synthesis In Placer | Checksum: 128bdd410
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: 1c7e272dc
 
-Time (s): cpu = 00:00:43 ; elapsed = 00:00:26 . Memory (MB): peak = 1798.758 ; gain = 0.000
-Phase 2.2 Global Placement Core | Checksum: 1cbd20bb5
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:25 . Memory (MB): peak = 1801.531 ; gain = 0.000
+Phase 2.2 Global Placement Core | Checksum: 154a4e6d8
 
-Time (s): cpu = 00:00:44 ; elapsed = 00:00:27 . Memory (MB): peak = 1798.758 ; gain = 0.000
-Phase 2 Global Placement | Checksum: 1cbd20bb5
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:26 . Memory (MB): peak = 1801.531 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 154a4e6d8
 
-Time (s): cpu = 00:00:44 ; elapsed = 00:00:27 . Memory (MB): peak = 1798.758 ; gain = 0.000
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:26 . Memory (MB): peak = 1801.531 ; gain = 0.000
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 10e7986a0
+Phase 3.1 Commit Multi Column Macros | Checksum: 1dec00ef3
 
-Time (s): cpu = 00:00:46 ; elapsed = 00:00:28 . Memory (MB): peak = 1798.758 ; gain = 0.000
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:27 . Memory (MB): peak = 1801.531 ; gain = 0.000
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 193982ee2
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1f83ab75b
 
-Time (s): cpu = 00:00:51 ; elapsed = 00:00:31 . Memory (MB): peak = 1798.758 ; gain = 0.000
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:29 . Memory (MB): peak = 1801.531 ; gain = 0.000
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: df1dfccf
+Phase 3.3 Area Swap Optimization | Checksum: 1d9934096
 
-Time (s): cpu = 00:00:51 ; elapsed = 00:00:31 . Memory (MB): peak = 1798.758 ; gain = 0.000
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:30 . Memory (MB): peak = 1801.531 ; gain = 0.000
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: eca06621
+Phase 3.4 Pipeline Register Optimization | Checksum: 1b322d353
 
-Time (s): cpu = 00:00:51 ; elapsed = 00:00:31 . Memory (MB): peak = 1798.758 ; gain = 0.000
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:30 . Memory (MB): peak = 1801.531 ; gain = 0.000
 
 Phase 3.5 Fast Optimization
-Phase 3.5 Fast Optimization | Checksum: 153c696a1
+Phase 3.5 Fast Optimization | Checksum: 1856a7051
 
-Time (s): cpu = 00:00:57 ; elapsed = 00:00:34 . Memory (MB): peak = 1798.758 ; gain = 0.000
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:33 . Memory (MB): peak = 1801.531 ; gain = 0.000
 
 Phase 3.6 Small Shape Detail Placement
-Phase 3.6 Small Shape Detail Placement | Checksum: 15f52dd7a
+Phase 3.6 Small Shape Detail Placement | Checksum: c15622d6
 
-Time (s): cpu = 00:01:04 ; elapsed = 00:00:41 . Memory (MB): peak = 1798.758 ; gain = 0.000
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:40 . Memory (MB): peak = 1801.531 ; gain = 0.000
 
 Phase 3.7 Re-assign LUT pins
-Phase 3.7 Re-assign LUT pins | Checksum: 12cb6856e
+Phase 3.7 Re-assign LUT pins | Checksum: 11301e66f
 
-Time (s): cpu = 00:01:05 ; elapsed = 00:00:42 . Memory (MB): peak = 1798.758 ; gain = 0.000
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:42 . Memory (MB): peak = 1801.531 ; gain = 0.000
 
 Phase 3.8 Pipeline Register Optimization
-Phase 3.8 Pipeline Register Optimization | Checksum: ae7e4703
+Phase 3.8 Pipeline Register Optimization | Checksum: 18018e712
 
-Time (s): cpu = 00:01:05 ; elapsed = 00:00:43 . Memory (MB): peak = 1798.758 ; gain = 0.000
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:42 . Memory (MB): peak = 1801.531 ; gain = 0.000
 
 Phase 3.9 Fast Optimization
-Phase 3.9 Fast Optimization | Checksum: 10b8cee72
+Phase 3.9 Fast Optimization | Checksum: 1fc950de7
 
-Time (s): cpu = 00:01:12 ; elapsed = 00:00:47 . Memory (MB): peak = 1798.758 ; gain = 0.000
-Phase 3 Detail Placement | Checksum: 10b8cee72
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:46 . Memory (MB): peak = 1801.531 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1fc950de7
 
-Time (s): cpu = 00:01:12 ; elapsed = 00:00:47 . Memory (MB): peak = 1798.758 ; gain = 0.000
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:46 . Memory (MB): peak = 1801.531 ; gain = 0.000
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -394,7 +394,7 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: d77beba7
+Post Placement Optimization Initialization | Checksum: 2194bd7f9
 
 Phase 4.1.1.1 BUFG Insertion
 
@@ -402,107 +402,113 @@ Starting Physical Synthesis Task
 
 Phase 1 Physical Synthesis Initialization
 INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.404 | TNS=-0.404 |
-Phase 1 Physical Synthesis Initialization | Checksum: 1a93edba9
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.474 | TNS=-0.474 |
+Phase 1 Physical Synthesis Initialization | Checksum: 22a203b33
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1798.758 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1801.531 ; gain = 0.000
 INFO: [Place 46-33] Processed net debuggerTop/nes/ppu/sprites/genblk1[1].shiftTileLo/i_reset_n, BUFG insertion was skipped due to placement/routing conflicts.
 INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 1, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
-Ending Physical Synthesis Task | Checksum: 178cc360e
+Ending Physical Synthesis Task | Checksum: 1f2d67aed
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1798.758 ; gain = 0.000
-Phase 4.1.1.1 BUFG Insertion | Checksum: d77beba7
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1801.531 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 2194bd7f9
 
-Time (s): cpu = 00:01:28 ; elapsed = 00:00:56 . Memory (MB): peak = 1798.758 ; gain = 0.000
-INFO: [Place 30-746] Post Placement Timing Summary WNS=-0.404. For the most accurate timing information please run report_timing.
-Phase 4.1.1 Post Placement Optimization | Checksum: fdfe68ec
+Time (s): cpu = 00:01:26 ; elapsed = 00:00:55 . Memory (MB): peak = 1801.531 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-0.474. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 126f310ac
 
-Time (s): cpu = 00:01:40 ; elapsed = 00:01:04 . Memory (MB): peak = 1798.758 ; gain = 0.000
-Phase 4.1 Post Commit Optimization | Checksum: fdfe68ec
+Time (s): cpu = 00:01:39 ; elapsed = 00:01:05 . Memory (MB): peak = 1801.531 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 126f310ac
 
-Time (s): cpu = 00:01:40 ; elapsed = 00:01:05 . Memory (MB): peak = 1798.758 ; gain = 0.000
+Time (s): cpu = 00:01:39 ; elapsed = 00:01:05 . Memory (MB): peak = 1801.531 ; gain = 0.000
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: fdfe68ec
+Phase 4.2 Post Placement Cleanup | Checksum: 126f310ac
 
-Time (s): cpu = 00:01:41 ; elapsed = 00:01:05 . Memory (MB): peak = 1798.758 ; gain = 0.000
+Time (s): cpu = 00:01:40 ; elapsed = 00:01:05 . Memory (MB): peak = 1801.531 ; gain = 0.000
 
 Phase 4.3 Placer Reporting
-Phase 4.3 Placer Reporting | Checksum: fdfe68ec
+Phase 4.3 Placer Reporting | Checksum: 126f310ac
 
-Time (s): cpu = 00:01:41 ; elapsed = 00:01:05 . Memory (MB): peak = 1798.758 ; gain = 0.000
+Time (s): cpu = 00:01:40 ; elapsed = 00:01:05 . Memory (MB): peak = 1801.531 ; gain = 0.000
 
 Phase 4.4 Final Placement Cleanup
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1798.758 ; gain = 0.000
-Phase 4.4 Final Placement Cleanup | Checksum: a110a140
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1801.531 ; gain = 0.000
+Phase 4.4 Final Placement Cleanup | Checksum: 1734221c6
 
-Time (s): cpu = 00:01:41 ; elapsed = 00:01:05 . Memory (MB): peak = 1798.758 ; gain = 0.000
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: a110a140
+Time (s): cpu = 00:01:40 ; elapsed = 00:01:06 . Memory (MB): peak = 1801.531 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1734221c6
 
-Time (s): cpu = 00:01:41 ; elapsed = 00:01:05 . Memory (MB): peak = 1798.758 ; gain = 0.000
-Ending Placer Task | Checksum: 2562c939
+Time (s): cpu = 00:01:40 ; elapsed = 00:01:06 . Memory (MB): peak = 1801.531 ; gain = 0.000
+Ending Placer Task | Checksum: 171470629
 
-Time (s): cpu = 00:01:41 ; elapsed = 00:01:05 . Memory (MB): peak = 1798.758 ; gain = 0.000
+Time (s): cpu = 00:01:40 ; elapsed = 00:01:06 . Memory (MB): peak = 1801.531 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
 81 Infos, 29 Warnings, 1 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:01:43 ; elapsed = 00:01:06 . Memory (MB): peak = 1798.758 ; gain = 0.000
+place_design: Time (s): cpu = 00:01:42 ; elapsed = 00:01:07 . Memory (MB): peak = 1801.531 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 1798.758 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 1801.531 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/impl_1/top_placed.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_io -file top_io_placed.rpt
-report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1798.758 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1801.531 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_placed.rpt -pb top_utilization_placed.pb
 INFO: [runtcl-4] Executing : report_control_sets -verbose -file top_control_sets_placed.rpt
-report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 1798.758 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.082 . Memory (MB): peak = 1801.531 ; gain = 0.000
 Command: phys_opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1798.758 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1801.531 ; gain = 0.000
 
 Starting Physical Synthesis Task
 
 Phase 1 Physical Synthesis Initialization
 INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.404 | TNS=-0.404 |
-Phase 1 Physical Synthesis Initialization | Checksum: 2019de2ee
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.474 | TNS=-0.474 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1f55a9e91
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 1798.758 ; gain = 0.000
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.404 | TNS=-0.404 |
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 1801.531 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.474 | TNS=-0.474 |
 
 Phase 2 DSP Register Optimization
 INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
 INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Phase 2 DSP Register Optimization | Checksum: 2019de2ee
+Phase 2 DSP Register Optimization | Checksum: 1f55a9e91
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 1798.758 ; gain = 0.000
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 1801.531 ; gain = 0.000
 
 Phase 3 Critical Path Optimization
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.404 | TNS=-0.404 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.474 | TNS=-0.474 |
+INFO: [Physopt 32-663] Processed net debuggerTop/video_output_sync/r_data_1.  Re-placed instance debuggerTop/video_output_sync/r_data_1_reg
+INFO: [Physopt 32-735] Processed net debuggerTop/video_output_sync/r_data_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.365 | TNS=-0.365 |
 INFO: [Physopt 32-662] Processed net debuggerTop/video_output_sync/r_data_1.  Did not re-place instance debuggerTop/video_output_sync/r_data_1_reg
 INFO: [Physopt 32-702] Processed net debuggerTop/video_output_sync/r_data_1. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net pll/inst/o_clk_25mhz_clk_wiz_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-663] Processed net debuggerTop/video_output_sync/r_data_0.  Re-placed instance debuggerTop/video_output_sync/r_data_0_reg
 INFO: [Physopt 32-735] Processed net debuggerTop/video_output_sync/r_data_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.340 | TNS=-0.340 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.352 | TNS=-0.352 |
 INFO: [Physopt 32-662] Processed net debuggerTop/video_output_sync/r_data_0.  Did not re-place instance debuggerTop/video_output_sync/r_data_0_reg
 INFO: [Physopt 32-702] Processed net debuggerTop/video_output_sync/r_data_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net debuggerTop/video_output_sync/r_data_1.  Re-placed instance debuggerTop/video_output_sync/r_data_1_reg
+INFO: [Physopt 32-735] Processed net debuggerTop/video_output_sync/r_data_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.348 | TNS=-0.348 |
 INFO: [Physopt 32-662] Processed net debuggerTop/video_output_sync/r_data_1.  Did not re-place instance debuggerTop/video_output_sync/r_data_1_reg
 INFO: [Physopt 32-702] Processed net debuggerTop/video_output_sync/r_data_1. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net pll/inst/o_clk_25mhz_clk_wiz_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-662] Processed net debuggerTop/video_output_sync/r_data_0.  Did not re-place instance debuggerTop/video_output_sync/r_data_0_reg
 INFO: [Physopt 32-702] Processed net debuggerTop/video_output_sync/r_data_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.340 | TNS=-0.340 |
-Phase 3 Critical Path Optimization | Checksum: 2019de2ee
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.348 | TNS=-0.348 |
+Phase 3 Critical Path Optimization | Checksum: 1f55a9e91
 
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 1798.758 ; gain = 0.000
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 1801.531 ; gain = 0.000
 
 Phase 4 Critical Path Optimization
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.340 | TNS=-0.340 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.348 | TNS=-0.348 |
 INFO: [Physopt 32-662] Processed net debuggerTop/video_output_sync/r_data_1.  Did not re-place instance debuggerTop/video_output_sync/r_data_1_reg
 INFO: [Physopt 32-702] Processed net debuggerTop/video_output_sync/r_data_1. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net pll/inst/o_clk_25mhz_clk_wiz_0. Optimizations did not improve timing on the net.
@@ -513,12 +519,12 @@ INFO: [Physopt 32-702] Processed net debuggerTop/video_output_sync/r_data_1. Opt
 INFO: [Physopt 32-702] Processed net pll/inst/o_clk_25mhz_clk_wiz_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-662] Processed net debuggerTop/video_output_sync/r_data_0.  Did not re-place instance debuggerTop/video_output_sync/r_data_0_reg
 INFO: [Physopt 32-702] Processed net debuggerTop/video_output_sync/r_data_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.340 | TNS=-0.340 |
-Phase 4 Critical Path Optimization | Checksum: 2019de2ee
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.348 | TNS=-0.348 |
+Phase 4 Critical Path Optimization | Checksum: 1f55a9e91
 
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 1798.758 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1798.758 ; gain = 0.000
-INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-0.340 | TNS=-0.340 |
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 1801.531 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1801.531 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-0.348 | TNS=-0.348 |
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -528,25 +534,25 @@ Summary of Physical Synthesis Optimizations
 |  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 |  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Critical Path  |          0.064  |          0.064  |            0  |              0  |                     1  |           0  |           2  |  00:00:01  |
-|  Total          |          0.064  |          0.064  |            0  |              0  |                     1  |           0  |           3  |  00:00:01  |
+|  Critical Path  |          0.126  |          0.126  |            0  |              0  |                     3  |           0  |           2  |  00:00:01  |
+|  Total          |          0.126  |          0.126  |            0  |              0  |                     3  |           0  |           3  |  00:00:01  |
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1798.758 ; gain = 0.000
-Ending Physical Synthesis Task | Checksum: 1e72daf22
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1801.531 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 15f3ce314
 
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 1798.758 ; gain = 0.000
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 1801.531 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-121 Infos, 29 Warnings, 1 Critical Warnings and 0 Errors encountered.
+127 Infos, 29 Warnings, 1 Critical Warnings and 0 Errors encountered.
 phys_opt_design completed successfully
-phys_opt_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:16 . Memory (MB): peak = 1798.758 ; gain = 0.000
+phys_opt_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:16 . Memory (MB): peak = 1801.531 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 1801.910 ; gain = 3.152
+Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 1801.531 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/impl_1/top_physopt.dcp' has been generated.
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
@@ -566,52 +572,52 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
-Checksum: PlaceDB: 3585cf66 ConstDB: 0 ShapeSum: bb2c3a93 RouteDB: 0
+Checksum: PlaceDB: 1f2487d1 ConstDB: 0 ShapeSum: 7239d565 RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: 51af511b
+Phase 1 Build RT Design | Checksum: 6e24c054
 
-Time (s): cpu = 00:01:27 ; elapsed = 00:01:00 . Memory (MB): peak = 1920.500 ; gain = 108.559
-Post Restoration Checksum: NetGraph: 1af40c7a NumContArr: 36bb44a1 Constraints: 0 Timing: 0
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:03 . Memory (MB): peak = 1891.262 ; gain = 89.730
+Post Restoration Checksum: NetGraph: 24baa7d NumContArr: 6bd915d7 Constraints: 0 Timing: 0
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: 51af511b
+Phase 2.1 Create Timer | Checksum: 6e24c054
 
-Time (s): cpu = 00:01:28 ; elapsed = 00:01:00 . Memory (MB): peak = 1920.500 ; gain = 108.559
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:03 . Memory (MB): peak = 1891.262 ; gain = 89.730
 
 Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: 51af511b
+Phase 2.2 Fix Topology Constraints | Checksum: 6e24c054
 
-Time (s): cpu = 00:01:28 ; elapsed = 00:01:00 . Memory (MB): peak = 1924.051 ; gain = 112.109
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:03 . Memory (MB): peak = 1899.117 ; gain = 97.586
 
 Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: 51af511b
+Phase 2.3 Pre Route Cleanup | Checksum: 6e24c054
 
-Time (s): cpu = 00:01:28 ; elapsed = 00:01:00 . Memory (MB): peak = 1924.051 ; gain = 112.109
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:03 . Memory (MB): peak = 1899.117 ; gain = 97.586
 
 Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 11ca3a288
+Phase 2.4 Update Timing | Checksum: 1f0e11294
 
-Time (s): cpu = 00:01:45 ; elapsed = 00:01:12 . Memory (MB): peak = 1944.832 ; gain = 132.891
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.334 | TNS=-0.334 | WHS=-0.425 | THS=-210.385|
+Time (s): cpu = 00:01:50 ; elapsed = 00:01:15 . Memory (MB): peak = 1931.875 ; gain = 130.344
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.342 | TNS=-0.342 | WHS=-0.437 | THS=-210.327|
 
 
 Phase 2.5 Update Timing for Bus Skew
 
 Phase 2.5.1 Update Timing
-Phase 2.5.1 Update Timing | Checksum: 133226cc8
+Phase 2.5.1 Update Timing | Checksum: 1b01f0a5e
 
-Time (s): cpu = 00:02:04 ; elapsed = 00:01:22 . Memory (MB): peak = 1960.238 ; gain = 148.297
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.334 | TNS=-0.334 | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:02:10 ; elapsed = 00:01:26 . Memory (MB): peak = 1968.676 ; gain = 167.145
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.342 | TNS=-0.341 | WHS=N/A    | THS=N/A    |
 
-Phase 2.5 Update Timing for Bus Skew | Checksum: 18dbc1f5b
+Phase 2.5 Update Timing for Bus Skew | Checksum: 16decbff5
 
-Time (s): cpu = 00:02:04 ; elapsed = 00:01:22 . Memory (MB): peak = 1969.301 ; gain = 157.359
-Phase 2 Router Initialization | Checksum: 18f870a11
+Time (s): cpu = 00:02:10 ; elapsed = 00:01:26 . Memory (MB): peak = 1978.008 ; gain = 176.477
+Phase 2 Router Initialization | Checksum: 1a66c2940
 
-Time (s): cpu = 00:02:05 ; elapsed = 00:01:22 . Memory (MB): peak = 1969.301 ; gain = 157.359
+Time (s): cpu = 00:02:10 ; elapsed = 00:01:26 . Memory (MB): peak = 1978.008 ; gain = 176.477
 
 Router Utilization Summary
   Global Vertical Routing Utilization    = 0.00156678 %
@@ -619,17 +625,17 @@ Router Utilization Summary
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
-  Number of Failed Nets               = 18815
+  Number of Failed Nets               = 18846
     (Failed Nets is the sum of unrouted and partially routed nets)
-  Number of Unrouted Nets             = 18815
+  Number of Unrouted Nets             = 18846
   Number of Partially Routed Nets     = 0
-  Number of Node Overlaps             = 26
+  Number of Node Overlaps             = 28
 
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: 1fdd73957
+Phase 3 Initial Routing | Checksum: dfbe3e88
 
-Time (s): cpu = 00:02:15 ; elapsed = 00:01:29 . Memory (MB): peak = 2003.902 ; gain = 191.961
+Time (s): cpu = 00:02:19 ; elapsed = 00:01:32 . Memory (MB): peak = 1997.879 ; gain = 196.348
 INFO: [Route 35-580] Design has 1 pins with tight setup and hold constraints.
 
 The top 5 pins with tight setup and hold constraints:
@@ -637,7 +643,7 @@ The top 5 pins with tight setup and hold constraints:
 +--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
 |       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
 +--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
-|    o_clk_25mhz_clk_wiz_0 |     o_clk_5mhz_clk_wiz_0 |                                                              debuggerTop/video_output_sync/r_data_1_reg/D|
+|  o_clk_25mhz_clk_wiz_0_1 |     o_clk_5mhz_clk_wiz_0 |                                                              debuggerTop/video_output_sync/r_data_1_reg/D|
 +--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
 
 File with complete list of pins: tight_setup_hold_pins.txt
@@ -646,64 +652,63 @@ File with complete list of pins: tight_setup_hold_pins.txt
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 2735
- Number of Nodes with overlaps = 175
- Number of Nodes with overlaps = 22
- Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 2769
+ Number of Nodes with overlaps = 131
+ Number of Nodes with overlaps = 9
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.436 | TNS=-1.436 | WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.421 | TNS=-1.421 | WHS=N/A    | THS=N/A    |
 
-Phase 4.1 Global Iteration 0 | Checksum: 1753befd9
+Phase 4.1 Global Iteration 0 | Checksum: 655c83a7
 
-Time (s): cpu = 00:02:41 ; elapsed = 00:01:45 . Memory (MB): peak = 2003.902 ; gain = 191.961
-Phase 4 Rip-up And Reroute | Checksum: 1753befd9
+Time (s): cpu = 00:02:43 ; elapsed = 00:01:47 . Memory (MB): peak = 1997.879 ; gain = 196.348
+Phase 4 Rip-up And Reroute | Checksum: 655c83a7
 
-Time (s): cpu = 00:02:41 ; elapsed = 00:01:45 . Memory (MB): peak = 2003.902 ; gain = 191.961
+Time (s): cpu = 00:02:43 ; elapsed = 00:01:47 . Memory (MB): peak = 1997.879 ; gain = 196.348
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
 
 Phase 5.1.1 Update Timing
-Phase 5.1.1 Update Timing | Checksum: 183fef757
+Phase 5.1.1 Update Timing | Checksum: effb4169
 
-Time (s): cpu = 00:02:47 ; elapsed = 00:01:49 . Memory (MB): peak = 2003.902 ; gain = 191.961
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.436 | TNS=-1.436 | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:02:49 ; elapsed = 00:01:51 . Memory (MB): peak = 1997.879 ; gain = 196.348
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.421 | TNS=-1.421 | WHS=N/A    | THS=N/A    |
 
-Phase 5.1 Delay CleanUp | Checksum: 1bafdb74b
+Phase 5.1 Delay CleanUp | Checksum: 11db39164
 
-Time (s): cpu = 00:02:49 ; elapsed = 00:01:50 . Memory (MB): peak = 2003.902 ; gain = 191.961
+Time (s): cpu = 00:02:50 ; elapsed = 00:01:52 . Memory (MB): peak = 1997.879 ; gain = 196.348
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: 1bafdb74b
+Phase 5.2 Clock Skew Optimization | Checksum: 11db39164
 
-Time (s): cpu = 00:02:49 ; elapsed = 00:01:50 . Memory (MB): peak = 2003.902 ; gain = 191.961
-Phase 5 Delay and Skew Optimization | Checksum: 1bafdb74b
+Time (s): cpu = 00:02:51 ; elapsed = 00:01:52 . Memory (MB): peak = 1997.879 ; gain = 196.348
+Phase 5 Delay and Skew Optimization | Checksum: 11db39164
 
-Time (s): cpu = 00:02:49 ; elapsed = 00:01:50 . Memory (MB): peak = 2003.902 ; gain = 191.961
+Time (s): cpu = 00:02:51 ; elapsed = 00:01:52 . Memory (MB): peak = 1997.879 ; gain = 196.348
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 187694229
+Phase 6.1.1 Update Timing | Checksum: 5831bc7f
 
-Time (s): cpu = 00:02:55 ; elapsed = 00:01:54 . Memory (MB): peak = 2003.902 ; gain = 191.961
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.436 | TNS=-1.436 | WHS=0.009  | THS=0.000  |
+Time (s): cpu = 00:02:56 ; elapsed = 00:01:55 . Memory (MB): peak = 1997.879 ; gain = 196.348
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.421 | TNS=-1.421 | WHS=0.021  | THS=0.000  |
 
-Phase 6.1 Hold Fix Iter | Checksum: 207e3341e
+Phase 6.1 Hold Fix Iter | Checksum: 9ce45fc8
 
-Time (s): cpu = 00:02:55 ; elapsed = 00:01:54 . Memory (MB): peak = 2003.902 ; gain = 191.961
-Phase 6 Post Hold Fix | Checksum: 207e3341e
+Time (s): cpu = 00:02:56 ; elapsed = 00:01:55 . Memory (MB): peak = 1997.879 ; gain = 196.348
+Phase 6 Post Hold Fix | Checksum: 9ce45fc8
 
-Time (s): cpu = 00:02:55 ; elapsed = 00:01:54 . Memory (MB): peak = 2003.902 ; gain = 191.961
+Time (s): cpu = 00:02:56 ; elapsed = 00:01:55 . Memory (MB): peak = 1997.879 ; gain = 196.348
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 4.3977 %
-  Global Horizontal Routing Utilization  = 5.48757 %
+  Global Vertical Routing Utilization    = 4.28481 %
+  Global Horizontal Routing Utilization  = 5.43578 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -714,10 +719,10 @@ Router Utilization Summary
   Number of Node Overlaps             = 0
 
 Congestion Report
-North Dir 1x1 Area, Max Cong = 54.0541%, No Congested Regions.
-South Dir 1x1 Area, Max Cong = 63.964%, No Congested Regions.
-East Dir 1x1 Area, Max Cong = 60.2941%, No Congested Regions.
-West Dir 1x1 Area, Max Cong = 70.5882%, No Congested Regions.
+North Dir 1x1 Area, Max Cong = 63.0631%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 48.6486%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 67.6471%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 72.0588%, No Congested Regions.
 
 ------------------------------
 Reporting congestion hotspots
@@ -739,45 +744,45 @@ Direction: West
 Congested clusters found at Level 0
 Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
 
-Phase 7 Route finalize | Checksum: 1e5c8725e
+Phase 7 Route finalize | Checksum: 981d273e
 
-Time (s): cpu = 00:02:55 ; elapsed = 00:01:54 . Memory (MB): peak = 2003.902 ; gain = 191.961
+Time (s): cpu = 00:02:56 ; elapsed = 00:01:55 . Memory (MB): peak = 1997.879 ; gain = 196.348
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 1e5c8725e
+Phase 8 Verifying routed nets | Checksum: 981d273e
 
-Time (s): cpu = 00:02:55 ; elapsed = 00:01:54 . Memory (MB): peak = 2003.902 ; gain = 191.961
+Time (s): cpu = 00:02:57 ; elapsed = 00:01:56 . Memory (MB): peak = 1997.879 ; gain = 196.348
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 24ccf5673
+Phase 9 Depositing Routes | Checksum: a6a6d052
 
-Time (s): cpu = 00:02:57 ; elapsed = 00:01:56 . Memory (MB): peak = 2003.902 ; gain = 191.961
+Time (s): cpu = 00:02:58 ; elapsed = 00:01:58 . Memory (MB): peak = 1997.879 ; gain = 196.348
 
 Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=-1.436 | TNS=-1.436 | WHS=0.009  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-1.421 | TNS=-1.421 | WHS=0.021  | THS=0.000  |
 
 WARNING: [Route 35-328] Router estimated timing not met.
 Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
-Phase 10 Post Router Timing | Checksum: 24ccf5673
+Phase 10 Post Router Timing | Checksum: a6a6d052
 
-Time (s): cpu = 00:02:57 ; elapsed = 00:01:56 . Memory (MB): peak = 2003.902 ; gain = 191.961
+Time (s): cpu = 00:02:59 ; elapsed = 00:01:58 . Memory (MB): peak = 1997.879 ; gain = 196.348
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:02:57 ; elapsed = 00:01:56 . Memory (MB): peak = 2003.902 ; gain = 191.961
+Time (s): cpu = 00:02:59 ; elapsed = 00:01:58 . Memory (MB): peak = 1997.879 ; gain = 196.348
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-137 Infos, 32 Warnings, 1 Critical Warnings and 0 Errors encountered.
+143 Infos, 32 Warnings, 1 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:03:00 ; elapsed = 00:01:58 . Memory (MB): peak = 2003.902 ; gain = 201.992
+route_design: Time (s): cpu = 00:03:01 ; elapsed = 00:01:59 . Memory (MB): peak = 1997.879 ; gain = 196.348
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 2003.902 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 1997.879 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/impl_1/top_routed.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
 Command: report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
@@ -791,7 +796,7 @@ INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [DRC 23-133] Running Methodology with 2 threads
 INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/impl_1/top_methodology_drc_routed.rpt.
 report_methodology completed successfully
-report_methodology: Time (s): cpu = 00:01:27 ; elapsed = 00:01:09 . Memory (MB): peak = 2784.160 ; gain = 780.258
+report_methodology: Time (s): cpu = 00:01:28 ; elapsed = 00:01:10 . Memory (MB): peak = 2782.242 ; gain = 784.363
 INFO: [runtcl-4] Executing : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 Command: report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 INFO: [Timing 38-35] Done setting XDC timing constraints.
@@ -800,9 +805,9 @@ Running Vector-less Activity Propagation...
 Finished Running Vector-less Activity Propagation
 WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
 Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
-149 Infos, 33 Warnings, 1 Critical Warnings and 0 Errors encountered.
+155 Infos, 33 Warnings, 1 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
-report_power: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 2784.160 ; gain = 0.000
+report_power: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 2782.242 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_route_status -file top_route_status.rpt -pb top_route_status.pb
 INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file top_timing_summary_routed.rpt -pb top_timing_summary_routed.pb -rpx top_timing_summary_routed.rpx -warn_on_violation 
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
@@ -834,9 +839,9 @@ WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 
 WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 146 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is debuggerTop/mcu_ram/r_nes_read_data_reg[2]_0. Please evaluate your design. The cells in the loop are: debuggerTop/nes/cpu2A03/cpu6502/ir/FSM_sequential_r_state[0]_i_4, debuggerTop/nes/cpu2A03/cpu6502/ir/FSM_sequential_r_state[0]_i_5, debuggerTop/nes/cpu2A03/cpu6502/ir/FSM_sequential_r_state[0]_i_6, debuggerTop/nes/cpu2A03/cpu6502/ir/blockRam_i_27__1, debuggerTop/nes/cpu2A03/cpu6502/ir/blockRam_i_28__1, debuggerTop/nes/cpu2A03/cpu6502/ir/blockRam_i_29__1, debuggerTop/nes/cpu2A03/cpu6502/ir/blockRam_i_30__1, debuggerTop/nes/cpu2A03/cpu6502/ir/blockRam_i_40__0, debuggerTop/nes/cpu2A03/cpu6502/ir/blockRam_i_41, debuggerTop/nes/cpu2A03/cpu6502/ir/blockRam_i_42__0, debuggerTop/nes/cpu2A03/cpu6502/ir/blockRam_i_43__0, debuggerTop/nes/cpu2A03/cpu6502/ir/blockRam_i_45__0, debuggerTop/nes/cpu2A03/cpu6502/ir/r_address[0]_i_1, debuggerTop/nes/cpu2A03/cpu6502/ir/r_address[0]_i_1__0, debuggerTop/nes/cpu2A03/cpu6502/ir/r_address[0]_i_2... and (the first 15 of 146 listed).
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[12] (net: debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[12]) which is driven by a register (debuggerTop/debugger/r_mem_address_reg[12]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[12] (net: debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[12]) which is driven by a register (debuggerTop/debugger/r_mem_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[12] (net: debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[12]) which is driven by a register (debuggerTop/mcu_nametable/r_nes_write_address_reg[12]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[12] (net: debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[12]) which is driven by a register (debuggerTop/mcu_nametable/r_nes_write_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[12] (net: debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[12]) which is driven by a register (debuggerTop/nes/ppu/background/r_video_address_reg[12]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[12] (net: debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[12]) which is driven by a register (debuggerTop/nes/ppu/background/r_video_address_reg[13]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[12] (net: debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[12]) which is driven by a register (debuggerTop/nes/ppu/background/r_video_rd_n_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[12] (net: debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[12]) which is driven by a register (debuggerTop/nes/ppu/r_video_rd_n_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[12] (net: debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[12]) which is driven by a register (debuggerTop/nes/ppu/r_video_we_n_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[13] (net: debuggerTop/memory_nametable/blockRam/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[13]) which is driven by a register (debuggerTop/debugger/r_mem_address_reg[13]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
@@ -870,9 +875,9 @@ Creating bitstream...
 Writing bitstream ./top.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
-INFO: [Common 17-186] 'C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Mon May  2 14:40:24 2022. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2020.1/doc/webtalk_introduction.html.
+INFO: [Common 17-186] 'C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Sun May  8 14:26:55 2022. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2020.1/doc/webtalk_introduction.html.
 INFO: [Common 17-83] Releasing license: Implementation
-169 Infos, 63 Warnings, 2 Critical Warnings and 0 Errors encountered.
+175 Infos, 63 Warnings, 2 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:28 ; elapsed = 00:00:24 . Memory (MB): peak = 2784.160 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon May  2 14:40:24 2022...
+write_bitstream: Time (s): cpu = 00:00:31 ; elapsed = 00:00:26 . Memory (MB): peak = 2782.242 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun May  8 14:26:56 2022...

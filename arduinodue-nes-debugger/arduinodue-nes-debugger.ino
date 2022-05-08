@@ -4,8 +4,8 @@ int pin_spi_cs_n = 8;
 
 // choose which ROM to load
 //#define ROM_SUPERMARIO
-//#define ROM_DONKEYKONG
-#define ROM_NESTEST
+#define ROM_DONKEYKONG
+//#define ROM_NESTEST
 //#define ROM_INTEGRATIONTEST
 
 
@@ -422,7 +422,7 @@ void readProfiler() {
     int nes_visible = getBit(lo, 8);
     int cpu_sync = getBit(lo, 7);  
     char buffer[64];
-    sprintf(buffer, "profile: [%04d] sync_posedge [%d] sync [%d] nes_x [%03d] nes_y [%03d] cpu[%d] ppu[%d] nes[%d] cpu_sync[%d]\n", i, sync_posedge, sync, nes_x, nes_y, cpu_ce, ppu_ce, nes_ce, cpu_sync);
+    sprintf(buffer, "profile: [%04d] sync_posedge [%d] sync [%d] nes_x [%03d] nes_y [%03d] cpu[%d] ppu[%d] nes[%d] cpu_sync[%d]", i, sync_posedge, sync, nes_x, nes_y, cpu_ce, ppu_ce, nes_ce, cpu_sync);
     Serial.println(buffer);
   
     
