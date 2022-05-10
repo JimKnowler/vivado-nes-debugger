@@ -165,8 +165,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/jim/Documents/GitHub/personal/digilent-xdc/Arty-A7-100-Master.xdc
-set_property used_in_implementation false [get_files C:/Users/jim/Documents/GitHub/personal/digilent-xdc/Arty-A7-100-Master.xdc]
+read_xdc C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/Arty-A7-100-Master-NES.xdc
+set_property used_in_implementation false [get_files C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/Arty-A7-100-Master-NES.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

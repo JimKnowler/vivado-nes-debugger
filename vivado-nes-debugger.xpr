@@ -483,7 +483,7 @@
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
       <Filter Type="Constrs"/>
-      <File Path="$PPRDIR/../../digilent-xdc/Arty-A7-100-Master.xdc">
+      <File Path="$PSRCDIR/sources_1/new/Arty-A7-100-Master-NES.xdc">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

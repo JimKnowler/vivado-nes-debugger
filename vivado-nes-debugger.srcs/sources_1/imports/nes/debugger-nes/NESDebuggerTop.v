@@ -21,7 +21,12 @@ module NESDebuggerTop(
     output [7:0]    o_vga_green,
     output [7:0]    o_vga_blue,
     output          o_vga_hsync,
-    output          o_vga_vsync
+    output          o_vga_vsync,
+
+    // controller
+    output          o_controller_latch,
+    output          o_controller_clk,
+    input           i_controller_data
 );
 
 // reset for NES design
@@ -258,6 +263,11 @@ wire w_cpu_debug_clk_en;
 wire w_cpu_debug_sync;
 wire w_ppu_debug_clk_en;
 
+reg r_controller_latch;
+reg r_controller_clk;
+
+wire w_nes_controller_latch;
+wire w_nes_controller_clk;
 
 /* verilator lint_off PINMISSING */
 NES nes(
@@ -276,9 +286,9 @@ NES nes(
     .o_video_visible(w_nes_video_visible),
 
     // controller
-    // o_controller_latch           // TODO: register when cpu en, falling clock edge
-    // o_controller_clk             // TODO: register when cpu en, falling clock edge
-    .i_controller_1(1),             // 1 = not pressed
+    .o_controller_latch(w_nes_controller_latch), 
+    .o_controller_clk(w_nes_controller_clk),
+    .i_controller_1(i_controller_data),
 
     // CPU memory access - RAM
     .o_cs_ram(w_nes_ram_en),
@@ -316,6 +326,30 @@ NES nes(
     .o_ppu_debug_clk_en(w_ppu_debug_clk_en)
 );
 /* verilator lint_on PINMISSING */
+
+//
+// Controller - latch output pins
+//
+
+always @(negedge i_reset_n or negedge i_clk_5mhz)
+begin
+    if (!i_reset_n)
+    begin
+        r_controller_clk <= 0;
+        r_controller_latch <= 0;
+    end
+    else
+    begin
+        if (w_cpu_debug_clk_en)
+        begin
+            r_controller_clk <= w_nes_controller_clk;
+            r_controller_latch <= w_nes_controller_latch;
+        end
+    end
+end
+
+assign o_controller_latch = r_controller_latch;
+assign o_controller_clk = r_controller_clk;
 
 //
 // Values - control NES reset, profiler, and debugger memory access

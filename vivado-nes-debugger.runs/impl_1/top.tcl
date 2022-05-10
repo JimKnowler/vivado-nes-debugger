@@ -143,7 +143,7 @@ OPTRACE "add files" START { }
   read_ip -quiet C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci
   read_ip -quiet C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/ip/NESProfilerMemory/NESProfilerMemory.xci
 OPTRACE "read constraints: implementation" START { }
-  read_xdc C:/Users/jim/Documents/GitHub/personal/digilent-xdc/Arty-A7-100-Master.xdc
+  read_xdc C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/Arty-A7-100-Master-NES.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }

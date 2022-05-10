@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Sun May  8 19:22:02 2022
+| Date         : Sun May  8 19:48:52 2022
 | Host         : DESKTOP-H1KDTUU running 64-bit major release  (build 9200)
 | Command      : report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
 | Design       : top
@@ -58,21 +58,21 @@ Related violations: <none>
 
 LUTLP-1#1 Warning
 Combinatorial Loop Alert  
-146 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is debuggerTop/mcu_ram/r_nes_read_data_reg[2]_0. Please evaluate your design. The cells in the loop are: debuggerTop/nes/cpu2A03/cpu6502/ir/FSM_sequential_r_state[0]_i_4,
-debuggerTop/nes/cpu2A03/cpu6502/ir/FSM_sequential_r_state[0]_i_5,
-debuggerTop/nes/cpu2A03/cpu6502/ir/FSM_sequential_r_state[0]_i_6,
-debuggerTop/nes/cpu2A03/cpu6502/ir/blockRam_i_27__1,
+143 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is debuggerTop/mcu_ram/r_nes_read_data_reg[3]_0. Please evaluate your design. The cells in the loop are: debuggerTop/nes/cpu2A03/cpu6502/tcu/FSM_sequential_r_state[0]_i_4,
+debuggerTop/nes/cpu2A03/cpu6502/abh/FSM_sequential_r_state[0]_i_5,
+debuggerTop/nes/cpu2A03/cpu6502/ir/FSM_sequential_r_state[0]_i_8,
+debuggerTop/nes/cpu2A03/cpu6502/ir/blockRam_i_27__0,
+debuggerTop/nes/cpu2A03/cpu6502/tcu/blockRam_i_27__1,
 debuggerTop/nes/cpu2A03/cpu6502/ir/blockRam_i_28__1,
 debuggerTop/nes/cpu2A03/cpu6502/ir/blockRam_i_29__1,
-debuggerTop/nes/cpu2A03/cpu6502/ir/blockRam_i_30__1,
-debuggerTop/nes/cpu2A03/cpu6502/ir/blockRam_i_40__0,
-debuggerTop/nes/cpu2A03/cpu6502/ir/blockRam_i_41,
-debuggerTop/nes/cpu2A03/cpu6502/ir/blockRam_i_42__0,
-debuggerTop/nes/cpu2A03/cpu6502/ir/blockRam_i_43__0,
-debuggerTop/nes/cpu2A03/cpu6502/ir/blockRam_i_45__0,
-debuggerTop/nes/cpu2A03/cpu6502/ir/r_address[0]_i_1,
-debuggerTop/nes/cpu2A03/cpu6502/ir/r_address[0]_i_1__0,
-debuggerTop/nes/cpu2A03/cpu6502/ir/r_address[0]_i_2 (the first 15 of 146 listed).
+debuggerTop/nes/cpu2A03/cpu6502/tcu/blockRam_i_39,
+debuggerTop/nes/cpu2A03/cpu6502/tcu/blockRam_i_40,
+debuggerTop/nes/cpu2A03/cpu6502/tcu/blockRam_i_41,
+debuggerTop/nes/cpu2A03/cpu6502/ir/blockRam_i_42,
+debuggerTop/nes/cpu2A03/cpu6502/tcu/r_address[0]_i_1,
+debuggerTop/nes/cpu2A03/cpu6502/tcu/r_address[0]_i_1__0,
+debuggerTop/nes/cpu2A03/cpu6502/ir/r_address[0]_i_2,
+debuggerTop/nes/cpu2A03/cpu6502/dl/r_address[0]_i_3__0 (the first 15 of 143 listed).
 Related violations: <none>
 
 PLCK-12#1 Warning

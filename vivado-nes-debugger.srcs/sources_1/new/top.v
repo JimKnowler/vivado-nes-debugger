@@ -29,6 +29,11 @@ module top(
     input           i_spi_clk,      // SPI CLK: clock signal from controller
     output          o_spi_cipo,     // SPI CIPO: tri-state in top module: high-z when cs is positive
     input           i_spi_copi,     // SPI CPOI: only process when cs is negative
+
+    // Controller interface
+    output          ck_io5,         // latch
+    output          ck_io6,         // clk
+    input           ck_io7,         // data 
     
     // VGA interface
     output [3:0] o_vga_r,
@@ -68,7 +73,11 @@ clk_wiz_0 pll(
     .o_vga_green(w_vga_green),
     .o_vga_blue(w_vga_blue),
     .o_vga_hsync(o_vga_hs),
-    .o_vga_vsync(o_vga_vs)
+    .o_vga_vsync(o_vga_vs),
+
+    .o_controller_latch(ck_io5),
+    .o_controller_clk(ck_io6),
+    .i_controller_data(ck_io7)
  );
 
 assign o_vga_r = w_vga_red[7:4];
