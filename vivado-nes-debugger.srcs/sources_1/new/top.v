@@ -77,7 +77,7 @@ clk_wiz_0 pll(
 
     .o_controller_latch(ck_io5),
     .o_controller_clk(ck_io6),
-    .i_controller_data(ck_io7)
+    .i_controller_data(!ck_io7)
  );
 
 assign o_vga_r = w_vga_red[7:4];

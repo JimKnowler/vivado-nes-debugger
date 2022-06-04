@@ -348,7 +348,7 @@ begin
     end
 end
 
-assign o_controller_latch = r_controller_latch;
+assign o_controller_latch = !r_controller_latch;
 assign o_controller_clk = r_controller_clk;
 
 //

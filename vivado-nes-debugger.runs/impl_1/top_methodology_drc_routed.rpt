@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Sun May  8 19:53:41 2022
+| Date         : Sat Jun  4 10:12:09 2022
 | Host         : DESKTOP-H1KDTUU running 64-bit major release  (build 9200)
 | Command      : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
 | Design       : top
@@ -246,12 +246,12 @@ Related violations: <none>
 
 TIMING-16#1 Warning
 Large setup violation  
-There is a large setup violation of -1.470 ns between debuggerTop/video_output_sync/r_data_0_reg/C (clocked by o_clk_25mhz_clk_wiz_0_1) and debuggerTop/video_output_sync/r_data_1_reg/D (clocked by o_clk_5mhz_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.385 ns between debuggerTop/video_output_sync/r_data_0_reg/C (clocked by o_clk_25mhz_clk_wiz_0_1) and debuggerTop/video_output_sync/r_data_1_reg/D (clocked by o_clk_5mhz_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-23#1 Warning
 Combinational loop found  
-A timing loop has been detected on a combinational path. A timing arc has been disabled between debuggerTop/nes/cpu2A03/cpu6502/dor/r_oam[127][0]_i_1/I1 and debuggerTop/nes/cpu2A03/cpu6502/dor/r_oam[127][0]_i_1/O to disable the timing loop
+A timing loop has been detected on a combinational path. A timing arc has been disabled between debuggerTop/nes/cpu2A03/cpu6502/dor/r_oam[127][0]_i_1/I2 and debuggerTop/nes/cpu2A03/cpu6502/dor/r_oam[127][0]_i_1/O to disable the timing loop
 Related violations: <none>
 
 TIMING-38#1 Warning

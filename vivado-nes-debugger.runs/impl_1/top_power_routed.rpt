@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date             : Sun May  8 19:53:50 2022
+| Date             : Sat Jun  4 10:12:18 2022
 | Host             : DESKTOP-H1KDTUU running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -52,16 +52,16 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.013 |       10 |       --- |             --- |
-| Slice Logic             |     0.013 |    24605 |       --- |             --- |
-|   LUT as Logic          |     0.012 |     8114 |     63400 |           12.80 |
+| Clocks                  |     0.014 |       10 |       --- |             --- |
+| Slice Logic             |     0.013 |    24609 |       --- |             --- |
+|   LUT as Logic          |     0.012 |     8107 |     63400 |           12.79 |
 |   F7/F8 Muxes           |    <0.001 |     2435 |     63400 |            3.84 |
-|   Register              |    <0.001 |    12979 |    126800 |           10.24 |
+|   Register              |    <0.001 |    12980 |    126800 |           10.24 |
 |   CARRY4                |    <0.001 |       46 |     15850 |            0.29 |
 |   BUFG                  |    <0.001 |        1 |        32 |            3.13 |
 |   Others                |     0.000 |      144 |       --- |             --- |
 |   LUT as Shift Register |     0.000 |        3 |     19000 |            0.02 |
-| Signals                 |     0.021 |    17398 |       --- |             --- |
+| Signals                 |     0.021 |    17394 |       --- |             --- |
 | Block RAM               |     0.003 |     68.5 |       135 |           50.74 |
 | MMCM                    |     0.096 |        1 |         6 |           16.67 |
 | I/O                     |    <0.001 |       23 |       210 |           10.95 |
@@ -156,13 +156,13 @@ Table of Contents
 |   debuggerTop     |     0.050 |
 |     memory_prg    |     0.001 |
 |       blockRam    |     0.001 |
-|     memory_ram    |     0.001 |
-|       blockRam    |     0.001 |
+|     memory_ram    |     0.002 |
+|       blockRam    |     0.002 |
 |     nes           |     0.014 |
 |       cpu2A03     |     0.004 |
 |       ppu         |     0.010 |
 |     vga_generator |     0.004 |
-|     video_fifo    |     0.015 |
+|     video_fifo    |     0.014 |
 |       fifo_ip     |     0.011 |
 |     video_output  |     0.013 |
 |   pll             |     0.096 |
