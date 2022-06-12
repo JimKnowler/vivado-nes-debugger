@@ -331,18 +331,40 @@ NES nes(
 // Controller - latch output pins
 //
 
+// counter used to hold the clk signal low slightly longer
+//  for compatibility with external hardware
+reg [7:0] r_controller_clk_counter;
+
 always @(negedge i_reset_n or negedge i_clk_5mhz)
 begin
     if (!i_reset_n)
     begin
         r_controller_clk <= 0;
         r_controller_latch <= 0;
+        r_controller_clk_counter <= 0;
     end
     else
     begin
         if (w_cpu_debug_clk_en)
         begin
-            r_controller_clk <= w_nes_controller_clk;
+            // hold clk signal low with counter
+            if (w_nes_controller_clk == 0)
+            begin
+                r_controller_clk <= 0;
+                r_controller_clk_counter <= 6;                          // 3 x 5mhz clock cycles ~= 1 x 1.6 mhz clock cycle
+            end
+            else
+            begin
+                if (r_controller_clk_counter == 0)
+                begin
+                    r_controller_clk <= 1;
+                end
+                else
+                begin
+                    r_controller_clk_counter <= r_controller_clk_counter - 1;
+                end
+            end
+
             r_controller_latch <= w_nes_controller_latch;
         end
     end

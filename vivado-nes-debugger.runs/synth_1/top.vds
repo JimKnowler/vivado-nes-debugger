@@ -2,8 +2,8 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Sat Jun  4 10:02:26 2022
-# Process ID: 16204
+# Start of session at: Sun Jun 12 12:23:05 2022
+# Process ID: 12108
 # Current directory: C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/synth_1/top.vds
@@ -17,13 +17,13 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 12156
+INFO: [Synth 8-7075] Helper process launched with PID 12852
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1013.422 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1013.637 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/synth_1/.Xil/Vivado-16204-DESKTOP-H1KDTUU/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/synth_1/.Xil/Vivado-16204-DESKTOP-H1KDTUU/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/synth_1/.Xil/Vivado-12108-DESKTOP-H1KDTUU/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/synth_1/.Xil/Vivado-12108-DESKTOP-H1KDTUU/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'NESDebuggerTop' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:8]
 	Parameter RW_WRITE bound to: 0 - type: integer 
 	Parameter RW_READ bound to: 1 - type: integer 
@@ -371,8 +371,8 @@ INFO: [Synth 8-6157] synthesizing module 'NESDebuggerMCU' [C:/Users/jim/Document
 	Parameter RW_WRITE bound to: 0 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'NESDebuggerMCU' (39#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerMCU.v:1]
 INFO: [Synth 8-6157] synthesizing module 'Memory' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-common/hardware/Memory.v:4]
-INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/synth_1/.Xil/Vivado-16204-DESKTOP-H1KDTUU/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (40#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/synth_1/.Xil/Vivado-16204-DESKTOP-H1KDTUU/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/synth_1/.Xil/Vivado-12108-DESKTOP-H1KDTUU/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (40#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/synth_1/.Xil/Vivado-12108-DESKTOP-H1KDTUU/realtime/blk_mem_gen_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'Memory' (41#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-common/hardware/Memory.v:4]
 INFO: [Synth 8-6157] synthesizing module 'VGAGenerator' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/ppu/vga/VGAGenerator.v:7]
 	Parameter WIDTH bound to: 800 - type: integer 
@@ -394,8 +394,8 @@ INFO: [Synth 8-6157] synthesizing module 'VGAOutput' [C:/Users/jim/Documents/Git
 	Parameter RGB_BITWIDTH bound to: 8 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'VGAOutput' (43#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/ppu/vga/VGAOutput.v:8]
 INFO: [Synth 8-6157] synthesizing module 'FIFO' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/hardware/FIFO.v:7]
-INFO: [Synth 8-6157] synthesizing module 'fifo_generator_0' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/synth_1/.Xil/Vivado-16204-DESKTOP-H1KDTUU/realtime/fifo_generator_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_0' (44#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/synth_1/.Xil/Vivado-16204-DESKTOP-H1KDTUU/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_0' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/synth_1/.Xil/Vivado-12108-DESKTOP-H1KDTUU/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_0' (44#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/synth_1/.Xil/Vivado-12108-DESKTOP-H1KDTUU/realtime/fifo_generator_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'FIFO' (45#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/hardware/FIFO.v:7]
 INFO: [Synth 8-6157] synthesizing module 'VideoOutput' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/nes/VideoOutput.v:1]
 	Parameter PIXEL_BITWIDTH bound to: 11 - type: integer 
@@ -404,33 +404,33 @@ INFO: [Synth 8-6157] synthesizing module 'VideoOutput' [C:/Users/jim/Documents/G
 	Parameter NES_VISIBLE_WIDTH bound to: 9'b011111111 
 	Parameter VGA_VISIBLE_WIDTH bound to: 11'b00111111110 
 INFO: [Synth 8-6155] done synthesizing module 'VideoOutput' (46#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/nes/VideoOutput.v:1]
-WARNING: [Synth 8-7071] port 'o_debug_linebuffer_read' of module 'VideoOutput' is unconnected for instance 'video_output' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:646]
-WARNING: [Synth 8-7071] port 'o_debug_linebuffer_write' of module 'VideoOutput' is unconnected for instance 'video_output' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:646]
-WARNING: [Synth 8-7071] port 'o_debug_linebuffer_read_count' of module 'VideoOutput' is unconnected for instance 'video_output' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:646]
-WARNING: [Synth 8-7071] port 'o_debug_vga_visible' of module 'VideoOutput' is unconnected for instance 'video_output' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:646]
-WARNING: [Synth 8-7023] instance 'video_output' of module 'VideoOutput' has 14 connections declared, but only 10 given [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:646]
+WARNING: [Synth 8-7071] port 'o_debug_linebuffer_read' of module 'VideoOutput' is unconnected for instance 'video_output' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:668]
+WARNING: [Synth 8-7071] port 'o_debug_linebuffer_write' of module 'VideoOutput' is unconnected for instance 'video_output' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:668]
+WARNING: [Synth 8-7071] port 'o_debug_linebuffer_read_count' of module 'VideoOutput' is unconnected for instance 'video_output' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:668]
+WARNING: [Synth 8-7071] port 'o_debug_vga_visible' of module 'VideoOutput' is unconnected for instance 'video_output' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:668]
+WARNING: [Synth 8-7023] instance 'video_output' of module 'VideoOutput' has 14 connections declared, but only 10 given [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:668]
 INFO: [Synth 8-6157] synthesizing module 'Sync' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-common/Sync.v:7]
 INFO: [Synth 8-6155] done synthesizing module 'Sync' (47#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-common/Sync.v:7]
 INFO: [Synth 8-6157] synthesizing module 'NESProfiler' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESProfiler.v:1]
 	Parameter MAX_NUM_SAMPLES bound to: 4096 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'NESProfilerMemory' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/synth_1/.Xil/Vivado-16204-DESKTOP-H1KDTUU/realtime/NESProfilerMemory_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'NESProfilerMemory' (48#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/synth_1/.Xil/Vivado-16204-DESKTOP-H1KDTUU/realtime/NESProfilerMemory_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'NESProfilerMemory' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/synth_1/.Xil/Vivado-12108-DESKTOP-H1KDTUU/realtime/NESProfilerMemory_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'NESProfilerMemory' (48#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/synth_1/.Xil/Vivado-12108-DESKTOP-H1KDTUU/realtime/NESProfilerMemory_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'NESProfiler' (49#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESProfiler.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'NESDebuggerTop' (50#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:8]
 INFO: [Synth 8-6155] done synthesizing module 'top' (51#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1290.566 ; gain = 277.145
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1289.789 ; gain = 276.152
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1290.566 ; gain = 277.145
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1289.789 ; gain = 276.152
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1290.566 ; gain = 277.145
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1289.789 ; gain = 276.152
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.424 . Memory (MB): peak = 1290.566 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.429 . Memory (MB): peak = 1289.789 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -463,20 +463,20 @@ Parsing XDC File [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debug
 Finished Parsing XDC File [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1318.227 ; gain = 0.148
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1314.277 ; gain = 0.148
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.189 . Memory (MB): peak = 1318.227 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.206 . Memory (MB): peak = 1314.277 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1318.895 ; gain = 305.473
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1314.898 ; gain = 301.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1318.895 ; gain = 305.473
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1314.898 ; gain = 301.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -491,7 +491,7 @@ Applied set_property DONT_TOUCH = true for debuggerTop/memory_nametable/blockRam
 Applied set_property DONT_TOUCH = true for debuggerTop/video_fifo/fifo_ip. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for debuggerTop/profiler/memory. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1318.895 ; gain = 305.473
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1314.898 ; gain = 301.262
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'r_state_reg' in module 'Cpu2A03'
 ---------------------------------------------------------------------------------------------------
@@ -504,7 +504,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'r_state_reg' in module 'Cpu
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'r_state_reg' using encoding 'sequential' in module 'Cpu2A03'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1318.895 ; gain = 305.473
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1314.898 ; gain = 301.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -517,7 +517,7 @@ Detailed RTL Component Info :
 	   2 Input   11 Bit       Adders := 2     
 	   2 Input   10 Bit       Adders := 2     
 	   2 Input    9 Bit       Adders := 3     
-	   2 Input    8 Bit       Adders := 13    
+	   2 Input    8 Bit       Adders := 14    
 	   2 Input    5 Bit       Adders := 3     
 	   2 Input    4 Bit       Adders := 1     
 	   2 Input    3 Bit       Adders := 7     
@@ -535,7 +535,7 @@ Detailed RTL Component Info :
 	               14 Bit    Registers := 3     
 	               11 Bit    Registers := 2     
 	                9 Bit    Registers := 2     
-	                8 Bit    Registers := 399   
+	                8 Bit    Registers := 400   
 	                7 Bit    Registers := 1     
 	                5 Bit    Registers := 2     
 	                4 Bit    Registers := 1     
@@ -555,7 +555,7 @@ Detailed RTL Component Info :
 	   2 Input   14 Bit        Muxes := 3     
 	   2 Input   11 Bit        Muxes := 2     
 	   2 Input    9 Bit        Muxes := 2     
-	   2 Input    8 Bit        Muxes := 133   
+	   2 Input    8 Bit        Muxes := 134   
 	   4 Input    8 Bit        Muxes := 3     
 	   3 Input    8 Bit        Muxes := 4     
 	   6 Input    8 Bit        Muxes := 1     
@@ -578,11 +578,11 @@ Detailed RTL Component Info :
 	  18 Input    2 Bit        Muxes := 3     
 	   7 Input    2 Bit        Muxes := 7     
 	   4 Input    2 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 2071  
+	   2 Input    1 Bit        Muxes := 2073  
 	   4 Input    1 Bit        Muxes := 33    
 	   6 Input    1 Bit        Muxes := 48    
 	   7 Input    1 Bit        Muxes := 296   
-	   3 Input    1 Bit        Muxes := 104   
+	   3 Input    1 Bit        Muxes := 105   
 	  20 Input    1 Bit        Muxes := 1     
 	  19 Input    1 Bit        Muxes := 3     
 	   5 Input    1 Bit        Muxes := 34    
@@ -610,7 +610,7 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:34 ; elapsed = 00:02:38 . Memory (MB): peak = 1528.648 ; gain = 515.227
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:33 ; elapsed = 00:02:35 . Memory (MB): peak = 1531.031 ; gain = 517.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -635,12 +635,12 @@ Finished ROM, RAM, DSP and Shift Register Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:41 ; elapsed = 00:02:45 . Memory (MB): peak = 1528.648 ; gain = 515.227
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:39 ; elapsed = 00:02:42 . Memory (MB): peak = 1531.031 ; gain = 517.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
-      : debuggerTopi_2_4/nes/i_2_11/I1967[5]
+      : debuggerTopi_2_4/nes/i_2_11/I1968[5]
       : debuggerTopi_2_4/nes/ppu/o_data[5]
       : debuggerTopi_2_4/nes/ppu/i_2_6/o_data[5]
       : debuggerTopi_2_4/nes/ppu/i_2_6/i_rs[2]
@@ -648,277 +648,258 @@ Start Timing Optimization
       : debuggerTopi_2_4/nes/i_2_11/o_rs_ppu[2]
 WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing debuggerTopi_2_4/nes/i_2_11/i_2_1434 -from I1 -to O'
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:43 ; elapsed = 00:02:47 . Memory (MB): peak = 1528.648 ; gain = 515.227
+Finished Timing Optimization : Time (s): cpu = 00:02:41 ; elapsed = 00:02:44 . Memory (MB): peak = 1531.031 ; gain = 517.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing debuggerTopi_2_4/i_2_10881 -from I0 -to O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing debuggerTopi_2_4/i_2_10916 -from I0 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing debuggerTopi_2_4/i_2_10882 -from I0 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing debuggerTopi_2_4/i_2_10917 -from I0 -to O'
 Found timing loop:
-     0: i_2_10936/O (LUT4)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:402]
-     1: i_2_10936/I0 (LUT4)
-     2: i_2_10686/O (LUT2)
+     0: i_2_9795/O (LUT4)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     3: i_2_10686/I0 (LUT2)
-     4: i_2_10621/O (LUT3)
+     1: i_2_9795/I0 (LUT4)
+     2: i_2_9797/O (LUT3)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     5: i_2_10621/I2 (LUT3)
-     6: i_2_10685/O (LUT3)
+     3: i_2_9797/I2 (LUT3)
+     4: i_2_9798/O (LUT6)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     7: i_2_10685/I1 (LUT3)
-     8: i_2_9748/O (LUT3)
+     5: i_2_9798/I5 (LUT6)
+     6: i_2_9800/O (LUT6)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     9: i_2_9748/I2 (LUT3)
-    10: i_2_9749/O (LUT5)
+     7: i_2_9800/I2 (LUT6)
+     8: i_2_9802/O (LUT5)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    11: i_2_9749/I0 (LUT5)
-    12: i_2_10684/O (LUT3)
+     9: i_2_9802/I3 (LUT5)
+    10: i_2_10627/O (LUT6)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    13: i_2_10684/I1 (LUT3)
-    14: i_2_9722/O (LUT2)
+    11: i_2_10627/I5 (LUT6)
+    12: i_2_10690/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    15: i_2_9722/I1 (LUT2)
-    16: i_2_9723/O (LUT6)
+    13: i_2_10690/I1 (LUT2)
+    14: i_2_9641/O (LUT6)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    17: i_2_9723/I4 (LUT6)
-    18: i_2_10676/O (LUT2)
+    15: i_2_9641/I5 (LUT6)
+    16: i_2_9642/O (LUT5)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    19: i_2_10676/I1 (LUT2)
-    20: debuggerTopi_2_11062/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:63]
-    21: debuggerTopi_2_11062/I1 (LUT2)
-    22: i_2_9803/O (LUT6)
+    17: i_2_9642/I3 (LUT5)
+    18: i_2_8055/O (LUT5)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/ppu/PPU.v:145]
+    19: i_2_8055/I4 (LUT5)
+    20: i_2_10699/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    23: i_2_9803/I5 (LUT6)
-    24: i_2_10693/O (LUT2)
+    21: i_2_10699/I1 (LUT2)
+    22: i_2_9795/O (LUT4)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    25: i_2_10693/I1 (LUT2)
-    26: i_2_9726/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    27: i_2_9726/I0 (LUT2)
-    28: i_2_9728/O (LUT3)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    29: i_2_9728/I2 (LUT3)
-    30: i_2_9729/O (LUT5)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    31: i_2_9729/I0 (LUT5)
-    32: i_2_10691/O (LUT3)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    33: i_2_10691/I1 (LUT3)
-    34: i_2_9716/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    35: i_2_9716/I1 (LUT2)
-    36: debuggerTopi_2_11039/O (LUT6)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:63]
-    37: debuggerTopi_2_11039/I5 (LUT6)
-    38: o_nes_data_inferredi_2_10740/O (LUT6)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerMCU.v:42]
-    39: o_nes_data_inferredi_2_10740/I4 (LUT6)
-    40: i_2_10936/O (LUT4)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:402]
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Inferred a: "set_disable_timing -from I0 -to O i_2_10936"
+Inferred a: "set_disable_timing -from I0 -to O i_2_9795"
 Found timing loop:
-     0: i_2_10686/O (LUT2)
+     0: i_2_10687/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10686/I0 (LUT2)
-     2: i_2_10621/O (LUT3)
+     1: i_2_10687/I0 (LUT2)
+     2: i_2_10622/O (LUT3)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     3: i_2_10621/I2 (LUT3)
-     4: i_2_10685/O (LUT3)
+     3: i_2_10622/I2 (LUT3)
+     4: i_2_10686/O (LUT3)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     5: i_2_10685/I1 (LUT3)
+     5: i_2_10686/I1 (LUT3)
      6: i_2_9748/O (LUT3)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
      7: i_2_9748/I2 (LUT3)
      8: i_2_9749/O (LUT5)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
      9: i_2_9749/I0 (LUT5)
-    10: i_2_10684/O (LUT3)
+    10: i_2_10685/O (LUT3)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    11: i_2_10684/I1 (LUT3)
-    12: i_2_9722/O (LUT2)
+    11: i_2_10685/I1 (LUT3)
+    12: i_2_9723/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    13: i_2_9722/I1 (LUT2)
-    14: i_2_9723/O (LUT6)
+    13: i_2_9723/I1 (LUT2)
+    14: i_2_9724/O (LUT6)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    15: i_2_9723/I4 (LUT6)
-    16: i_2_10676/O (LUT2)
+    15: i_2_9724/I4 (LUT6)
+    16: i_2_10677/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    17: i_2_10676/I1 (LUT2)
-    18: debuggerTopi_2_11062/O (LUT2)
+    17: i_2_10677/I1 (LUT2)
+    18: debuggerTopi_2_11078/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:63]
-    19: debuggerTopi_2_11062/I1 (LUT2)
+    19: debuggerTopi_2_11078/I1 (LUT2)
     20: i_2_9803/O (LUT6)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
     21: i_2_9803/I5 (LUT6)
-    22: i_2_10693/O (LUT2)
+    22: i_2_10694/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    23: i_2_10693/I1 (LUT2)
-    24: i_2_9726/O (LUT2)
+    23: i_2_10694/I1 (LUT2)
+    24: i_2_9727/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    25: i_2_9726/I0 (LUT2)
-    26: i_2_9728/O (LUT3)
+    25: i_2_9727/I0 (LUT2)
+    26: i_2_9729/O (LUT3)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    27: i_2_9728/I2 (LUT3)
-    28: i_2_9729/O (LUT5)
+    27: i_2_9729/I2 (LUT3)
+    28: i_2_9730/O (LUT5)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    29: i_2_9729/I0 (LUT5)
-    30: i_2_10691/O (LUT3)
+    29: i_2_9730/I0 (LUT5)
+    30: i_2_10692/O (LUT3)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    31: i_2_10691/I1 (LUT3)
-    32: i_2_9716/O (LUT2)
+    31: i_2_10692/I1 (LUT3)
+    32: i_2_9717/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    33: i_2_9716/I1 (LUT2)
-    34: debuggerTopi_2_11039/O (LUT6)
+    33: i_2_9717/I1 (LUT2)
+    34: debuggerTopi_2_11055/O (LUT6)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:63]
-    35: debuggerTopi_2_11039/I4 (LUT6)
-    36: i_2_10687/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    37: i_2_10687/I1 (LUT2)
-    38: i_2_10686/O (LUT2)
+    35: debuggerTopi_2_11055/I5 (LUT6)
+    36: o_nes_data_inferredi_2_10741/O (LUT6)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerMCU.v:42]
+    37: o_nes_data_inferredi_2_10741/I4 (LUT6)
+    38: i_2_10942/O (LUT4)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:351]
+    39: i_2_10942/I0 (LUT4)
+    40: i_2_10687/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Inferred a: "set_disable_timing -from I0 -to O i_2_10686"
+Inferred a: "set_disable_timing -from I0 -to O i_2_10687"
 Found timing loop:
-     0: i_2_10693/O (LUT2)
+     0: i_2_10687/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10693/I1 (LUT2)
-     2: i_2_9726/O (LUT2)
+     1: i_2_10687/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Found timing loop:
+     0: i_2_10694/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     3: i_2_9726/I0 (LUT2)
-     4: i_2_9728/O (LUT3)
+     1: i_2_10694/I1 (LUT2)
+     2: i_2_9727/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     5: i_2_9728/I2 (LUT3)
-     6: i_2_9729/O (LUT5)
+     3: i_2_9727/I0 (LUT2)
+     4: i_2_9729/O (LUT3)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     7: i_2_9729/I0 (LUT5)
-     8: i_2_10691/O (LUT3)
+     5: i_2_9729/I2 (LUT3)
+     6: i_2_9730/O (LUT5)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     9: i_2_10691/I1 (LUT3)
-    10: i_2_9716/O (LUT2)
+     7: i_2_9730/I0 (LUT5)
+     8: i_2_10692/O (LUT3)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    11: i_2_9716/I1 (LUT2)
-    12: debuggerTopi_2_11039/O (LUT6)
+     9: i_2_10692/I1 (LUT3)
+    10: i_2_9717/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+    11: i_2_9717/I1 (LUT2)
+    12: debuggerTopi_2_11055/O (LUT6)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:63]
-    13: debuggerTopi_2_11039/I3 (LUT6)
-    14: i_2_9719/O (LUT6)
+    13: debuggerTopi_2_11055/I3 (LUT6)
+    14: i_2_9720/O (LUT6)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    15: i_2_9719/I5 (LUT6)
-    16: i_2_10682/O (LUT2)
+    15: i_2_9720/I5 (LUT6)
+    16: i_2_10683/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    17: i_2_10682/I1 (LUT2)
-    18: i_2_10622/O (LUT4)
+    17: i_2_10683/I1 (LUT2)
+    18: i_2_10623/O (LUT4)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    19: i_2_10622/I0 (LUT4)
-    20: i_2_10681/O (LUT3)
+    19: i_2_10623/I0 (LUT4)
+    20: i_2_10682/O (LUT3)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    21: i_2_10681/I1 (LUT3)
+    21: i_2_10682/I1 (LUT3)
     22: i_2_9752/O (LUT3)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
     23: i_2_9752/I2 (LUT3)
     24: i_2_9753/O (LUT5)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
     25: i_2_9753/I0 (LUT5)
-    26: i_2_10680/O (LUT3)
+    26: i_2_10681/O (LUT3)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    27: i_2_10680/I1 (LUT3)
-    28: i_2_9712/O (LUT2)
+    27: i_2_10681/I1 (LUT3)
+    28: i_2_9713/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    29: i_2_9712/I1 (LUT2)
-    30: i_2_9713/O (LUT6)
+    29: i_2_9713/I1 (LUT2)
+    30: i_2_9714/O (LUT6)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    31: i_2_9713/I5 (LUT6)
-    32: i_2_10679/O (LUT2)
+    31: i_2_9714/I5 (LUT6)
+    32: i_2_10680/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    33: i_2_10679/I1 (LUT2)
+    33: i_2_10680/I1 (LUT2)
     34: i_2_9810/O (LUT6)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
     35: i_2_9810/I5 (LUT6)
-    36: i_2_10693/O (LUT2)
+    36: i_2_10694/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Inferred a: "set_disable_timing -from I1 -to O i_2_10693"
+Inferred a: "set_disable_timing -from I1 -to O i_2_10694"
 Found timing loop:
-     0: i_2_10680/O (LUT3)
+     0: i_2_10681/O (LUT3)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10680/I1 (LUT3)
-     2: i_2_9712/O (LUT2)
+     1: i_2_10681/I1 (LUT3)
+     2: i_2_9713/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     3: i_2_9712/I1 (LUT2)
-     4: i_2_9713/O (LUT6)
+     3: i_2_9713/I1 (LUT2)
+     4: i_2_9714/O (LUT6)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     5: i_2_9713/I5 (LUT6)
-     6: i_2_10679/O (LUT2)
+     5: i_2_9714/I5 (LUT6)
+     6: i_2_10680/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     7: i_2_10679/I1 (LUT2)
+     7: i_2_10680/I1 (LUT2)
      8: i_2_9810/O (LUT6)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
      9: i_2_9810/I5 (LUT6)
-    10: i_2_10693/O (LUT2)
+    10: i_2_10694/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    11: i_2_10693/O (LUT2)
+    11: i_2_10694/O (LUT2)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Inferred a: "set_disable_timing -from I1 -to O i_2_10680"
+Inferred a: "set_disable_timing -from I1 -to O i_2_10681"
 Found timing loop:
-     0: i_2_10684/O (LUT3)
+     0: i_2_10685/O (LUT3)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10684/I1 (LUT3)
-     2: i_2_9722/O (LUT2)
+     1: i_2_10685/I1 (LUT3)
+     2: i_2_9723/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     3: i_2_9722/I1 (LUT2)
-     4: i_2_9723/O (LUT6)
+     3: i_2_9723/I1 (LUT2)
+     4: i_2_9724/O (LUT6)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     5: i_2_9723/I4 (LUT6)
-     6: i_2_10676/O (LUT2)
+     5: i_2_9724/I4 (LUT6)
+     6: i_2_10677/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     7: i_2_10676/I1 (LUT2)
-     8: debuggerTopi_2_11062/O (LUT2)
+     7: i_2_10677/I1 (LUT2)
+     8: debuggerTopi_2_11078/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:63]
-     9: debuggerTopi_2_11062/I1 (LUT2)
+     9: debuggerTopi_2_11078/I1 (LUT2)
     10: i_2_9803/O (LUT6)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
     11: i_2_9803/I5 (LUT6)
-    12: i_2_10693/O (LUT2)
+    12: i_2_10694/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    13: i_2_10693/O (LUT2)
+    13: i_2_10694/O (LUT2)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Inferred a: "set_disable_timing -from I1 -to O i_2_10684"
+Inferred a: "set_disable_timing -from I1 -to O i_2_10685"
 Found timing loop:
-     0: i_2_10691/O (LUT3)
+     0: i_2_10692/O (LUT3)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10691/I1 (LUT3)
-     2: i_2_9716/O (LUT2)
+     1: i_2_10692/I1 (LUT3)
+     2: i_2_9717/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     3: i_2_9716/I1 (LUT2)
-     4: debuggerTopi_2_11039/O (LUT6)
+     3: i_2_9717/I1 (LUT2)
+     4: debuggerTopi_2_11055/O (LUT6)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:63]
-     5: debuggerTopi_2_11039/I3 (LUT6)
-     6: i_2_9719/O (LUT6)
+     5: debuggerTopi_2_11055/I3 (LUT6)
+     6: i_2_9720/O (LUT6)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     7: i_2_9719/I5 (LUT6)
-     8: i_2_10682/O (LUT2)
+     7: i_2_9720/I5 (LUT6)
+     8: i_2_10683/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     9: i_2_10682/I1 (LUT2)
-    10: i_2_10622/O (LUT4)
+     9: i_2_10683/I1 (LUT2)
+    10: i_2_10623/O (LUT4)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    11: i_2_10622/I0 (LUT4)
-    12: i_2_10681/O (LUT3)
+    11: i_2_10623/I0 (LUT4)
+    12: i_2_10682/O (LUT3)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    13: i_2_10681/I1 (LUT3)
+    13: i_2_10682/I1 (LUT3)
     14: i_2_9752/O (LUT3)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
     15: i_2_9752/I2 (LUT3)
     16: i_2_9753/O (LUT5)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
     17: i_2_9753/I0 (LUT5)
-    18: i_2_10680/O (LUT3)
+    18: i_2_10681/O (LUT3)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    19: i_2_10680/O (LUT3)
+    19: i_2_10681/O (LUT3)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Inferred a: "set_disable_timing -from I1 -to O i_2_10691"
+Inferred a: "set_disable_timing -from I1 -to O i_2_10692"
 Found timing loop:
      0: i_2_9797/O (LUT3)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
@@ -932,12 +913,12 @@ Found timing loop:
      6: i_2_9802/O (LUT5)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
      7: i_2_9802/I3 (LUT5)
-     8: i_2_10626/O (LUT6)
+     8: i_2_10627/O (LUT6)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     9: i_2_10626/I5 (LUT6)
-    10: i_2_10689/O (LUT2)
+     9: i_2_10627/I5 (LUT6)
+    10: i_2_10690/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    11: i_2_10689/I1 (LUT2)
+    11: i_2_10690/I1 (LUT2)
     12: i_2_9641/O (LUT6)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
     13: i_2_9641/I5 (LUT6)
@@ -947,125 +928,172 @@ Found timing loop:
     16: i_2_8055/O (LUT5)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/ppu/PPU.v:145]
     17: i_2_8055/I4 (LUT5)
-    18: i_2_10698/O (LUT2)
+    18: i_2_10699/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    19: i_2_10698/I1 (LUT2)
+    19: i_2_10699/I1 (LUT2)
     20: i_2_9795/O (LUT4)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    21: i_2_9795/I0 (LUT4)
-    22: i_2_9797/O (LUT3)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+    21: i_2_9795/O (LUT4)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
 Inferred a: "set_disable_timing -from I2 -to O i_2_9797"
 Found timing loop:
-     0: i_2_10686/O (LUT2)
+     0: i_2_9827/O (LUT4)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10686/O (LUT2)
+     1: i_2_9827/I3 (LUT4)
+     2: i_2_9828/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     3: i_2_9828/I1 (LUT2)
+     4: i_2_10626/O (LUT6)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     5: i_2_10626/I5 (LUT6)
+     6: i_2_10689/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     7: i_2_10689/I1 (LUT2)
+     8: i_2_9806/O (LUT5)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     9: i_2_9806/I4 (LUT5)
+    10: i_2_10684/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+    11: i_2_10684/I1 (LUT2)
+    12: i_2_9710/O (LUT6)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+    13: i_2_9710/I4 (LUT6)
+    14: i_2_10697/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+    15: i_2_10697/I1 (LUT2)
+    16: i_2_9754/O (LUT5)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+    17: i_2_9754/I4 (LUT5)
+    18: i_2_9755/O (LUT4)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+    19: i_2_9755/I0 (LUT4)
+    20: i_2_9757/O (LUT3)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+    21: i_2_9757/I1 (LUT3)
+    22: i_2_9759/O (LUT3)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+    23: i_2_9759/I2 (LUT3)
+    24: i_2_9760/O (LUT5)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+    25: i_2_9760/I0 (LUT5)
+    26: i_2_9827/O (LUT4)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I3 -to O i_2_9827"
+Found timing loop:
+     0: i_2_9827/O (LUT4)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_9827/O (LUT4)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
 Found timing loop:
-     0: i_2_10693/O (LUT2)
+     0: i_2_10682/O (LUT3)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10693/O (LUT2)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Found timing loop:
-     0: i_2_10682/O (LUT2)
+     1: i_2_10682/I1 (LUT3)
+     2: i_2_9752/O (LUT3)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10682/I1 (LUT2)
-     2: i_2_10622/O (LUT4)
+     3: i_2_9752/I2 (LUT3)
+     4: i_2_9753/O (LUT5)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     3: i_2_10622/I0 (LUT4)
-     4: i_2_10681/O (LUT3)
+     5: i_2_9753/I0 (LUT5)
+     6: i_2_10681/O (LUT3)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     5: i_2_10681/I1 (LUT3)
-     6: i_2_9752/O (LUT3)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     7: i_2_9752/I2 (LUT3)
-     8: i_2_9753/O (LUT5)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     9: i_2_9753/I0 (LUT5)
-    10: i_2_10680/O (LUT3)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    11: i_2_10680/O (LUT3)
+     7: i_2_10681/O (LUT3)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
 Inferred a: "set_disable_timing -from I1 -to O i_2_10682"
-Found timing loop:
-     0: i_2_10682/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10682/O (LUT2)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Found timing loop:
-     0: i_2_10686/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10686/O (LUT2)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
 Found timing loop:
      0: i_2_10696/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
      1: i_2_10696/I1 (LUT2)
-     2: i_2_9754/O (LUT5)
+     2: debuggerTopi_2_11232/O (LUT4)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:63]
+     3: debuggerTopi_2_11232/I0 (LUT4)
+     4: i_2_10687/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     3: i_2_9754/I4 (LUT5)
-     4: i_2_9755/O (LUT4)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     5: i_2_9755/I0 (LUT4)
-     6: i_2_9757/O (LUT3)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     7: i_2_9757/I1 (LUT3)
-     8: i_2_9759/O (LUT3)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     9: i_2_9759/I2 (LUT3)
-    10: i_2_9760/O (LUT5)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    11: i_2_9760/I0 (LUT5)
-    12: i_2_9827/O (LUT4)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    13: i_2_9827/I3 (LUT4)
-    14: i_2_9828/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    15: i_2_9828/I1 (LUT2)
-    16: i_2_10625/O (LUT6)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    17: i_2_10625/I5 (LUT6)
-    18: i_2_10688/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    19: i_2_10688/I1 (LUT2)
-    20: i_2_9806/O (LUT5)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    21: i_2_9806/I4 (LUT5)
-    22: i_2_10683/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    23: i_2_10683/I1 (LUT2)
-    24: i_2_9709/O (LUT6)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    25: i_2_9709/I4 (LUT6)
-    26: i_2_10696/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     5: i_2_10687/O (LUT2)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
 Inferred a: "set_disable_timing -from I1 -to O i_2_10696"
 Found timing loop:
-     0: i_2_10682/O (LUT2)
+     0: i_2_10683/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10682/O (LUT2)
+     1: i_2_10683/I1 (LUT2)
+     2: i_2_10623/O (LUT4)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     3: i_2_10623/I0 (LUT4)
+     4: i_2_10682/O (LUT3)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     5: i_2_10682/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I1 -to O i_2_10683"
+Found timing loop:
+     0: i_2_10696/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_10696/O (LUT2)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
 Found timing loop:
-     0: i_2_10697/O (LUT2)
+     0: i_2_10699/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10697/I1 (LUT2)
-     2: i_2_10618/O (LUT4)
+     1: i_2_10699/I1 (LUT2)
+     2: i_2_9795/O (LUT4)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     3: i_2_10618/I0 (LUT4)
-     4: i_2_10678/O (LUT3)
+     3: i_2_9795/O (LUT4)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I1 -to O i_2_10699"
+Found timing loop:
+     0: i_2_10683/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     5: i_2_10678/I1 (LUT3)
-     6: i_2_9877/O (LUT4)
+     1: i_2_10683/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Found timing loop:
+     0: i_2_10687/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     7: i_2_9877/I0 (LUT4)
-     8: i_2_10064/O (LUT6)
+     1: i_2_10687/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Found timing loop:
+     0: i_2_10694/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     9: i_2_10064/I2 (LUT6)
-    10: i_2_10677/O (LUT3)
+     1: i_2_10694/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Found timing loop:
+     0: i_2_10683/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    11: i_2_10677/I1 (LUT3)
+     1: i_2_10683/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Found timing loop:
+     0: i_2_10696/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_10696/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Found timing loop:
+     0: i_2_10699/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_10699/I0 (LUT2)
+     2: debuggerTopi_2_11318/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:63]
+     3: debuggerTopi_2_11318/I1 (LUT2)
+     4: i_2_10696/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     5: i_2_10696/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_2_10699"
+Found timing loop:
+     0: i_2_10698/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_10698/I1 (LUT2)
+     2: i_2_10619/O (LUT4)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     3: i_2_10619/I0 (LUT4)
+     4: i_2_10679/O (LUT3)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     5: i_2_10679/I1 (LUT3)
+     6: i_2_9878/O (LUT4)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     7: i_2_9878/I0 (LUT4)
+     8: i_2_10065/O (LUT6)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     9: i_2_10065/I2 (LUT6)
+    10: i_2_10678/O (LUT3)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+    11: i_2_10678/I1 (LUT3)
     12: i_2_9645/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
     13: i_2_9645/I1 (LUT2)
@@ -1077,58 +1105,61 @@ Found timing loop:
     17: i_2_9647/I3 (LUT6)
     18: i_2_8059/O (LUT6)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/ppu/PPU.v:141]
-    19: i_2_8059/I5 (LUT6)
-    20: i_2_10696/O (LUT2)
+    19: i_2_8059/I3 (LUT6)
+    20: debuggerTopi_2_11070/O (LUT5)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:63]
+    21: debuggerTopi_2_11070/I4 (LUT5)
+    22: i_2_10699/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    21: i_2_10696/O (LUT2)
+    23: i_2_10699/O (LUT2)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Inferred a: "set_disable_timing -from I1 -to O i_2_10697"
+Inferred a: "set_disable_timing -from I1 -to O i_2_10698"
 Found timing loop:
-     0: i_2_10679/O (LUT2)
+     0: i_2_10680/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10679/I1 (LUT2)
+     1: i_2_10680/I1 (LUT2)
      2: i_2_9810/O (LUT6)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
      3: i_2_9810/I5 (LUT6)
-     4: i_2_10693/O (LUT2)
+     4: i_2_10694/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     5: i_2_10693/O (LUT2)
+     5: i_2_10694/O (LUT2)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Inferred a: "set_disable_timing -from I1 -to O i_2_10679"
+Inferred a: "set_disable_timing -from I1 -to O i_2_10680"
 Found timing loop:
      0: i_2_9803/O (LUT6)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
      1: i_2_9803/I5 (LUT6)
-     2: i_2_10693/O (LUT2)
+     2: i_2_10694/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     3: i_2_10693/O (LUT2)
+     3: i_2_10694/O (LUT2)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
 Inferred a: "set_disable_timing -from I5 -to O i_2_9803"
 Found timing loop:
-     0: i_2_10673/O (LUT3)
+     0: i_2_10674/O (LUT3)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10673/I1 (LUT3)
+     1: i_2_10674/I1 (LUT3)
      2: i_2_9637/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
      3: i_2_9637/I1 (LUT2)
      4: i_2_9638/O (LUT6)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
      5: i_2_9638/I4 (LUT6)
-     6: i_2_10679/O (LUT2)
+     6: i_2_10680/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     7: i_2_10679/I0 (LUT2)
-     8: i_2_10678/O (LUT3)
+     7: i_2_10680/I0 (LUT2)
+     8: i_2_10679/O (LUT3)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     9: i_2_10678/I1 (LUT3)
-    10: i_2_9877/O (LUT4)
+     9: i_2_10679/I1 (LUT3)
+    10: i_2_9878/O (LUT4)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    11: i_2_9877/I0 (LUT4)
-    12: i_2_10064/O (LUT6)
+    11: i_2_9878/I0 (LUT4)
+    12: i_2_10065/O (LUT6)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    13: i_2_10064/I2 (LUT6)
-    14: i_2_10677/O (LUT3)
+    13: i_2_10065/I2 (LUT6)
+    14: i_2_10678/O (LUT3)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    15: i_2_10677/I1 (LUT3)
+    15: i_2_10678/I1 (LUT3)
     16: i_2_9645/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
     17: i_2_9645/I1 (LUT2)
@@ -1140,30 +1171,44 @@ Found timing loop:
     21: i_2_9647/I3 (LUT6)
     22: i_2_8059/O (LUT6)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/ppu/PPU.v:141]
-    23: i_2_8059/I5 (LUT6)
-    24: i_2_10696/O (LUT2)
+    23: i_2_8059/I2 (LUT6)
+    24: i_2_10700/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    25: i_2_10696/O (LUT2)
+    25: i_2_10700/I1 (LUT2)
+    26: i_2_10617/O (LUT4)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+    27: i_2_10617/I3 (LUT4)
+    28: i_2_10675/O (LUT3)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+    29: i_2_10675/I1 (LUT3)
+    30: i_2_9889/O (LUT6)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+    31: i_2_9889/I0 (LUT6)
+    32: i_2_10066/O (LUT6)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+    33: i_2_10066/I1 (LUT6)
+    34: i_2_10674/O (LUT3)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Inferred a: "set_disable_timing -from I1 -to O i_2_10673"
+Inferred a: "set_disable_timing -from I1 -to O i_2_10674"
 Found timing loop:
-     0: i_2_10673/O (LUT3)
+     0: i_2_10674/O (LUT3)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10673/O (LUT3)
+     1: i_2_10674/O (LUT3)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
 Found timing loop:
-     0: i_2_10678/O (LUT3)
+     0: i_2_10679/O (LUT3)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10678/I1 (LUT3)
-     2: i_2_9877/O (LUT4)
+     1: i_2_10679/I1 (LUT3)
+     2: i_2_9878/O (LUT4)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     3: i_2_9877/I0 (LUT4)
-     4: i_2_10064/O (LUT6)
+     3: i_2_9878/I0 (LUT4)
+     4: i_2_10065/O (LUT6)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     5: i_2_10064/I2 (LUT6)
-     6: i_2_10677/O (LUT3)
+     5: i_2_10065/I2 (LUT6)
+     6: i_2_10678/O (LUT3)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     7: i_2_10677/I1 (LUT3)
+     7: i_2_10678/I1 (LUT3)
      8: i_2_9645/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
      9: i_2_9645/I1 (LUT2)
@@ -1175,109 +1220,148 @@ Found timing loop:
     13: i_2_9647/I3 (LUT6)
     14: i_2_8059/O (LUT6)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/ppu/PPU.v:141]
-    15: i_2_8059/I5 (LUT6)
-    16: i_2_10696/O (LUT2)
+    15: i_2_8059/I2 (LUT6)
+    16: i_2_10700/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    17: i_2_10696/O (LUT2)
+    17: i_2_10700/I1 (LUT2)
+    18: i_2_10617/O (LUT4)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+    19: i_2_10617/I3 (LUT4)
+    20: i_2_10675/O (LUT3)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+    21: i_2_10675/I1 (LUT3)
+    22: i_2_9889/O (LUT6)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+    23: i_2_9889/I0 (LUT6)
+    24: i_2_10066/O (LUT6)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+    25: i_2_10066/I1 (LUT6)
+    26: i_2_10674/O (LUT3)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+    27: i_2_10674/O (LUT3)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Inferred a: "set_disable_timing -from I1 -to O i_2_10678"
+Inferred a: "set_disable_timing -from I1 -to O i_2_10679"
 Found timing loop:
-     0: i_2_9757/O (LUT3)
+     0: i_2_10686/O (LUT3)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_9757/I1 (LUT3)
-     2: i_2_9759/O (LUT3)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     3: i_2_9759/I2 (LUT3)
-     4: i_2_9760/O (LUT5)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     5: i_2_9760/I0 (LUT5)
-     6: i_2_9827/O (LUT4)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     7: i_2_9827/I3 (LUT4)
-     8: i_2_9828/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     9: i_2_9828/I1 (LUT2)
-    10: i_2_10625/O (LUT6)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    11: i_2_10625/I5 (LUT6)
-    12: i_2_10688/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    13: i_2_10688/I1 (LUT2)
-    14: i_2_9806/O (LUT5)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    15: i_2_9806/I4 (LUT5)
-    16: i_2_10683/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    17: i_2_10683/I1 (LUT2)
-    18: i_2_9709/O (LUT6)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    19: i_2_9709/I4 (LUT6)
-    20: i_2_10696/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    21: i_2_10696/O (LUT2)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Inferred a: "set_disable_timing -from I1 -to O i_2_9757"
-Found timing loop:
-     0: i_2_10685/O (LUT3)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10685/I1 (LUT3)
+     1: i_2_10686/I1 (LUT3)
      2: i_2_9748/O (LUT3)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
      3: i_2_9748/I2 (LUT3)
      4: i_2_9749/O (LUT5)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
      5: i_2_9749/I0 (LUT5)
-     6: i_2_10684/O (LUT3)
+     6: i_2_10685/O (LUT3)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     7: i_2_10684/O (LUT3)
+     7: i_2_10685/O (LUT3)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Inferred a: "set_disable_timing -from I1 -to O i_2_10685"
+Inferred a: "set_disable_timing -from I1 -to O i_2_10686"
 Found timing loop:
-     0: i_2_10681/O (LUT3)
+     0: i_2_10682/O (LUT3)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10681/I1 (LUT3)
-     2: i_2_9752/O (LUT3)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     3: i_2_9752/I2 (LUT3)
-     4: i_2_9753/O (LUT5)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     5: i_2_9753/I0 (LUT5)
-     6: i_2_10680/O (LUT3)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     7: i_2_10680/O (LUT3)
+     1: i_2_10682/O (LUT3)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Inferred a: "set_disable_timing -from I1 -to O i_2_10681"
 Found timing loop:
-     0: i_2_9702/O (LUT3)
+     0: i_2_10683/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_9702/I2 (LUT3)
-     2: i_2_9704/O (LUT6)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     3: i_2_9704/I3 (LUT6)
-     4: i_2_9705/O (LUT4)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     5: i_2_9705/I3 (LUT4)
-     6: i_2_9706/O (LUT6)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     7: i_2_9706/I5 (LUT6)
-     8: o_nes_data_inferredi_2_10741/O (LUT6)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerMCU.v:42]
-     9: o_nes_data_inferredi_2_10741/I4 (LUT6)
-    10: i_2_10936/O (LUT4)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:402]
-    11: i_2_10936/O (LUT4)
+     1: i_2_10683/O (LUT2)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Inferred a: "set_disable_timing -from I2 -to O i_2_9702"
+Found timing loop:
+     0: i_2_10687/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_10687/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Found timing loop:
+     0: i_2_10683/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_10683/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Found timing loop:
+     0: i_2_10699/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_10699/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Found timing loop:
+     0: i_2_10698/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_10698/I0 (LUT2)
+     2: debuggerTopi_2_11318/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:63]
+     3: debuggerTopi_2_11318/I1 (LUT2)
+     4: i_2_10696/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     5: i_2_10696/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_2_10698"
+Found timing loop:
+     0: i_2_10700/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_10700/I1 (LUT2)
+     2: i_2_10617/O (LUT4)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     3: i_2_10617/I3 (LUT4)
+     4: i_2_10675/O (LUT3)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     5: i_2_10675/I1 (LUT3)
+     6: i_2_9889/O (LUT6)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     7: i_2_9889/I0 (LUT6)
+     8: i_2_10066/O (LUT6)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     9: i_2_10066/I1 (LUT6)
+    10: i_2_10674/O (LUT3)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+    11: i_2_10674/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I1 -to O i_2_10700"
+Found timing loop:
+     0: i_2_10699/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_10699/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Found timing loop:
+     0: i_2_10677/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_10677/I1 (LUT2)
+     2: debuggerTopi_2_11078/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:63]
+     3: debuggerTopi_2_11078/I1 (LUT2)
+     4: i_2_9803/O (LUT6)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     5: i_2_9803/I4 (LUT6)
+     6: i_2_10675/O (LUT3)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     7: i_2_10675/I1 (LUT3)
+     8: i_2_9889/O (LUT6)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     9: i_2_9889/I0 (LUT6)
+    10: i_2_10066/O (LUT6)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+    11: i_2_10066/I1 (LUT6)
+    12: i_2_10674/O (LUT3)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+    13: i_2_10674/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I1 -to O i_2_10677"
+Found timing loop:
+     0: i_2_10680/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_10680/I0 (LUT2)
+     2: i_2_10679/O (LUT3)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     3: i_2_10679/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_2_10680"
 Found timing loop:
      0: i_2_9802/O (LUT5)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
      1: i_2_9802/I3 (LUT5)
-     2: i_2_10626/O (LUT6)
+     2: i_2_10627/O (LUT6)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     3: i_2_10626/I5 (LUT6)
-     4: i_2_10689/O (LUT2)
+     3: i_2_10627/I5 (LUT6)
+     4: i_2_10690/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     5: i_2_10689/I1 (LUT2)
+     5: i_2_10690/I1 (LUT2)
      6: i_2_9641/O (LUT6)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
      7: i_2_9641/I5 (LUT6)
@@ -1286,10 +1370,10 @@ Found timing loop:
      9: i_2_9642/I3 (LUT5)
     10: i_2_8055/O (LUT5)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/ppu/PPU.v:145]
-    11: i_2_8055/I3 (LUT5)
-    12: i_2_10697/O (LUT2)
+    11: i_2_8055/I4 (LUT5)
+    12: i_2_10699/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    13: i_2_10697/O (LUT2)
+    13: i_2_10699/O (LUT2)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
 Inferred a: "set_disable_timing -from I3 -to O i_2_9802"
 Found timing loop:
@@ -1298,36 +1382,9 @@ Found timing loop:
      1: i_2_9802/O (LUT5)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
 Found timing loop:
-     0: i_2_9705/O (LUT4)
+     0: i_2_10678/O (LUT3)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_9705/I3 (LUT4)
-     2: i_2_9706/O (LUT6)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     3: i_2_9706/I5 (LUT6)
-     4: o_nes_data_inferredi_2_10741/O (LUT6)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerMCU.v:42]
-     5: o_nes_data_inferredi_2_10741/I4 (LUT6)
-     6: i_2_10936/O (LUT4)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:402]
-     7: i_2_10936/O (LUT4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Inferred a: "set_disable_timing -from I3 -to O i_2_9705"
-Found timing loop:
-     0: i_2_9706/O (LUT6)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_9706/I5 (LUT6)
-     2: o_nes_data_inferredi_2_10741/O (LUT6)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerMCU.v:42]
-     3: o_nes_data_inferredi_2_10741/I4 (LUT6)
-     4: i_2_10936/O (LUT4)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:402]
-     5: i_2_10936/O (LUT4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Inferred a: "set_disable_timing -from I5 -to O i_2_9706"
-Found timing loop:
-     0: i_2_10677/O (LUT3)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10677/I1 (LUT3)
+     1: i_2_10678/I1 (LUT3)
      2: i_2_9645/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
      3: i_2_9645/I1 (LUT2)
@@ -1339,202 +1396,177 @@ Found timing loop:
      7: i_2_9647/I3 (LUT6)
      8: i_2_8059/O (LUT6)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/ppu/PPU.v:141]
-     9: i_2_8059/I5 (LUT6)
-    10: i_2_10696/O (LUT2)
+     9: i_2_8059/I2 (LUT6)
+    10: i_2_10700/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    11: i_2_10696/O (LUT2)
+    11: i_2_10700/I0 (LUT2)
+    12: debuggerTopi_2_11318/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:63]
+    13: debuggerTopi_2_11318/I1 (LUT2)
+    14: i_2_10696/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+    15: i_2_10696/O (LUT2)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Inferred a: "set_disable_timing -from I1 -to O i_2_10677"
+Inferred a: "set_disable_timing -from I1 -to O i_2_10678"
 Found timing loop:
-     0: i_2_10677/O (LUT3)
+     0: i_2_10678/O (LUT3)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10677/O (LUT3)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Found timing loop:
-     0: i_2_10682/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10682/O (LUT2)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Found timing loop:
-     0: i_2_10686/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10686/O (LUT2)
+     1: i_2_10678/O (LUT3)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
 Found timing loop:
-     0: i_2_10682/O (LUT2)
+     0: i_2_10683/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10682/O (LUT2)
+     1: i_2_10683/O (LUT2)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
 Found timing loop:
-     0: i_2_10686/O (LUT2)
+     0: i_2_10687/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10686/O (LUT2)
+     1: i_2_10687/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Found timing loop:
+     0: i_2_10699/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_10699/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Found timing loop:
+     0: i_2_10700/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_10700/I0 (LUT2)
+     2: debuggerTopi_2_11318/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:63]
+     3: debuggerTopi_2_11318/I1 (LUT2)
+     4: i_2_10696/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     5: i_2_10696/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_2_10700"
+Found timing loop:
+     0: i_2_10698/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_10698/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Found timing loop:
+     0: i_2_10699/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_10699/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Found timing loop:
+     0: i_2_10687/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_10687/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Found timing loop:
+     0: debuggerTopi_2_11318/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:63]
+     1: debuggerTopi_2_11318/I1 (LUT2)
+     2: i_2_10696/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     3: i_2_10696/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I1 -to O debuggerTopi_2_11318"
+Found timing loop:
+     0: i_2_10699/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_10699/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Found timing loop:
+     0: i_2_10698/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_10698/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Found timing loop:
+     0: i_2_10683/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_10683/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Found timing loop:
+     0: i_2_10680/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_10680/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Found timing loop:
+     0: i_2_10677/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_10677/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Found timing loop:
+     0: debuggerTopi_2_11318/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:63]
+     1: debuggerTopi_2_11318/I0 (LUT2)
+     2: i_2_10683/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     3: i_2_10683/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O debuggerTopi_2_11318"
+Found timing loop:
+     0: i_2_10699/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_10699/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Found timing loop:
+     0: i_2_10683/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_10683/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Found timing loop:
+     0: i_2_10677/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_10677/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Found timing loop:
+     0: i_2_10683/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_10683/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Found timing loop:
+     0: i_2_10699/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_10699/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Found timing loop:
+     0: i_2_10699/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_10699/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Found timing loop:
+     0: i_2_10687/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_10687/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Found timing loop:
+     0: i_2_10699/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_10699/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Found timing loop:
+     0: i_2_10699/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_10699/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Found timing loop:
+     0: i_2_10677/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_10677/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Found timing loop:
+     0: i_2_10699/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_10699/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+Found timing loop:
+     0: i_2_10699/O (LUT2)
+      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
+     1: i_2_10699/O (LUT2)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
 Found timing loop:
      0: i_2_10696/O (LUT2)
       [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
      1: i_2_10696/O (LUT2)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Found timing loop:
-     0: i_2_10699/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10699/I1 (LUT2)
-     2: i_2_10616/O (LUT4)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     3: i_2_10616/I3 (LUT4)
-     4: i_2_10674/O (LUT3)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     5: i_2_10674/I1 (LUT3)
-     6: i_2_9888/O (LUT6)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     7: i_2_9888/I0 (LUT6)
-     8: i_2_10065/O (LUT6)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     9: i_2_10065/I1 (LUT6)
-    10: i_2_10673/O (LUT3)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-    11: i_2_10673/O (LUT3)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Inferred a: "set_disable_timing -from I1 -to O i_2_10699"
-Found timing loop:
-     0: i_2_10697/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10697/O (LUT2)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Found timing loop:
-     0: i_2_10682/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10682/O (LUT2)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Found timing loop:
-     0: i_2_10686/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10686/O (LUT2)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Found timing loop:
-     0: i_2_10936/O (LUT4)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:402]
-     1: i_2_10936/O (LUT4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Found timing loop:
-     0: i_2_10682/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10682/O (LUT2)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Found timing loop:
-     0: i_2_10676/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10676/I1 (LUT2)
-     2: debuggerTopi_2_11062/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:63]
-     3: debuggerTopi_2_11062/I1 (LUT2)
-     4: i_2_9803/O (LUT6)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     5: i_2_9803/I2 (LUT6)
-     6: i_2_10692/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     7: i_2_10692/I1 (LUT2)
-     8: i_2_9797/O (LUT3)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     9: i_2_9797/O (LUT3)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Inferred a: "set_disable_timing -from I1 -to O i_2_10676"
-Found timing loop:
-     0: i_2_10679/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10679/I0 (LUT2)
-     2: i_2_10678/O (LUT3)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     3: i_2_10678/O (LUT3)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Inferred a: "set_disable_timing -from I0 -to O i_2_10679"
-Found timing loop:
-     0: i_2_10936/O (LUT4)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:402]
-     1: i_2_10936/O (LUT4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Found timing loop:
-     0: i_2_10681/O (LUT3)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10681/O (LUT3)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Found timing loop:
-     0: i_2_10697/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10697/O (LUT2)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Found timing loop:
-     0: i_2_10697/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10697/O (LUT2)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Found timing loop:
-     0: i_2_10682/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10682/O (LUT2)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Found timing loop:
-     0: i_2_10936/O (LUT4)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:402]
-     1: i_2_10936/O (LUT4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Found timing loop:
-     0: i_2_10679/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10679/O (LUT2)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Found timing loop:
-     0: i_2_10676/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10676/O (LUT2)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Found timing loop:
-     0: i_2_10682/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10682/O (LUT2)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Found timing loop:
-     0: i_2_10682/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10682/O (LUT2)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Found timing loop:
-     0: i_2_10936/O (LUT4)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:402]
-     1: i_2_10936/O (LUT4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Found timing loop:
-     0: i_2_10676/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10676/O (LUT2)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Found timing loop:
-     0: i_2_10936/O (LUT4)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:402]
-     1: i_2_10936/O (LUT4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Found timing loop:
-     0: i_2_10682/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10682/O (LUT2)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Found timing loop:
-     0: i_2_10686/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10686/O (LUT2)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Found timing loop:
-     0: i_2_10676/O (LUT2)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/cpu6502/ALU.v:64]
-     1: i_2_10676/O (LUT2)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
-Found timing loop:
-     0: i_2_10936/O (LUT4)
-      [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/imports/nes/debugger-nes/NESDebuggerTop.v:402]
-     1: i_2_10936/O (LUT4)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2_9705/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2_9664/O'
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:53 ; elapsed = 00:02:56 . Memory (MB): peak = 1528.648 ; gain = 515.227
+Finished Technology Mapping : Time (s): cpu = 00:02:50 ; elapsed = 00:02:53 . Memory (MB): peak = 1531.031 ; gain = 517.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1552,37 +1584,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:58 ; elapsed = 00:03:02 . Memory (MB): peak = 1528.648 ; gain = 515.227
+Finished IO Insertion : Time (s): cpu = 00:02:56 ; elapsed = 00:02:59 . Memory (MB): peak = 1531.031 ; gain = 517.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:58 ; elapsed = 00:03:02 . Memory (MB): peak = 1528.648 ; gain = 515.227
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:56 ; elapsed = 00:02:59 . Memory (MB): peak = 1531.031 ; gain = 517.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:01 ; elapsed = 00:03:05 . Memory (MB): peak = 1528.648 ; gain = 515.227
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:59 ; elapsed = 00:03:02 . Memory (MB): peak = 1531.031 ; gain = 517.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:03:01 ; elapsed = 00:03:05 . Memory (MB): peak = 1528.648 ; gain = 515.227
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:59 ; elapsed = 00:03:02 . Memory (MB): peak = 1531.031 ; gain = 517.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:03:02 ; elapsed = 00:03:06 . Memory (MB): peak = 1528.648 ; gain = 515.227
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:00 ; elapsed = 00:03:03 . Memory (MB): peak = 1531.031 ; gain = 517.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:03:02 ; elapsed = 00:03:06 . Memory (MB): peak = 1528.648 ; gain = 515.227
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:00 ; elapsed = 00:03:03 . Memory (MB): peak = 1531.031 ; gain = 517.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1610,14 +1642,14 @@ Report Cell Usage:
 |8     |BUFG              |     1|
 |9     |CARRY4            |    46|
 |10    |LUT1              |    38|
-|11    |LUT2              |   603|
-|12    |LUT3              |   262|
-|13    |LUT4              |   769|
-|14    |LUT5              |  1054|
-|15    |LUT6              |  6178|
+|11    |LUT2              |   604|
+|12    |LUT3              |   264|
+|13    |LUT4              |   770|
+|14    |LUT5              |  1058|
+|15    |LUT6              |  6187|
 |16    |MUXF7             |  1706|
 |17    |MUXF8             |   729|
-|18    |FDCE              | 10029|
+|18    |FDCE              | 10037|
 |19    |FDPE              |    32|
 |20    |FDRE              |  2766|
 |21    |FDSE              |     6|
@@ -1625,25 +1657,25 @@ Report Cell Usage:
 |23    |OBUF              |    17|
 +------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:03:02 ; elapsed = 00:03:06 . Memory (MB): peak = 1528.648 ; gain = 515.227
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:00 ; elapsed = 00:03:03 . Memory (MB): peak = 1531.031 ; gain = 517.395
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 60 critical warnings and 3 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:37 ; elapsed = 00:02:57 . Memory (MB): peak = 1528.648 ; gain = 486.898
-Synthesis Optimization Complete : Time (s): cpu = 00:03:03 ; elapsed = 00:03:06 . Memory (MB): peak = 1528.648 ; gain = 515.227
+Synthesis finished with 0 errors, 69 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:33 ; elapsed = 00:02:54 . Memory (MB): peak = 1531.031 ; gain = 492.285
+Synthesis Optimization Complete : Time (s): cpu = 00:03:00 ; elapsed = 00:03:03 . Memory (MB): peak = 1531.031 ; gain = 517.395
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.349 . Memory (MB): peak = 1528.648 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.332 . Memory (MB): peak = 1531.031 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 2481 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1528.648 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1531.031 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-122 Infos, 37 Warnings, 60 Critical Warnings and 0 Errors encountered.
+122 Infos, 39 Warnings, 69 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:03:13 ; elapsed = 00:03:28 . Memory (MB): peak = 1528.648 ; gain = 515.227
+synth_design: Time (s): cpu = 00:03:08 ; elapsed = 00:03:13 . Memory (MB): peak = 1531.031 ; gain = 517.395
 INFO: [Common 17-1381] The checkpoint 'C:/Users/jim/Documents/GitHub/personal/vivado/vivado-nes-debugger/vivado-nes-debugger.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Jun  4 10:06:06 2022...
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 12 12:26:25 2022...
