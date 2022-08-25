@@ -31,9 +31,9 @@ module top(
     input           i_spi_copi,     // SPI CPOI: only process when cs is negative
 
     // Controller interface
-    output          ck_io5,         // latch
-    output          ck_io6,         // clk
-    input           ck_io7,         // data 
+    output          o_nes_latch,         // latch
+    output          o_nes_clk,           // clk
+    input           i_nes_d0_player1,    // data 
     
     // VGA interface
     output [3:0] o_vga_r,
@@ -75,9 +75,9 @@ clk_wiz_0 pll(
     .o_vga_hsync(o_vga_hs),
     .o_vga_vsync(o_vga_vs),
 
-    .o_controller_latch(ck_io5),
-    .o_controller_clk(ck_io6),
-    .i_controller_data(!ck_io7)
+    .o_controller_latch(o_nes_latch),
+    .o_controller_clk(o_nes_clk),
+    .i_controller_data(!i_nes_d0_player1)
  );
 
 assign o_vga_r = w_vga_red[7:4];
